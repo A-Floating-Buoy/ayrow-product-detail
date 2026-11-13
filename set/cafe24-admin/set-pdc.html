@@ -1,0 +1,1818 @@
+<!-- 세트 상세 초안 — pdc 체계 · tools/pdc-set/build.py 가 두 제품 상세에서 조립한다(구조 확정 전까지 직접 고치지 않는다) -->
+<!-- 제품 섹션의 문구 · 마크업은 원본 그대로. 제품 섹션은 <div class="pdc--제품 pdc-set__group">으로 묶는다 · 규칙: 스킨 레포 docs/pdc-convention.md -->
+<link rel="stylesheet" href="/css/module/product/pdc-elixir.css?ver=20261112000007">
+<link rel="stylesheet" href="/css/module/product/pdc-sun-veil.css?ver=20261112000006">
+<link rel="stylesheet" href="/css/module/product/pdc-set.css?ver=20261113000009">
+<div class="pdc pdc--set" data-pdc data-pdc-product="elixir sun-veil set" data-pdc-ver="20261113000009">
+  <!-- 1. Hero — 자리만 잡아 둠. 문구 · 이미지는 클라이언트 확인 뒤 -->
+  <section class="pdc__section pdc__section--contained pdc-set-hero" data-pdc-section="set-hero">
+    <div class="container container--md">
+      <div class="pdc-set-hero__placeholder" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- 2. 엘릭서 -->
+  <div class="pdc--elixir pdc-set__group">
+  <section class="pdc__section pdc__section--full pdc-elixir-hero" data-pdc-section="elixir-hero" data-pdc-hero-video>
+    <!-- 포스터 = loop 영상 첫 프레임 · 영상은 pdc-elixir.js가 위에 얹는다(재생되면 포스터를 숨김) -->
+    <picture>
+      <img class="pdc-elixir-hero__bg" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/hero-loop-poster.jpg" alt="" width="2400" height="1350" loading="eager" fetchpriority="high">
+    </picture>
+    <div class="pdc-elixir-hero__content" data-scroll-reveal>
+      <p class="pdc-elixir-hero__lead sm--body-l body-mega">피부를 위한 시간을 다시 설계하는<br>바이오 컨센트레이트</p>
+      <p class="pdc__eyebrow">Skin Longevity Concentrate</p>
+      <h2 class="pdc-elixir-hero__title heading-xl">BIO ELIXIR<span class="pdc-elixir-hero__tm">™</span></h2>
+      <a class="pdc-elixir-hero__link body-xl" href="#pdc-elixir-clinical">피부 변화 확인하기 <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-concentrate" data-pdc-section="concentrate" data-pdc-nav-title="바이오 엘릭서는 무엇인가요?">
+    <div class="container container--lg">
+      <div class="pdc-concentrate__grid">
+        <figure class="pdc-concentrate__visual" data-scroll-reveal data-scroll-direction="none">
+          <img class="pdc-concentrate__layer pdc-concentrate__layer--crop" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/concentrate-crop.png" alt="" width="1024" height="1536" loading="lazy" aria-hidden="true">
+          <img class="pdc-concentrate__layer pdc-concentrate__layer--back" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/concentrate-0347.png" alt="" width="1677" height="1950" loading="lazy" aria-hidden="true">
+          <img class="pdc-concentrate__layer pdc-concentrate__layer--front" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/concentrate-0500.jpg" alt="바이오 엘릭서 제품 이미지" width="1300" height="1950" loading="lazy" itemprop="image">
+        </figure>
+        <div class="pdc-concentrate__copy" data-scroll-reveal>
+          <p class="pdc__eyebrow pdc-concentrate__eyebrow">Layerable Skin Longevity Concentrate</p>
+          <h2 class="pdc-concentrate__title">
+            <span class="pdc-concentrate__title-kicker heading-xl">A New Way to</span>
+            <span class="pdc-concentrate__title-swap">
+              <s class="pdc-concentrate__title-old" aria-hidden="true">MIST</s>
+              <span class="pdc-concentrate__title-main type-display">CONCENTRATE</span>
+            </span>
+          </h2>
+          <p class="pdc-concentrate__body sm--body-m body-l">피뿌리풀을 베이스로 한 고기능 포뮬러를<br class="sm--hide"> 쉽게 뿌리고, 얇게 쌓고, 필요한 순간 다시 레이어링합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc__section--band pdc-clinical pdc-clinical--timepoints pdc-clinical--labels pdc-clinical--sv" id="pdc-elixir-clinical" data-pdc-section="clinical" data-pdc-nav-title="엘릭서 · 어떤 변화를 확인했나요?">
+    <div class="container container--lg">
+      <header class="pdc__head" data-scroll-reveal>
+        <p class="pdc__eyebrow">One Formula, Three Timepoints</p>
+        <h2 class="pdc__head-title pdc-elixir__title sm--heading-xxl heading-xxxl">지금, 24시간 후, 4주 후.</h2>
+        <p class="pdc__head-lead body-l">한 번의 분사부터 4주간의 사용까지,<br>세 시점에서 피부 변화를 확인했습니다.</p>
+      </header>
+
+      <!-- 시점 탭: 섹션에 들어오면 한 번 자동 재생(data-pdc-timepoints ms, pdc-elixir.js) · 모바일은 상단 고정 가로 슬라이더 -->
+      <div class="pdc-timepoints" data-pdc-timepoints="7000">
+        <div class="pdc-timepoints__nav">
+          <div class="pdc-timepoints__tabs" role="tablist" aria-label="측정 시점">
+            <button class="pdc-timepoints__tab" type="button" role="tab" id="pdc-timepoints-tab-now" aria-controls="pdc-timepoints-panel-now" aria-selected="true">
+              <span class="pdc-timepoints__time"><strong>NOW</strong><span class="pdc-timepoints__when">사용 직후</span></span>
+              <span class="pdc-timepoints__labels heading-m">피부 온도 · 붓기 · 붉은기 개선</span>
+            </button>
+            <button class="pdc-timepoints__tab" type="button" role="tab" id="pdc-timepoints-tab-24h" aria-controls="pdc-timepoints-panel-24h" aria-selected="false" tabindex="-1">
+              <span class="pdc-timepoints__time"><strong>24H</strong><span class="pdc-timepoints__when">24시간 후</span></span>
+              <span class="pdc-timepoints__labels heading-m">보습 지속</span>
+            </button>
+            <button class="pdc-timepoints__tab" type="button" role="tab" id="pdc-timepoints-tab-4w" aria-controls="pdc-timepoints-panel-4w" aria-selected="false" tabindex="-1">
+              <span class="pdc-timepoints__time"><strong>4 WEEKS</strong><span class="pdc-timepoints__when">4주 사용 후</span></span>
+              <span class="pdc-timepoints__labels heading-m">피부노화지수 완화</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="pdc-timepoints__panels">
+          <!-- NOW: 근거 카드 3장 (모바일은 아래로 쌓기) -->
+          <div class="pdc-timepoints__panel" id="pdc-timepoints-panel-now" role="tabpanel" aria-labelledby="pdc-timepoints-tab-now">
+            <div class="pdc-timepoints__row">
+              <figure class="pdc-timepoints__card">
+                <figcaption class="pdc-timepoints__card-head"><span class="body-l">즉각적인(일시적) 피부 온도 감소(쿨링)</span><strong class="heading-xxxl">-5.376°C</strong></figcaption>
+                <div class="pdc-timepoints__card-body pdc-timepoints__card-body--chart">
+                  <svg class="pdc-chart" viewBox="0 18 502 468" role="img" aria-labelledby="pdc-chart-now-title">
+              <title id="pdc-chart-now-title">피부 온도 36.281°C에서 30.905°C로, 5.376°C 감소</title>
+              <line class="pdc-chart__grid" x1="78.1" y1="77.5" x2="462.9" y2="77.5"/>
+              <text class="pdc-chart__tick" x="68.1" y="77.5" text-anchor="end" dominant-baseline="middle" font-size="16.7">38</text>
+              <line class="pdc-chart__grid" x1="78.1" y1="239.6" x2="462.9" y2="239.6"/>
+              <text class="pdc-chart__tick" x="68.1" y="239.6" text-anchor="end" dominant-baseline="middle" font-size="16.7">33</text>
+              <line class="pdc-chart__grid" x1="78.1" y1="401.6" x2="462.9" y2="401.6"/>
+              <text class="pdc-chart__tick" x="68.1" y="401.6" text-anchor="end" dominant-baseline="middle" font-size="16.7">28</text>
+              <text class="pdc-chart__tick" x="68.1" y="27.8" text-anchor="end" dominant-baseline="middle" font-size="16.7">°C</text>
+              <polyline class="pdc-chart__line" pathLength="1" points="78.1,133.3 462.9,307.4"/>
+              <circle class="pdc-chart__dot pdc-chart__dot--open" cx="78.1" cy="133.3" r="7"/>
+              <text class="pdc-chart__value" x="71.1" y="119.3" text-anchor="start" font-size="20">36.281</text>
+              <circle class="pdc-chart__dot" cx="462.9" cy="307.4" r="7"/>
+              <text class="pdc-chart__value" x="469.9" y="335.4" text-anchor="end" font-size="20">30.905Ŧ</text>
+              <text class="pdc-chart__label" x="78.1" y="471.9" text-anchor="start" font-size="18">열 자극 직후</text>
+              <text class="pdc-chart__label" x="462.9" y="471.9" text-anchor="end" font-size="18">사용 직후</text>
+            </svg>
+                </div>
+                <p class="pdc-timepoints__sig body-xs">Ŧ : <i>p</i>&lt;0.05 by repeated measures ANOVA</p>
+              </figure>
+              <figure class="pdc-timepoints__card">
+                <figcaption class="pdc-timepoints__card-head"><span class="body-l">즉각적인(일시적) 피부 붓기 완화율</span><strong class="heading-xxxl">30.686<span class="pdc-metric__unit">%</span></strong></figcaption>
+                <div class="pdc-timepoints__card-body pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 51.07%;">
+                  <img class="pdc-elixir-compare__img pdc-elixir-compare__img--thermal-before" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/thermal-before.jpg" alt="사용 전 열화상 이미지" width="960" height="960" loading="lazy" draggable="false">
+                  <div class="pdc-elixir-compare__after">
+                    <img class="pdc-elixir-compare__img pdc-elixir-compare__img--thermal-after" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/thermal-after.jpg" alt="사용 직후 열화상 이미지" width="960" height="960" loading="lazy" draggable="false">
+                  </div>
+                  <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                  <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="51.07" aria-label="사용 전·사용 직후 열화상 비교" data-pdc-compare-range>
+                  <span class="pdc-timepoints__ba pdc-timepoints__ba--before">BEFORE</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">AFTER</span>
+                </div>
+              </figure>
+              <figure class="pdc-timepoints__card">
+                <figcaption class="pdc-timepoints__card-head"><span class="body-l">외부 자극(물리적 자극)으로 손상된 피부의 일시적 붉은기 진정 개선율</span><strong class="heading-xxxl">91.195<span class="pdc-metric__unit">%</span></strong></figcaption>
+                <div class="pdc-timepoints__card-body pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 51.07%;">
+                  <img class="pdc-elixir-compare__img pdc-elixir-compare__img--redness-before" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/redness-before.jpg" alt="외부 자극 직후 피부 붉은기" width="458" height="458" loading="lazy" draggable="false">
+                  <div class="pdc-elixir-compare__after">
+                    <img class="pdc-elixir-compare__img pdc-elixir-compare__img--redness-after" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/redness-after.jpg" alt="사용 직후 피부 붉은기" width="458" height="458" loading="lazy" draggable="false">
+                  </div>
+                  <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                  <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="51.07" aria-label="외부 자극 직후·사용 직후 붉은기 비교" data-pdc-compare-range>
+                  <span class="pdc-timepoints__ba pdc-timepoints__ba--before">BEFORE</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">AFTER</span>
+                </div>
+              </figure>
+            </div>
+            <ul class="pdc-timepoints__notes body-xs">
+              <li>※ 피부 붓기 개선율(%)=│(after-before)│/before*100</li>
+              <li>※ 붉은기 진정 개선율(%)=(자극 후-사용 직후)/(자극 후-자극 전)*100</li>
+              <li>*P&amp;K 피부임상연구센타㈜ 인체적용시험 결과(2026.06.15~07.09 / 2026.06.22~07.23) · 개인에 따라 차이가 있을 수 있습니다.</li>
+            </ul>
+            <details class="pdc-disclosure pdc-clinical__study pdc-study-card">
+              <summary class="pdc-disclosure__summary sm--body-m body-l">VIEW THE STUDY<span class="pdc-disclosure__icon" aria-hidden="true"></span></summary>
+              <div class="pdc-disclosure__body">
+                <table class="pdc-study">
+                  <caption class="visually-hidden">NOW · 사용 직후 인체적용시험 개요</caption>
+                  <tbody>
+                    <tr><th scope="row">시험명</th><td>에이로우 바이오 엘릭서의 피부 온도 감소(쿨링), 피부 붓기 및 물리적 자극으로 손상된 피부의 붉은기 진정에 대한 인체적용시험</td></tr>
+                    <tr><th scope="row">시험기관</th><td>P&amp;K 피부임상연구센타㈜</td></tr>
+                    <tr><th scope="row">시험기간</th><td>2026.06.15 ~ 07.09 (쿨링·붓기) / 2026.06.22 ~ 07.23 (붉은기 진정)</td></tr>
+                    <tr><th scope="row">시험대상</th><td>만 35~60세 성인 여성 21명</td></tr>
+                    <tr><th scope="row">측정항목</th><td>피부 온도 감소(쿨링), 피부 붓기, 물리적 자극으로 손상된 피부의 붉은기 진정</td></tr>
+                  </tbody>
+                </table>
+                <p class="pdc-study__disclaimer pdc__note body-xs">인체적용시험 결과가 모든 사용자에게 동일하게 나타나는 것은 아닙니다.</p>
+              </div>
+            </details>
+          </div>
+
+          <!-- 24H -->
+          <div class="pdc-timepoints__panel" id="pdc-timepoints-panel-24h" role="tabpanel" aria-labelledby="pdc-timepoints-tab-24h" hidden>
+            <div class="pdc-clinical__hydration">
+              <div class="pdc-clinical__hydration-copy">
+                <div class="pdc-hydration__head">
+                  <h3 class="pdc-hydration__title heading-l">24시간 피부 보습 지속력</h3>
+                  <p class="pdc-hydration__sub body-m">사용 전 대비 개선율</p>
+                </div>
+                <dl class="pdc-hydration__stats">
+                  <div class="pdc-hydration__stat"><dt class="body-l">24시간 후 개선율</dt><dd><strong class="pdc-clinical__metric heading-xxxl">54.463<span class="pdc-metric__unit">%</span></strong></dd></div>
+                  <div class="pdc-hydration__stat pdc-hydration__stat--sub"><dt class="body-l">사용 직후 개선율</dt><dd><strong class="heading-xl">90.547<span class="pdc-metric__unit">%</span></strong></dd></div>
+                </dl>
+                <p class="pdc-hydration__claim body-l">1회 사용으로<br>24시간 동안 지속되는<br>피부 보습 효과</p>
+              </div>
+              <div class="pdc-clinical__hydration-chart">
+                <svg class="pdc-chart" viewBox="0 -24 515 436" role="img" aria-labelledby="pdc-chart-24h-title">
+              <title id="pdc-chart-24h-title">피부 보습 36.403에서 사용 직후 69.365, 24시간 후 56.229 (A.U.)</title>
+              <line class="pdc-chart__grid" x1="55.5" y1="53.9" x2="487.2" y2="53.9"/>
+              <text class="pdc-chart__tick" x="45.5" y="53.9" text-anchor="end" dominant-baseline="middle" font-size="13">80</text>
+              <text class="pdc-chart__tick" x="45.5" y="20.4" text-anchor="end" dominant-baseline="middle" font-size="13">A.U.</text>
+              <line class="pdc-chart__grid" x1="55.5" y1="150" x2="487.2" y2="150"/>
+              <text class="pdc-chart__tick" x="45.5" y="150" text-anchor="end" dominant-baseline="middle" font-size="13">60</text>
+              <line class="pdc-chart__grid" x1="55.5" y1="246.1" x2="487.2" y2="246.1"/>
+              <text class="pdc-chart__tick" x="45.5" y="246.1" text-anchor="end" dominant-baseline="middle" font-size="13">40</text>
+              <line class="pdc-chart__grid" x1="55.5" y1="342.3" x2="487.2" y2="342.3"/>
+              <text class="pdc-chart__tick" x="45.5" y="342.3" text-anchor="end" dominant-baseline="middle" font-size="13">20</text>
+                <polyline class="pdc-chart__line" pathLength="1" points="55.5,263.4 271.4,105 487.2,168.1"/>
+              <circle class="pdc-chart__dot pdc-chart__dot--open" cx="55.5" cy="263.4" r="6"/>
+              <text class="pdc-chart__value" x="49.5" y="291.4" text-anchor="start" font-size="20">36.403</text>
+              <circle class="pdc-chart__dot" cx="271.4" cy="105" r="6"/>
+              <text class="pdc-chart__value" x="271.4" y="91" text-anchor="middle" font-size="20">69.365**</text>
+              <circle class="pdc-chart__dot" cx="487.2" cy="168.1" r="6"/>
+              <text class="pdc-chart__value" x="493.2" y="196.1" text-anchor="end" font-size="20">56.229**</text>
+              <text class="pdc-chart__label" x="55.5" y="395.5" text-anchor="start" font-size="13">사용 전</text>
+              <text class="pdc-chart__label" x="271.4" y="395.5" text-anchor="middle" font-size="13">사용 직후</text>
+              <text class="pdc-chart__label" x="487.2" y="395.5" text-anchor="end" font-size="13">24시간 후</text>
+            </svg>
+                <p class="pdc-timepoints__sig body-xs">** : <i>p</i>&lt;0.05 by repeated measures ANOVA, post hoc C.I correction by Bonferroni.</p>
+              </div>
+            </div>
+            <ul class="pdc-timepoints__notes body-xs">
+              <li>※ 개선율(%)=│(after-before)│/before*100</li>
+              <li>*P&amp;K 피부임상연구센타㈜ 인체적용시험 결과(2026.06.15~07.09) · 개인에 따라 차이가 있을 수 있습니다.</li>
+            </ul>
+            <details class="pdc-disclosure pdc-clinical__study pdc-study-card">
+              <summary class="pdc-disclosure__summary sm--body-m body-l">VIEW THE STUDY<span class="pdc-disclosure__icon" aria-hidden="true"></span></summary>
+              <div class="pdc-disclosure__body">
+                <table class="pdc-study">
+                  <caption class="visually-hidden">24H · 24시간 후 인체적용시험 개요</caption>
+                  <tbody>
+                    <tr><th scope="row">시험명</th><td>에이로우 바이오 엘릭서의 24시간 피부 보습 지속력에 대한 인체적용시험</td></tr>
+                    <tr><th scope="row">시험기관</th><td>P&amp;K 피부임상연구센타㈜</td></tr>
+                    <tr><th scope="row">시험기간</th><td>2026.06.15 ~ 07.09</td></tr>
+                    <tr><th scope="row">시험대상</th><td>만 35~60세 성인 여성 21명</td></tr>
+                    <tr><th scope="row">측정항목</th><td>24시간 피부 보습 지속력</td></tr>
+                  </tbody>
+                </table>
+                <p class="pdc-study__disclaimer pdc__note body-xs">인체적용시험 결과가 모든 사용자에게 동일하게 나타나는 것은 아닙니다.</p>
+              </div>
+            </details>
+          </div>
+
+          <!-- 4 WEEKS -->
+          <div class="pdc-timepoints__panel" id="pdc-timepoints-panel-4w" role="tabpanel" aria-labelledby="pdc-timepoints-tab-4w" hidden>
+            <div class="pdc-timepoints__summary">
+              <h3 class="pdc-clinical__summary-title"><strong>피부노화지수(Skin Aging Index) 완화</strong>에 도움</h3>
+              <p class="pdc-clinical__summary-note body-m">피부노화지수는 피부 탄력 · 눈가주름 · 피부결을 종합적으로 평가한 지표입니다.</p>
+            </div>
+            <div class="pdc-timepoints__row pdc-timepoints__row--4">
+              <article class="pdc-timepoints__card">
+                <h4 class="pdc-timepoints__card-head"><span class="body-l">피부노화지수 완화</span><strong class="heading-xxxl">18.537<span class="pdc-metric__unit">%</span></strong></h4>
+                <div class="pdc-timepoints__card-body pdc-timepoints__card-body--chart"><svg class="pdc-chart" viewBox="0 0 307 198" role="img" aria-labelledby="pdc-chart-sai-title">
+              <title id="pdc-chart-sai-title">피부노화지수 51.868에서 42.253으로 18.537% 개선</title>
+              <line class="pdc-chart__grid" x1="57.3" y1="35.4" x2="278.4" y2="35.4"/>
+              <text class="pdc-chart__tick" x="47.3" y="35.4" text-anchor="end" dominant-baseline="middle" font-size="12.5">60</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="74.3" x2="278.4" y2="74.3"/>
+              <text class="pdc-chart__tick" x="47.3" y="74.3" text-anchor="end" dominant-baseline="middle" font-size="12.5">50</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="113.2" x2="278.4" y2="113.2"/>
+              <text class="pdc-chart__tick" x="47.3" y="113.2" text-anchor="end" dominant-baseline="middle" font-size="12.5">40</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="152.1" x2="278.4" y2="152.1"/>
+              <text class="pdc-chart__tick" x="47.3" y="152.1" text-anchor="end" dominant-baseline="middle" font-size="12.5">30</text>
+              <text class="pdc-chart__tick" x="47.3" y="13.9" text-anchor="end" dominant-baseline="middle" font-size="12.5">SAI</text>
+              <polyline class="pdc-chart__line" pathLength="1" points="57.3,67 278.4,104.4"/>
+              <circle class="pdc-chart__dot pdc-chart__dot--open" cx="57.3" cy="67" r="6"/>
+              <text class="pdc-chart__value" x="51.3" y="55" text-anchor="start" font-size="15.6">51.868</text>
+              <circle class="pdc-chart__dot" cx="278.4" cy="104.4" r="6"/>
+              <text class="pdc-chart__value" x="284.4" y="127.3" text-anchor="end" font-size="15.6">42.253*</text>
+              <text class="pdc-chart__label" x="57.3" y="184.1" text-anchor="start" font-size="13.5">사용 전</text>
+              <text class="pdc-chart__label" x="278.4" y="184.1" text-anchor="end" font-size="13.5">4주 후</text>
+            </svg></div>
+                <p class="pdc-timepoints__sig body-xs">※ SAI: Skin Aging Index(피부노화지수)<br>* : <i>p</i>&lt;0.05 by Paired t-test</p>
+              </article>
+              <article class="pdc-timepoints__card">
+                <h4 class="pdc-timepoints__card-head"><span class="body-l">피부 탄력 증가</span><strong class="heading-xxxl">19.551<span class="pdc-metric__unit">%</span></strong></h4>
+                <div class="pdc-timepoints__card-body pdc-timepoints__card-body--chart"><svg class="pdc-chart" viewBox="0 0 307 198" role="img" aria-labelledby="pdc-chart-elastic-title">
+              <title id="pdc-chart-elastic-title">피부 탄력 0.624에서 0.746으로 19.551% 증가</title>
+              <line class="pdc-chart__grid" x1="57.3" y1="35.4" x2="278.4" y2="35.4"/>
+              <text class="pdc-chart__tick" x="47.3" y="35.4" text-anchor="end" dominant-baseline="middle" font-size="12.5">0.8</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="93.8" x2="278.4" y2="93.8"/>
+              <text class="pdc-chart__tick" x="47.3" y="93.8" text-anchor="end" dominant-baseline="middle" font-size="12.5">0.675</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="152.1" x2="278.4" y2="152.1"/>
+              <text class="pdc-chart__tick" x="47.3" y="152.1" text-anchor="end" dominant-baseline="middle" font-size="12.5">0.55</text>
+              <text class="pdc-chart__tick" x="47.3" y="13.9" text-anchor="end" dominant-baseline="middle" font-size="12.5">R2</text>
+              <polyline class="pdc-chart__line" pathLength="1" points="57.3,117.6 278.4,60.6"/>
+              <circle class="pdc-chart__dot pdc-chart__dot--open" cx="57.3" cy="117.6" r="6"/>
+              <text class="pdc-chart__value" x="51.3" y="140.5" text-anchor="start" font-size="15.6">0.624</text>
+              <circle class="pdc-chart__dot" cx="278.4" cy="60.6" r="6"/>
+              <text class="pdc-chart__value" x="284.4" y="48.6" text-anchor="end" font-size="15.6">0.746*</text>
+              <text class="pdc-chart__label" x="57.3" y="184.1" text-anchor="start" font-size="13.5">사용 전</text>
+              <text class="pdc-chart__label" x="278.4" y="184.1" text-anchor="end" font-size="13.5">4주 후</text>
+            </svg></div>
+                <p class="pdc-timepoints__sig body-xs">* : <i>p</i>&lt;0.05 by Paired t-test</p>
+              </article>
+              <article class="pdc-timepoints__card">
+                <h4 class="pdc-timepoints__card-head"><span class="body-l">눈가 주름 감소</span><strong class="heading-xxxl">12.987<span class="pdc-metric__unit">%</span></strong></h4>
+                <div class="pdc-timepoints__card-body pdc-timepoints__card-body--chart"><svg class="pdc-chart" viewBox="0 0 307 198" role="img" aria-labelledby="pdc-chart-wrinkle-title">
+              <title id="pdc-chart-wrinkle-title">눈가 주름 25.656에서 22.324로 12.987% 감소</title>
+              <line class="pdc-chart__grid" x1="57.3" y1="35.4" x2="278.4" y2="35.4"/>
+              <text class="pdc-chart__tick" x="47.3" y="35.4" text-anchor="end" dominant-baseline="middle" font-size="12.5">28</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="93.8" x2="278.4" y2="93.8"/>
+              <text class="pdc-chart__tick" x="47.3" y="93.8" text-anchor="end" dominant-baseline="middle" font-size="12.5">24</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="152.1" x2="278.4" y2="152.1"/>
+              <text class="pdc-chart__tick" x="47.3" y="152.1" text-anchor="end" dominant-baseline="middle" font-size="12.5">20</text>
+              <text class="pdc-chart__tick" x="47.3" y="13.9" text-anchor="end" dominant-baseline="middle" font-size="12.5">Ra (μm)</text>
+              <polyline class="pdc-chart__line" pathLength="1" points="57.3,69.6 278.4,118.2"/>
+              <circle class="pdc-chart__dot pdc-chart__dot--open" cx="57.3" cy="69.6" r="6"/>
+              <text class="pdc-chart__value" x="51.3" y="57.6" text-anchor="start" font-size="15.6">25.656</text>
+              <circle class="pdc-chart__dot" cx="278.4" cy="118.2" r="6"/>
+              <text class="pdc-chart__value" x="284.4" y="141.1" text-anchor="end" font-size="15.6">22.324#</text>
+              <text class="pdc-chart__label" x="57.3" y="184.1" text-anchor="start" font-size="13.5">사용 전</text>
+              <text class="pdc-chart__label" x="278.4" y="184.1" text-anchor="end" font-size="13.5">4주 후</text>
+            </svg></div>
+                <p class="pdc-timepoints__sig body-xs"># : <i>p</i>&lt;0.05 by Wilcoxon signed rank test</p>
+              </article>
+              <article class="pdc-timepoints__card">
+                <h4 class="pdc-timepoints__card-head"><span class="body-l">피부결 개선</span><strong class="heading-xxxl">10.836<span class="pdc-metric__unit">%</span></strong></h4>
+                <div class="pdc-timepoints__card-body pdc-timepoints__card-body--chart"><svg class="pdc-chart" viewBox="0 0 307 198" role="img" aria-labelledby="pdc-chart-texture-title">
+              <title id="pdc-chart-texture-title">피부결 7.503에서 6.690으로 10.836% 개선</title>
+              <line class="pdc-chart__grid" x1="57.3" y1="35.4" x2="278.4" y2="35.4"/>
+              <text class="pdc-chart__tick" x="47.3" y="35.4" text-anchor="end" dominant-baseline="middle" font-size="12.5">8</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="93.8" x2="278.4" y2="93.8"/>
+              <text class="pdc-chart__tick" x="47.3" y="93.8" text-anchor="end" dominant-baseline="middle" font-size="12.5">7</text>
+              <line class="pdc-chart__grid" x1="57.3" y1="152.1" x2="278.4" y2="152.1"/>
+              <text class="pdc-chart__tick" x="47.3" y="152.1" text-anchor="end" dominant-baseline="middle" font-size="12.5">6</text>
+              <text class="pdc-chart__tick" x="47.3" y="13.9" text-anchor="end" dominant-baseline="middle" font-size="12.5">Ra (A.U.)</text>
+              <polyline class="pdc-chart__line" pathLength="1" points="57.3,64.4 278.4,111.9"/>
+              <circle class="pdc-chart__dot pdc-chart__dot--open" cx="57.3" cy="64.4" r="6"/>
+              <text class="pdc-chart__value" x="51.3" y="52.4" text-anchor="start" font-size="15.6">7.503</text>
+              <circle class="pdc-chart__dot" cx="278.4" cy="111.9" r="6"/>
+              <text class="pdc-chart__value" x="284.4" y="134.8" text-anchor="end" font-size="15.6">6.690#</text>
+              <text class="pdc-chart__label" x="57.3" y="184.1" text-anchor="start" font-size="13.5">사용 전</text>
+              <text class="pdc-chart__label" x="278.4" y="184.1" text-anchor="end" font-size="13.5">4주 후</text>
+            </svg></div>
+                <p class="pdc-timepoints__sig body-xs"># : <i>p</i>&lt;0.05 by Wilcoxon signed rank test</p>
+              </article>
+            </div>
+            <ul class="pdc-timepoints__notes body-xs">
+              <li>※ 개선율(%)=│(after-before)│/before*100</li>
+              <li>*P&amp;K 피부임상연구센타㈜ 인체적용시험 결과(2026.06.22~07.23) · 개인에 따라 차이가 있을 수 있습니다.</li>
+            </ul>
+            <details class="pdc-disclosure pdc-clinical__study pdc-study-card">
+              <summary class="pdc-disclosure__summary sm--body-m body-l">VIEW THE STUDY<span class="pdc-disclosure__icon" aria-hidden="true"></span></summary>
+              <div class="pdc-disclosure__body">
+                <table class="pdc-study">
+                  <caption class="visually-hidden">4 WEEKS · 4주 사용 후 인체적용시험 개요</caption>
+                  <tbody>
+                    <tr><th scope="row">시험명</th><td>에이로우 바이오 엘릭서의 눈가주름, 피부 탄력, 피부결 및 피부노화지수에 대한 인체적용시험</td></tr>
+                    <tr><th scope="row">시험기관</th><td>P&amp;K 피부임상연구센타㈜</td></tr>
+                    <tr><th scope="row">시험기간</th><td>2026.06.22 ~ 07.23</td></tr>
+                    <tr><th scope="row">시험대상</th><td>만 35~60세 성인 여성 21명</td></tr>
+                    <tr><th scope="row">측정항목</th><td>눈가주름, 피부 탄력, 피부결, 피부노화지수(Skin Aging Index)</td></tr>
+                  </tbody>
+                </table>
+                <p class="pdc-study__disclaimer pdc__note body-xs">인체적용시험 결과가 모든 사용자에게 동일하게 나타나는 것은 아닙니다.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="pdc-safety" data-scroll-reveal>
+        <img class="pdc-safety__icon" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/safety-check.svg" alt="" width="56" height="56" loading="lazy">
+        <div class="pdc-safety__copy">
+          <p class="pdc__eyebrow">Clinically Tested for Primary Skin Irritation</p>
+          <p class="pdc-safety__label body-m">민감성 피부 대상 일차자극 테스트 완료</p>
+          <p class="pdc-safety__result heading-xl"><strong>피부자극지수 0.00</strong></p>
+        </div>
+        <p class="pdc-safety__verdict sm--body-m body-l">비(무)자극성 판정 · 민감성 피부 사용 적합</p>
+      </div>
+      <p class="pdc-safety__note body-xs">*P&amp;K 피부임상연구센타㈜ 민감성 피부 대상 일차자극 시험 결과(2026.07.08~07.10, 성인 남녀 31명) · 개인에 따라 차이가 있을 수 있습니다.</p>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--full pdc-origin" data-pdc-section="origin" data-pdc-nav-title="엘릭서 · 어떤 원료에서 시작했나요?">
+    <div class="container container--md">
+      <header class="pdc__head pdc-origin__head" data-scroll-reveal>
+        <p class="pdc__eyebrow">Discover STECHA<span class="pdc-tm">™</span></p>
+        <h2 class="pdc__head-title pdc-elixir__title sm--heading-xl heading-xxxl">척박한 땅에서 살아남은 약용 식물,<br>피뿌리풀에서 시작했습니다.</h2>
+        <p class="pdc-origin__badge sm--body-m body-l">KIST 천연물 연구 배경 · AYROW 최초 사용 신규 화장품 성분명 등재</p>
+      </header>
+      <div class="pdc-origin__kist" data-scroll-reveal>
+        <img class="pdc-origin__kist-logo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/kist-logo.svg" alt="KIST 한국과학기술연구원" width="300" height="70" loading="lazy">
+        <div class="pdc-origin__kist-copy">
+          <p class="heading-m"><strong>KIST 연구성과 기술이전 제품</strong></p>
+          <p class="sm--body-m body-l">KIST 천연물 연구소에서 연구한<br class="sm--hide"> 피뿌리풀 유래 원료 기술을 적용했습니다.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 패럴렉스: 이미지 레이어가 스크롤보다 느리게 움직인다 (pdc-elixir.js initParallax) · 데스크톱/모바일(≤767px, 3:4 세로 크롭) 이미지를 CSS로 전환 -->
+    <figure class="pdc-origin__field" data-pdc-parallax>
+      <div class="pdc-origin__field-media" data-pdc-parallax-layer>
+        <img class="pdc-origin__field-image pdc-origin__field-image--desktop" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/plant-origin-field-desktop.jpg" alt="몽골 초원에 핀 피뿌리풀(Stellera chamaejasme)" width="2400" height="1355" loading="lazy">
+        <img class="pdc-origin__field-image pdc-origin__field-image--mobile" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/plant-origin-field-mobile.jpg" alt="" width="1080" height="1440" loading="lazy" aria-hidden="true">
+      </div>
+      <figcaption class="pdc-origin__field-copy" data-scroll-reveal>
+        <p class="pdc-origin__field-name"><strong class="heading-xl">STECHA<span class="pdc-tm pdc-tm--xs">™</span></strong><span class="sm--body-m body-l">FROM STELLERA</span></p>
+        <p class="sm--body-m body-l">척박한 환경에서 살아남은 몽골 약용식물,<br><em>Stellera chamaejasme.</em></p>
+        <p class="sm--body-m body-l">오래전부터 피부를 돌보는 데 활용되어 온 약용식물을<br class="sm--hide"> 바이오 피부과학으로 다시 발견했습니다.</p>
+      </figcaption>
+    </figure>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-botanical" data-pdc-section="botanical" data-pdc-nav-title="엘릭서 · 무엇으로 채웠나요?">
+    <div class="container container--lg">
+      <div class="pdc-botanical__grid">
+        <header class="pdc-botanical__head" data-scroll-reveal>
+          <p class="pdc__eyebrow">Botanical Base<span class="pdc-botanical__eyebrow-sep" aria-hidden="true">|</span>피뿌리풀 LTVE<span class="pdc-tm">™</span></p>
+          <h2 class="pdc-elixir__title sm--heading-xxl heading-xxxl">정제수 대신,<br>피뿌리풀로 채웠습니다.</h2>
+          <p class="pdc-botanical__body sm--body-m body-l">정제수에 추출물을 한 방울 더하는 방식이 아니라,<br class="sm--hide"> 포뮬러의 시작부터 피뿌리풀로 설계했습니다.</p>
+          <div class="pdc-botanical__callout">
+            <p class="sm--body-m body-l"><strong>74<span class="pdc-metric__unit">%</span> 식물 세포수 · 신규 등재 피뿌리풀 성분<sup>1</sup></strong><br>저온 진공추출로 피뿌리풀의 고유 수분과<br class="sm--hide"> 물질을 응축한 보태니컬 워터</p>
+            <p class="pdc-botanical__callout-note body-m"><sup>1</sup>피뿌리풀수 및 피뿌리풀추출물 신규 성분명 등재 (2026.08.11)</p>
+          </div>
+        </header>
+        <figure class="pdc-botanical__bottle" data-scroll-reveal data-scroll-direction="none">
+          <img class="pdc-botanical__bottle-body" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/botanical-bottle.svg" alt="바이오 엘릭서 용기 일러스트" width="160" height="558" loading="lazy">
+          <img class="pdc-botanical__bottle-water" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/botanical-bottle-water-full.svg?ver=2026102201" alt="" width="161" height="558" loading="lazy" aria-hidden="true">
+          <span class="pdc-botanical__bottle-blend" style="--pdc-liquid-mask: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22161%22 height=%22558%22 viewBox=%220 0 161 558%22 preserveAspectRatio=%22none%22%3E%3Cpath fill=%22%23fff%22 d=%22M132.561 130.757L132.814 130.81C133.196 131.553 134.329 133.371 135.118 133.491C155.377 136.564 153.752 145.817 153.618 162.708C111.547 163.024 69.4738 163.091 27.4014 162.908C20.6789 162.686 13.6063 162.737 6.86983 162.714C6.84578 150.354 4.69095 137.728 20.6242 134.51C24.3662 133.754 25.4587 134.071 27.9625 131.061C30.6796 130.837 36.0345 131.369 38.9517 131.534C44.5794 131.85 50.2137 132.035 55.85 132.088C82.2806 132.338 106.189 132.452 132.561 130.757Z%22/%3E%3Cpath fill=%22%23fff%22 d=%22M5.08281 164.184C10.4961 163.772 20.5595 164.181 26.4328 164.234L64.8423 164.399L118.831 164.304C130.624 164.212 142.423 164.062 154.215 164.142C156.57 164.159 158.753 165.096 158.744 167.794C158.716 176.093 158.723 184.393 158.719 192.692L158.718 242.55L158.721 394.499L158.718 470.677L158.741 492.323C158.761 512.541 158.269 528.085 143.434 543.561C140.368 546.377 137.187 548.841 133.4 550.622C130.169 552.141 126.678 553.123 123.176 553.778C103.459 557.473 48.1166 558.278 29.8928 551.6C19.5154 547.799 11.6741 538.878 7.11683 529.024C3.75217 521.749 2.26637 514.084 1.87502 506.113C1.22373 492.853 1.75163 479.315 1.75793 466.032L1.75879 391.087L1.73618 173.208C1.75278 169.075 0.703275 165.608 5.08281 164.184Z%22/%3E%3C/svg%3E');" aria-hidden="true"></span>
+          <img class="pdc-botanical__bottle-ink" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/botanical-bottle-ink.svg" alt="" width="160" height="558" loading="lazy" aria-hidden="true">
+        </figure>
+        <!-- 병 애니메이션 순서에 맞춰 등장: 영문 문구 · 74 + 4 → 74% 피뿌리풀수(정제수가 찬 뒤) → 4% 피뿌리풀추출물 + 각주(추출물이 부어진 뒤) -->
+        <div class="pdc-botanical__stats">
+          <p class="pdc-botanical__stats-kicker pdc__eyebrow">THE FORMULA BEGINS WITH THE BOTANICAL PLANT</p>
+          <p class="pdc-botanical__stats-title">74 + 4</p>
+          <dl class="pdc-botanical__stats-list">
+            <div class="pdc-botanical__stat pdc-botanical__stat--water">
+              <dt>74<span class="pdc-metric__unit">%</span> 피뿌리풀수</dt>
+              <dd class="sm--body-m body-l">식물이 품은 고유 수분을 담은 Botanical Water</dd>
+            </div>
+            <div class="pdc-botanical__stat pdc-botanical__stat--extract">
+              <dt>4<span class="pdc-metric__unit">%</span> 피뿌리풀추출물 배합&#8288;*</dt>
+              <dd class="sm--body-m body-l">피뿌리풀 유래 성분을 더한 Hero Active</dd>
+              <dd class="pdc-botanical__stats-note body-xs">*4%는 해당 추출 원료의 처방 투입량 기준</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <ul class="pdc-botanical__features" aria-label="포뮬러 설계 원칙">
+        <li class="pdc-botanical__feature">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/icon-leaf.svg" alt="" width="33" height="40" loading="lazy">
+          <span class="pdc-botanical__feature-text"><strong>식물 유래 포뮬러</strong><span>PLANT-BASED FORMULA</span></span>
+        </li>
+        <li class="pdc-botanical__feature">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/icon-drop.svg" alt="" width="30" height="41" loading="lazy">
+          <span class="pdc-botanical__feature-text"><strong>피부 본연의 수분감</strong><span>NATURAL HYDRATION</span></span>
+        </li>
+        <li class="pdc-botanical__feature">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/icon-flask.svg" alt="" width="32" height="41" loading="lazy">
+          <span class="pdc-botanical__feature-text"><strong>꼼꼼한 성분 설계</strong><span>MINIMAL &amp; EFFECTIVE</span></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-ltve" data-pdc-section="ltve">
+    <div class="container container--lg">
+      <header class="pdc__head" data-scroll-reveal>
+        <p class="pdc__eyebrow">Low Temperature Vacuum Extraction</p>
+        <h2 class="pdc__head-title pdc-elixir__title sm--heading-xxl heading-xxxl">추출물을 넘어,<br>식물이 품은 수분까지.</h2>
+        <p class="pdc__head-lead body-l">AYROW LTVE<span class="pdc-tm">™</span>는 저온·진공 환경에서<br class="sm--hide"> 피뿌리풀의 고유 수분과 유래 성분을 함께 얻는 추출 방식입니다.</p>
+      </header>
+      <ol class="pdc-ltve__steps" aria-label="LTVE™ 추출 4단계">
+        <li class="pdc-ltve__step pdc-ltve__step--1" data-scroll-reveal>
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ltve-01.png" alt="" width="1122" height="1402" loading="lazy">
+          <span class="pdc-ltve__num body-l">01</span><strong class="heading-m">저온</strong>
+        </li>
+        <li class="pdc-ltve__step pdc-ltve__step--2" data-scroll-reveal data-scroll-delay="80">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ltve-02.png" alt="" width="1122" height="1402" loading="lazy">
+          <span class="pdc-ltve__num body-l">02</span><strong class="heading-m">진공</strong>
+        </li>
+        <li class="pdc-ltve__step pdc-ltve__step--3" data-scroll-reveal data-scroll-delay="160">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ltve-03.png" alt="" width="1448" height="1086" loading="lazy">
+          <span class="pdc-ltve__num body-l">03</span><strong class="heading-m">식물 세포수</strong>
+        </li>
+        <li class="pdc-ltve__step pdc-ltve__step--4" data-scroll-reveal data-scroll-delay="240">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ltve-04.png" alt="" width="941" height="1672" loading="lazy">
+          <span class="pdc-ltve__num body-l">04</span><strong class="heading-m">농축된 Botanical Base</strong>
+        </li>
+      </ol>
+      <details class="pdc-disclosure pdc-ltve__more" open>
+        <summary class="pdc-disclosure__summary sm--body-m body-l"><span>LEARN ABOUT LTVE<span class="pdc-tm">™</span></span><span class="pdc-disclosure__icon" aria-hidden="true"></span></summary>
+        <div class="pdc-disclosure__body body-m">
+          <p>일반적인 가열 추출 과정에서는 열에 민감한 식물 성분이 영향을 받고, 고유의 수분도 잃어버릴 수 있습니다.</p>
+          <p>LTVE<span class="pdc-tm">™</span>는 압력을 낮춰 끓는점을 떨어뜨린 진공 상태에서, <span class="text-underline-mark text-underline-mark--creme">낮은 온도로 피뿌리풀의 세포수와 유래 성분을 함께</span> 얻습니다.</p>
+          <p>이렇게 얻은 피뿌리풀수는 정제수를 대신해 <span class="text-underline-mark text-underline-mark--creme">포뮬러의 74%</span>를 채우는 Botanical Base가 됩니다.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--full pdc-harmony pdc-harmony--grid" data-pdc-section="harmony" data-pdc-nav-title="엘릭서 · 어떤 성분으로 설계했나요?">
+    <div class="pdc-harmony__stage">
+      <div class="pdc-harmony__rules" aria-hidden="true"><span class="pdc-harmony__rule pdc-harmony__rule--h pdc-harmony__rule--intro-t" style="--i: 0;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v pdc-harmony__rule--intro-l" style="--i: 1;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h pdc-harmony__rule--intro-b" style="--i: 2;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v pdc-harmony__rule--intro-r" style="--i: 3;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 1; --i: 0;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h" style="--at: 1; --i: 1;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 3; --i: 2;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h" style="--at: 3; --i: 3;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 4; --i: 4;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h" style="--at: 5; --i: 5;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 6; --i: 6;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h" style="--at: 7; --i: 7;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 7; --i: 8;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h" style="--at: 8; --i: 9;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 8; --i: 10;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h" style="--at: 9; --i: 11;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 10; --i: 12;"></span><span class="pdc-harmony__rule pdc-harmony__rule--h" style="--at: 11; --i: 13;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 12; --i: 14;"></span><span class="pdc-harmony__rule pdc-harmony__rule--v" style="--at: 14; --i: 15;"></span></div>
+      <div class="pdc-harmony__intro" data-scroll-reveal>
+        <p class="pdc__eyebrow">Powered by Reverse AG Code<span class="pdc-tm pdc-tm--lg">™</span></p>
+        <h2 class="pdc-elixir__title sm--heading-xxl heading-xxxl">세 가지 활성 성분을<br>Harmony Ratio로.</h2>
+        <p class="pdc-harmony__desc sm--body-m body-l">장수과학에서 영감을 받은 세 가지 성분을 바탕으로 피부 컨디션을 체계적으로 관리하도록 설계한 <strong>AYROW의 독자 Science Platform.</strong></p>
+        <div class="pdc-harmony__patent">
+          <p class="pdc-harmony__patent-no body-m">특허 제10-2966324호</p>
+          <a class="pdc-harmony__more pdc-link body-m" href="https://www.ayrow.co/reverse-ag-code/index.html">Reverse AG Code<span class="pdc-tm pdc-tm--lg">™</span> 더 알아보기 <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="pdc-harmony__hint sm--body-s body-m">공에 마우스를 올리거나 터치하면<br>성분의 역할을 확인할 수 있습니다.</p>
+      </div>
+      <div class="pdc-harmony__canvas" data-pdc-hotspots>
+        <div class="pdc-harmony__canvas-inner">
+          <ul class="pdc-harmony__spots" aria-label="Reverse AG Code™ 성분">
+            <li class="pdc-harmony__spot pdc-harmony__spot--lg" data-pdc-hotspot style="--c: 4; --r: 3; --s: 4; --orb: #F7F1A0; --orb-ink: #0077BF; --n: 0;">
+              <button class="pdc-harmony__dot" type="button" data-pdc-hotspot-button aria-expanded="false" aria-controls="pdc-harmony-pop-1"><span class="pdc-harmony__no">01</span><span class="pdc-harmony__orb" aria-hidden="true"></span><span class="pdc-harmony__name">NMN</span></button>
+              <div class="pdc-harmony__pop" id="pdc-harmony-pop-1" role="tooltip" data-pdc-hotspot-popup hidden>
+                <span class="pdc-harmony__pop-kicker">CORE ENGINE</span>
+                <strong class="pdc-harmony__pop-title">니코틴아마이드모노뉴클레오타이드</strong>
+                <span class="pdc-harmony__pop-sub sm--body-m body-l">피부 에너지 설계의 출발점</span>
+                <p class="body-m">세포 에너지 대사에 관여하는 NAD⁺의 전구체.<br>피부 활력의 기반을 고려한 코어 포뮬러의 핵심 성분입니다.</p>
+              </div>
+            </li>
+            <li class="pdc-harmony__spot pdc-harmony__spot--lg pdc-harmony__spot--up" data-pdc-hotspot style="--c: 3; --r: 7; --s: 4; --orb: #802727; --orb-ink: #fff; --n: 1;">
+              <button class="pdc-harmony__dot" type="button" data-pdc-hotspot-button aria-expanded="false" aria-controls="pdc-harmony-pop-2"><span class="pdc-harmony__no">02</span><span class="pdc-harmony__orb" aria-hidden="true"></span><span class="pdc-harmony__name">Resveratrol</span></button>
+              <div class="pdc-harmony__pop" id="pdc-harmony-pop-2" role="tooltip" data-pdc-hotspot-popup hidden>
+                <span class="pdc-harmony__pop-kicker">CORE ENGINE</span>
+                <strong class="pdc-harmony__pop-title">레스베라트롤</strong>
+                <span class="pdc-harmony__pop-sub sm--body-m body-l">항산화 방어의 중심축</span>
+                <p class="body-m">식물 유래 폴리페놀로 알려진 항산화 성분.<br>산화 스트레스에 대응해 건강한 피부 컨디션을 뒷받침합니다.</p>
+              </div>
+            </li>
+            <li class="pdc-harmony__spot pdc-harmony__spot--lg pdc-harmony__spot--flip pdc-harmony__spot--up" data-pdc-hotspot style="--c: 10; --r: 7; --s: 4; --orb: #0077BF; --orb-ink: #fff; --n: 2;">
+              <button class="pdc-harmony__dot" type="button" data-pdc-hotspot-button aria-expanded="false" aria-controls="pdc-harmony-pop-3"><span class="pdc-harmony__no">03</span><span class="pdc-harmony__orb" aria-hidden="true"></span><span class="pdc-harmony__name">Pterostilbene</span></button>
+              <div class="pdc-harmony__pop" id="pdc-harmony-pop-3" role="tooltip" data-pdc-hotspot-popup hidden>
+                <span class="pdc-harmony__pop-kicker">CORE ENGINE</span>
+                <strong class="pdc-harmony__pop-title">피테로스틸벤</strong>
+                <span class="pdc-harmony__pop-sub sm--body-m body-l">항산화 밸런스의 완성</span>
+                <p class="body-m">레스베라트롤과 유사한 구조를 바탕으로 코어 포뮬러의 항산화 밸런스를 더욱 견고하게 완성합니다.</p>
+              </div>
+            </li>
+            <li class="pdc-harmony__spot" data-pdc-hotspot style="--c: 6; --r: 1; --s: 2; --orb: #efa232; --orb-ink: #fff; --n: 3;">
+              <button class="pdc-harmony__dot" type="button" data-pdc-hotspot-button aria-expanded="false" aria-controls="pdc-harmony-pop-4"><span class="pdc-harmony__no">04</span><span class="pdc-harmony__orb" aria-hidden="true"></span><span class="pdc-harmony__name">Quercetin</span></button>
+              <div class="pdc-harmony__pop" id="pdc-harmony-pop-4" role="tooltip" data-pdc-hotspot-popup hidden>
+                <span class="pdc-harmony__pop-kicker">SUPPORTING ACTIVES</span>
+                <strong class="pdc-harmony__pop-title">다마스크장미 유래 퀘르세틴</strong>
+                <p class="body-m">산화 스트레스에 대응해 피부 컨디션을 지키는 항산화 액티브</p>
+              </div>
+            </li>
+            <li class="pdc-harmony__spot pdc-harmony__spot--flip" data-pdc-hotspot style="--c: 8; --r: 5; --s: 2; --orb: #86b547; --orb-ink: #fff; --n: 4;">
+              <button class="pdc-harmony__dot" type="button" data-pdc-hotspot-button aria-expanded="false" aria-controls="pdc-harmony-pop-5"><span class="pdc-harmony__no">05</span><span class="pdc-harmony__orb" aria-hidden="true"></span><span class="pdc-harmony__name">Vegan PRN</span></button>
+              <div class="pdc-harmony__pop" id="pdc-harmony-pop-5" role="tooltip" data-pdc-hotspot-popup hidden>
+                <span class="pdc-harmony__pop-kicker">SUPPORTING ACTIVES</span>
+                <strong class="pdc-harmony__pop-title">화이트 트러플 유래 효모 RNA</strong>
+                <p class="body-m">피부 컨디션과 생기를 탄탄하게 뒷받침하는 RNA 기반 액티브</p>
+              </div>
+            </li>
+            <li class="pdc-harmony__spot pdc-harmony__spot--flip" data-pdc-hotspot style="--c: 10; --r: 5; --s: 2; --orb: #f29c7c; --orb-ink: #fff; --n: 5;">
+              <button class="pdc-harmony__dot" type="button" data-pdc-hotspot-button aria-expanded="false" aria-controls="pdc-harmony-pop-6"><span class="pdc-harmony__no">06</span><span class="pdc-harmony__orb" aria-hidden="true"></span><span class="pdc-harmony__name">Kakadu Plum</span></button>
+              <div class="pdc-harmony__pop" id="pdc-harmony-pop-6" role="tooltip" data-pdc-hotspot-popup hidden>
+                <span class="pdc-harmony__pop-kicker">SUPPORTING ACTIVES</span>
+                <strong class="pdc-harmony__pop-title">카카두 플럼 추출물</strong>
+                <p class="body-m">비타민 C를 풍부하게 함유한 브라이트닝·항산화 액티브</p>
+              </div>
+            </li>
+            <li class="pdc-harmony__spot pdc-harmony__spot--up" data-pdc-hotspot style="--c: 1; --r: 9; --s: 2; --orb: #d38aae; --orb-ink: #fff; --n: 6;">
+              <button class="pdc-harmony__dot" type="button" data-pdc-hotspot-button aria-expanded="false" aria-controls="pdc-harmony-pop-7"><span class="pdc-harmony__no">07</span><span class="pdc-harmony__orb" aria-hidden="true"></span><span class="pdc-harmony__name">Lepidium Seed</span></button>
+              <div class="pdc-harmony__pop" id="pdc-harmony-pop-7" role="tooltip" data-pdc-hotspot-popup hidden>
+                <span class="pdc-harmony__pop-kicker">SUPPORTING ACTIVES</span>
+                <strong class="pdc-harmony__pop-title">다닥냉이씨추출물</strong>
+                <p class="body-m">열감으로 지친 피부를 위한 쿨링 컨디셔닝 액티브</p>
+              </div>
+            </li>
+            <li class="pdc-harmony__crystal" aria-hidden="true" style="--c: 7; --r: 8; --s: 3;"><span class="pdc-harmony__orb"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--md">
+      <div class="pdc-support" data-scroll-reveal>
+        <p class="pdc__eyebrow">FORMULA SUPPORT</p>
+        <ul class="pdc-support__grid">
+          <li class="pdc-support__card"><strong class="body-m">Niacinamide</strong><p class="body-m">피부 톤과 장벽 컨디션 케어</p></li>
+          <li class="pdc-support__card"><strong class="body-m">Panthenol</strong><p class="body-m">편안한 피부를 위한 보습·진정 케어</p></li>
+          <li class="pdc-support__card"><strong class="body-m">Adenosine</strong><p class="body-m">탄력과 주름 개선을 위한 기능성 케어</p></li>
+          <li class="pdc-support__card"><strong class="body-m">Low-Molecular HA</strong><p class="body-m">수분을 촘촘하게 채우는 저분자 보습 케어</p></li>
+        </ul>
+        <p class="pdc-support__note pdc__note body-xs">*상기 내용은 포뮬러 구성 및 설계 방향에 대한 설명이며, 제품의 효능·효과를 의미하지 않습니다.</p>
+      </div>
+
+      <div class="pdc-vegan" data-scroll-reveal>
+        <img class="pdc-vegan__logo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/vegan-society-logo.svg" alt="The Vegan Society 비건 트레이드마크" width="168" height="56" loading="lazy">
+        <div class="pdc-vegan__title">
+          <p class="pdc__eyebrow">VEGAN TRADEMARK CERTIFIED</p>
+          <h3 class="heading-xl">피부를 위한 설계에,<br>더 나은 기준을 더했습니다.</h3>
+        </div>
+        <p class="pdc-vegan__body sm--body-m body-l">바이오 엘릭서는 동물성 원료를 사용하지 않은 포뮬러로, <br class="sm--hide">1990년부터 이어져 온 <strong>영국 비건소사이어티의<br class="sm--hide"> 비건 트레이드마크 인증</strong>을 받았습니다.</p>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-ritual" data-pdc-section="ritual" data-pdc-nav-title="엘릭서 · 언제 사용하면 좋나요?">
+    <div class="container container--lg">
+      <header class="pdc__head pdc-ritual__head" data-scroll-reveal>
+        <p class="pdc__eyebrow">From Routine to Ritual</p>
+        <h2 class="pdc__head-title pdc-elixir__title sm--heading-xxl heading-xxxl">아침·저녁 두 번의 루틴에서,<br>하루 종일 이어지는 리추얼로</h2>
+        <p class="pdc-ritual__brand heading-xl">Whereable Beauty<span class="pdc-tm pdc-tm--sm">™</span></p>
+      </header>
+      <!-- 데스크톱: 순서 고정, 선택한 장면(.is-active)만 제자리에서 넓어진다 · 모바일: 가로 스와이프
+           data-pdc-ritual-autoplay(ms): 화면에 보이는 동안 자동 전환 — 속성을 지우면 꺼진다 -->
+      <div class="pdc-ritual__carousel" data-pdc-ritual data-pdc-ritual-autoplay="2500" data-scroll-reveal>
+        <ol class="pdc-ritual__list" aria-label="하루의 사용 장면">
+          <li class="pdc-ritual__item is-active" data-pdc-ritual-item tabindex="0" aria-current="true">
+            <p class="pdc-ritual__time"><strong>07:30</strong> MORNING</p>
+            <figure class="pdc-ritual__figure pdc-ritual__figure--morning"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-morning-0405.jpg" alt="안경·이어폰과 함께 놓인 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
+            <div class="pdc-ritual__copy">
+              <h3 class="pdc-ritual__title">하루의 첫 레이어가<br>필요할 때</h3>
+              <p class="pdc-ritual__desc">세안 직후, 메이크업 전 피부 컨디션을 정돈합니다.</p>
+            </div>
+          </li>
+          <li class="pdc-ritual__item" data-pdc-ritual-item tabindex="0">
+            <p class="pdc-ritual__time"><strong>14:00</strong> WORK</p>
+            <figure class="pdc-ritual__figure"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-work-0420.jpg" alt="업무 책상 위의 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
+            <div class="pdc-ritual__copy">
+              <h3 class="pdc-ritual__title">업무 중 피부 컨디션이<br>떨어질 때</h3>
+              <p class="pdc-ritual__desc">메이크업 위로<br>가볍게 한 번 더 뿌립니다.</p>
+            </div>
+          </li>
+          <li class="pdc-ritual__item" data-pdc-ritual-item tabindex="0">
+            <p class="pdc-ritual__time"><strong>19:00</strong> ACTIVE</p>
+            <figure class="pdc-ritual__figure"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-active-0435.jpg" alt="골프 장갑과 함께 놓인 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
+            <div class="pdc-ritual__copy">
+              <h3 class="pdc-ritual__title">운동 후 피부가<br>달아올랐을 때</h3>
+              <p class="pdc-ritual__desc">운동·골프·수영 후,<br>다시 한 번 레이어링합니다.</p>
+            </div>
+          </li>
+          <li class="pdc-ritual__item" data-pdc-ritual-item tabindex="0">
+            <p class="pdc-ritual__time"><strong>ANYWHERE</strong> TRAVEL</p>
+            <figure class="pdc-ritual__figure"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-travel-0398.jpg" alt="여행 파우치 속 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
+            <div class="pdc-ritual__copy">
+              <h3 class="pdc-ritual__title">건조한 기내나 호텔에<br>머물 때</h3>
+              <p class="pdc-ritual__desc">휴대하기 좋은 엘릭서로<br>어디서든 같은 루틴으로</p>
+            </div>
+          </li>
+        </ol>
+        <!-- 모바일(가로 스와이프)에서만 보이는 위치 표시 -->
+        <div class="pdc-ritual__dots">
+          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="07:30 MORNING" aria-current="true"></button>
+          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="14:00 WORK"></button>
+          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="19:00 ACTIVE"></button>
+          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="ANYWHERE TRAVEL"></button>
+        </div>
+      </div>
+      <p class="pdc-ritual__closing" data-pdc-slogan>
+        <span class="pdc-ritual__closing-line pdc-ritual__closing-lead sm--body-l heading-m">어디서나 이어지는</span>
+        <strong class="pdc-ritual__closing-line pdc-ritual__closing-main sm--heading-xl heading-xxl">스킨 롱제비티</strong>
+        <span class="pdc-ritual__closing-line pdc-ritual__closing-en sm--body-m body-l">Skin Longevity, Wherever You Are.</span>
+      </p>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-elixir-usage" data-pdc-section="usage" data-pdc-nav-title="엘릭서 · 어떻게 사용하나요?">
+    <div class="container container--md">
+      <header class="pdc__head" data-scroll-reveal>
+        <p class="pdc__eyebrow">How to Use</p>
+        <h2 class="pdc__head-title pdc-elixir__title sm--heading-xxl heading-xxxl">사용방법</h2>
+        <p class="pdc__head-lead body-l">뿌리고, 두드리고, 다시 쌓는 세 단계</p>
+      </header>
+      <div class="pdc-elixir-usage__layout">
+        <figure class="pdc-elixir-usage__visual">
+          <img class="pdc-elixir-usage__video" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/how-to-use.png" alt="바이오 엘릭서를 분사하는 모습" width="1024" height="1536" loading="lazy">
+        </figure>
+        <!-- data-pdc-steps-autoplay(ms): 화면에 보이는 동안 다음 단계로 — 속성을 지우면 꺼진다 -->
+        <div class="pdc-elixir-usage__steps" aria-label="바이오 엘릭서 사용 방법" data-pdc-steps data-pdc-steps-autoplay="2500">
+          <article class="pdc-elixir-usage__step" data-scroll-reveal data-pdc-step role="button" tabindex="0">
+            <strong class="sm--body-m heading-xl">01 · Apply</strong>
+            <p class="sm--body-s body-l">눈을 감고 얼굴에서 약 20cm 거리를 두어<br class="sm--hide"> 고르게 분사합니다.</p>
+          </article>
+          <article class="pdc-elixir-usage__step" data-scroll-reveal data-pdc-step role="button" tabindex="0">
+            <strong class="sm--body-m heading-xl">02 · Layer</strong>
+            <p class="sm--body-s body-l">자연스럽게 건조시키거나 가볍게 두드려<br class="sm--hide"> 피부에 밀착시킵니다.</p>
+          </article>
+          <article class="pdc-elixir-usage__step" data-scroll-reveal data-pdc-step role="button" tabindex="0">
+            <strong class="sm--body-m heading-xl">03 · Repeat</strong>
+            <p class="sm--body-s body-l">피부 컨디션 변화가 느껴질 때 다시 레이어링합니다.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="container container--lg">
+      <div class="pdc-elixir-usage__when" data-scroll-reveal>
+        <p class="heading-m"><strong>이럴 때 사용하세요</strong></p>
+        <ul class="pdc-elixir-usage__chips">
+          <li class="body-m">세안 직후 첫 단계</li>
+          <li class="body-m">메이크업 전</li>
+          <li class="body-m">메이크업 위 수시 사용</li>
+          <li class="body-m">운동·골프·수영 후</li>
+          <li class="body-m">비행기·호텔 등 건조한 이동 환경</li>
+          <li class="body-m">저녁 세안 후</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- 3. 선베일 -->
+  <div class="pdc--sun-veil pdc-set__group">
+  <section class="pdc__section pdc__section--contained pdc__section--hero" id="pdc-hero" data-pdc-section="hero" data-pdc-nav-title="선베일은 무엇인가요?">
+    <div class="container container--md">
+      <div class="pdc-hero">
+        <div class="pdc-hero-stack" aria-label="Sun Veil hero moments">
+          <div class="pdc-hero-stack__track">
+            <div class="pdc-hero-stack__item">
+              <div class="pdc-hero__banner" data-pdc-video-section data-pdc-video-priority="eager">
+                <div class="pdc-hero__visual" aria-hidden="true">
+                  <video class="pdc-hero__video" data-pdc-video muted loop playsinline preload="metadata">
+                    <source src="https://player.vimeo.com/progressive_redirect/playback/1192243258/rendition/1440p/file.mp4%20%281440p%29.mp4?loc=external&signature=ae597a11daf808fc0d2a95d5e848db6962a0fdb9b31c05e903a6b188fbf8979d" type="video/mp4">
+                  </video>
+                </div>
+                <div class="pdc-hero__content">
+                  <div class="pdc-hero__top">
+                    <div class="pdc-hero__copy">
+                      <p class="pdc-hero__kicker sm--heading-s heading-s">A New Kind of Aesthetic Guard</p>
+                      <h2 class="pdc-hero__title type-display">Reverse AG Code<span class="pdc__tm">™</span><br>Sun Veil</h2>
+                      <p class="pdc-hero__lead sm--body-xl body-mega">보이지 않게, 그러나<br>숨 막히지 않게 보호합니다.</p>
+                    </div>
+                  </div>
+                  <div class="pdc-hero__badges" aria-label="핵심 데이터">
+                    <span class="pdc-pill sm--body-m body-l">99% NMN</span>
+                    <span class="pdc-pill sm--body-m body-l">UPF 50+</span>
+                    <span class="pdc-pill sm--body-m body-l">피부 자극 0.00</span>
+                  </div>
+                  <p class="pdc-hero__bottom sm--body-xl body-mega"><strong>0.004mm</strong> <br>피부와 하나 되는 <br>초박막 선케어 베일</p>
+                </div>
+              </div>
+            </div>
+            <div class="pdc-hero-stack__item">
+              <figure class="pdc-image-moment pdc-image-moment--application" data-scroll-reveal data-scroll-direction="none">
+                <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-after-application-1-3-cropped.webp?ver=202606161445" alt="눈가 아래에 부착한 선베일" width="1180" height="1416" itemprop="image">
+                <figcaption class="pdc-image-moment__caption body-s" data-scroll-reveal>보이지 않지만, 선베일을 부착한 상태입니다.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="pdc-feature-grid" aria-label="Sun Veil 핵심 특징">
+          <div class="pdc-feature">
+            <strong class="sm--heading-l heading-xl">Aeroflow<span class="pdc__tm">™</span></strong>
+            <span class="xs--body-s sm--body-m body-xl">열·습기·땀은 배출하고 <br>장시간 착용에도 답답함 없이 밀착</span>
+          </div>
+          <div class="pdc-feature">
+            <strong class="sm--heading-l heading-xl">Invisible</strong>
+            <span class="xs--body-s sm--body-m body-xl">메이크업 위에서도 거의<br>식별되지 않는 투명함</span>
+          </div>
+          <div class="pdc-feature">
+            <strong class="sm--heading-l heading-xl">Seamless</strong>
+            <span class="xs--body-s sm--body-m body-xl">붙인 것조차<br>잊게 만드는 착용감</span>
+          </div>
+          <div class="pdc-feature">
+            <strong class="sm--heading-l heading-xl">Gentle <span class="sm--hide">Removal</span></strong>
+            <span class="xs--body-s sm--body-m body-xl">솜털 하나 건드리지 않는<br>섬세한 분리</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-membrane-intro" id="pdc-membrane-intro" data-pdc-section="membrane-intro">
+    <div class="container container--md">
+      <div class="pdc-membrane-intro__content" data-scroll-reveal>
+        <h2 class="pdc-membrane-intro__title heading-xxxl">우리가 붙이고 있던 건<br>‘필름’이었습니다.</h2>
+        <div class="pdc-membrane-intro__statement-group">
+          <div class="pdc-membrane-intro__statement heading-xxxl">
+            선베일은<br>
+            <details class="pdc-membrane-intro__caption">
+              <summary class="pdc-membrane-intro__caption-trigger" aria-label="숨 쉬는 나노 섬유 설명 보기">
+                <span class="pdc-membrane-intro__caption-term">숨 쉬는 나노 ‘섬유’</span><span class="pdc-membrane-intro__caption-icon" aria-hidden="true">i</span><span class="pdc-membrane-intro__caption-suffix">입니다.</span>
+              </summary>
+              <div class="pdc-membrane-intro__caption-panel">
+                <h3 class="heading-s">Aeroflow Nanofibers<span class="pdc__tm">™</span></h3>
+                <p class="sm--body-s body-m">막는 필름과 달리, 열·습기·땀은 배출하고 피부를<br>가두지 않는 통기성 섬유</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--full pdc__section--band pdc-problem" id="pdc-problem" data-pdc-section="problem">
+    <div class="container container--xl">
+      <div class="pdc-problem__grid">
+        <figure class="pdc-problem__visual">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-problem.webp?ver=1.01" alt="선베일 착용 모델" width="878" height="1316" loading="lazy">
+          <figcaption class="pdc-problem__caption sm--body-m body-l">사진 속 모델은 선베일을 부착한 상태입니다.</figcaption>
+        </figure>
+        <article class="pdc-problem__copy">
+          <header class="pdc-problem__header" data-scroll-reveal>
+            <p class="pdc__eyebrow pdc-problem__eyebrow">선케어가 가장 먼저 무너지는 자리</p>
+            <h2 class="pdc-problem__title pdc-display-title sm--type-display heading-xxl xxl--display">
+              <span class="pdc-problem__title-kicker">눈가 아래,</span>
+              <span class="pdc-problem__title-question">바르는 선케어만으로<br>충분할까요?</span>
+            </h2>
+          </header>
+          <div class="pdc-problem__body body-xl" data-scroll-reveal>
+            <p class="body-xxl">눈가 아래 광대 부위는</p>
+            <ul class="pdc-problem__list">
+              <li class="body-l">피지선이 적어 피부 보호막이 얇고</li>
+              <li class="body-l">자외선에 가장 먼저 노출되며</li>
+              <li class="body-l">표정 움직임과 마찰로 선케어가 쉽게 밀리기에</li>
+            </ul>
+            <p class="body-xxl"><strong>선케어가 가장 먼저 지워집니다.</strong><br><strong>문제는 그 다음입니다.</strong></p>
+            <ul class="pdc-problem-friction__list" aria-label="선케어 지속을 어렵게 만드는 일상 고민">
+              <li class="sm--body-xl body-xl"><span class="-text-underline-mark -text-underline-mark--creme"><strong>덧바르기 번거롭고</strong></span></li>
+              <li class="sm--body-xl body-xl"><span class="-text-underline-mark -text-underline-mark--creme"><strong>그냥 두기엔 불안한 순간이 생깁니다.</strong></span></li>
+              <li class="sm--body-xl body-xl"><strong>그래서 선패치를 찾게 되지만, 또 다른 불편함이 남습니다.</strong></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--full pdc-pain" id="pdc-film-membrane-pain" data-pdc-section="film-membrane-pain">
+    <div class="pdc-pain__inner">
+      <div class="pdc-pain__copy" data-scroll-reveal>
+        <p class="heading-m"><strong>선패치, 불편했던 이유는 단 하나입니다.</strong></p>
+        <h2 class="pdc-display-title heading-xxl">“숨을 못 쉬기 때문입니다.”</h2>
+      </div>
+      <div class="pdc-text-bubbles" aria-label="기존 선패치 불편 요소">
+        <div class="pdc-text-bubbles__row pdc-text-bubbles__row--forward" data-scroll-reveal data-scroll-direction="left" data-scroll-distance="32" data-scroll-delay="180">
+          <span class="pdc-text-bubbles__pill sm--body-l body-xl">땀/열/습기로<br>답답함</span>
+          <span class="pdc-text-bubbles__pill sm--body-l body-xl">필름 텐션으로 인한<br>밀폐감, 피부 조임</span>
+          <span class="pdc-text-bubbles__pill sm--body-l body-xl">메이크업 위에서<br>들뜸</span>
+        </div>
+        <div class="pdc-text-bubbles__row pdc-text-bubbles__row--reverse" data-scroll-reveal data-scroll-direction="right" data-scroll-distance="32" data-scroll-delay="320">
+          <span class="pdc-text-bubbles__pill sm--body-l body-xl">접착 성분으로 인한<br>뻣뻣함, 잔주름 픽스</span>
+          <span class="pdc-text-bubbles__pill sm--body-l body-xl">오래 붙이면<br>피부 피로감</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--full pdc-choice" id="pdc-film-membrane-choice" data-pdc-section="film-membrane-choice">
+    <div class="pdc-choice__inner">
+      <h2 class="pdc-choice__text sm--heading-xl heading-xxxl" data-pdc-scroll-highlight aria-label="그래서 우리는 필름막을 버리고 나노 섬유를 선택했습니다."><span class="pdc-choice__group-start">그래서 우리는 ‘필름막’을 버리고</span><br>‘나노 섬유’를 선택했습니다.</h2>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-compare" id="pdc-film-membrane" data-pdc-section="film-membrane" data-pdc-nav-title="선베일 · 왜 필름형 선패치와 다른가요?">
+    <div class="container container--md">
+      <div class="pdc-compare__card">
+        <div class="pdc-compare__visual">
+          <img class="pdc-compare__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-film-membrane.webp?ver=1.01" alt="필름형 선패치와 나노 섬유 선베일 비교" width="1792" height="1344" loading="lazy">
+          <div class="pdc-compare__visual-copy">
+            <h2 class="sm--heading-xl heading-xxl">필름 vs 나노 섬유</h2>
+            <p class="sm--body-m body-l">같은 ‘선패치’라고 생각했다면 <br class="sm-up--hide"> 완전히 잘못 보신 겁니다 </p>
+          </div>
+        </div>
+        <div class="pdc-compare__cards" data-scroll-reveal>
+          <table class="pdc-compare-table" aria-label="기존 선패치와 에이로우 선베일 비교">
+            <colgroup>
+              <col class="pdc-compare-table__col-label">
+              <col class="pdc-compare-table__col-standard">
+              <col class="pdc-compare-table__col-ayrow">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="heading-m" scope="col"><span class="visually-hidden">비교 항목</span></th>
+                <th class="heading-m" scope="col"><strong>기존 선패치</strong></th>
+                <th scope="col" class="pdc-compare-table__accent heading-m">
+                  <span class="pdc-compare-table__check" aria-hidden="true">✓</span>
+                  <strong>에이로우 선베일</strong>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="sm--body-m body-l" scope="row">형태</th>
+                <td class="sm--body-m body-l">필름 = 막 (막힘)</td>
+                <td class="pdc-compare-table__accent sm--body-m body-l">나노 섬유 멤브레인 = 선택적 투과 (숨 쉬는 구조)</td>
+              </tr>
+              <tr>
+                <th class="sm--body-m body-l" scope="row">구조</th>
+                <td class="sm--body-m body-l">피부를 덮는 구조</td>
+                <td class="pdc-compare-table__accent sm--body-m body-l">섬유 기반 다공성 구조</td>
+              </tr>
+              <tr>
+                <th class="sm--body-m body-l" scope="row">통기성</th>
+                <td class="sm--body-m body-l">공기 흐름 차단</td>
+                <td class="pdc-compare-table__accent sm--body-m body-l">공기 &amp; 수분 흐름 유지</td>
+              </tr>
+              <tr>
+                <th class="sm--body-m body-l" scope="row">착용감</th>
+                <td class="sm--body-m body-l">장시간 사용 시 답답함</td>
+                <td class="pdc-compare-table__accent sm--body-m body-l">장시간 부착 가능</td>
+              </tr>
+              <tr>
+                <th class="sm--body-m body-l" scope="row">피부착용</th>
+                <td class="sm--body-m body-l">열·수분 정체</td>
+                <td class="pdc-compare-table__accent sm--body-m body-l">피부 호흡 및 컨디션 유지</td>
+              </tr>
+              <tr class="pdc-compare-table__quote-row">
+                <th class="sm--body-l body-xxl" scope="row"><span class="visually-hidden">한 줄 요약</span></th>
+                <td class="sm--body-l body-xxl">“피부가 숨 막히는 필름막”</td>
+                <td class="pdc-compare-table__accent sm--body-xl body-xxl">“피부가 숨 쉬는 나노 섬유”</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-at-glance" id="pdc-at-a-glance" data-pdc-section="at-a-glance" data-pdc-nav-title="선베일을 하면 뭐가 달라지나요?">
+    <div class="container container--xl">
+      <header class="pdc-at-glance__header" data-scroll-reveal>
+        <p class="pdc__eyebrow pdc-at-glance__eyebrow">At a Glance</p>
+        <h2 class="pdc-at-glance__title pdc-display-title heading-xxxl">선패치의 기준을 다시 썼습니다.</h2>
+      </header>
+      <div class="pdc-at-glance__cards swiper" data-pdc-at-glance-text-swiper data-ps-slides-per-view="1" data-ps-slides-per-view-lg="2" data-ps-slides-per-view-wide="3" data-ps-space-between="20" aria-label="Sun Veil 일상 경험">
+        <div class="pdc-at-glance__cards-track swiper-wrapper">
+          <article class="pdc-at-glance__card pdc-at-glance__card--ciel swiper-slide is-active">
+            <img class="pdc-at-glance__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-a-glance-01-2.webp" alt="메이크업 위 투명한 선베일" width="876" height="1352" loading="eager">
+            <svg class="pdc-at-glance__shape" viewBox="0 0 754 707" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <defs>
+                <mask id="pdc-at-glance-shape-mask" maskUnits="userSpaceOnUse">
+                  <path class="pdc-at-glance__shape-mask-path" pathLength="1" d="M1.08478 235.848C1.08478 235.848 -9.81522 169.018 62.4248 164.978C86.2748 163.648 104.805 177.488 172.525 178.918C240.245 180.348 295.375 177.338 366.665 123.158C437.955 68.9775 481.425 -1.59247 575.525 0.547526C669.625 2.68753 713.105 100.348 713.105 100.348C713.105 100.348 806.495 276.428 708.825 470.328C611.155 664.228 466.665 776.568 302.405 657.338C161.985 555.398 7.28478 324.428 1.08478 235.848Z" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+                </mask>
+              </defs>
+              <path class="pdc-at-glance__shape-path" d="M1.08478 235.848C1.08478 235.848 -9.81522 169.018 62.4248 164.978C86.2748 163.648 104.805 177.488 172.525 178.918C240.245 180.348 295.375 177.338 366.665 123.158C437.955 68.9775 481.425 -1.59247 575.525 0.547526C669.625 2.68753 713.105 100.348 713.105 100.348C713.105 100.348 806.495 276.428 708.825 470.328C611.155 664.228 466.665 776.568 302.405 657.338C161.985 555.398 7.28478 324.428 1.08478 235.848Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-dasharray="8 6" vector-effect="non-scaling-stroke" mask="url(#pdc-at-glance-shape-mask)"/>
+            </svg>
+            <div class="pdc-at-glance__content">
+              <h3 class="pdc-at-glance__card-title heading-xl"><span class="pdc-at-glance__number heading-xxxl">01</span> <br>Invisible &amp; Seamless</h3>
+              <div class="pdc-at-glance__copy">
+                <p class="xs--body-l sm--body-l body-l"><strong>보이지 않는 0.004mm</strong></p>
+                <p class="xs--body-l sm--body-l body-l">붙였는지 잊을 만큼, 얇고 투명한 존재감</p>
+                <p class="xs--body-l sm--body-l body-l"><strong>메이크업과 자연스럽게 호환</strong></p>
+                <p class="xs--body-l sm--body-l body-l">경계 없이 매끄럽게 이어지는 피부 표현</p>
+              </div>
+            </div>
+          </article>
+          <article class="pdc-at-glance__card pdc-at-glance__card--glass swiper-slide">
+            <img class="pdc-at-glance__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-a-glance-02-2.webp" alt="수분으로 밀착된 선베일" width="876" height="1352" loading="eager">
+            <div class="pdc-at-glance__content">
+              <h3 class="pdc-at-glance__card-title heading-xl"><span class="pdc-at-glance__number heading-xxxl">02</span> <br>Effortless Fit</h3>
+              <div class="pdc-at-glance__copy">
+                <p class="xs--body-l sm--body-l body-l"><strong>점착제 없이, 자연스럽게 밀착</strong></p>
+                <p class="xs--body-l sm--body-l body-l">수분에 반응해 피부에 스며들 듯 가볍게 밀착되는 <br><strong>Moisture-Bonding</strong></p>
+                <p class="xs--body-l sm--body-l body-l"><strong>헷갈림 없이, 한 번에</strong></p>
+                <p class="xs--body-l sm--body-l body-l">직관적 L/R 구분으로, 거울 없이도 한 번에 부착 <br><strong>No Mirror, One Go</strong></p>
+              </div>
+            </div>
+          </article>
+          <article class="pdc-at-glance__card pdc-at-glance__card--creme swiper-slide">
+            <img class="pdc-at-glance__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-a-glance-03-2.webp" alt="일상 속 선베일 착용" width="876" height="1352" loading="eager">
+            <div class="pdc-at-glance__content">
+              <h3 class="pdc-at-glance__card-title heading-xl"><span class="pdc-at-glance__number heading-xxxl">03</span> <br>Whereable Beauty<span class="pdc__tm">™</span></h3>
+              <div class="pdc-at-glance__copy">
+                <p class="xs--body-l sm--body-l body-l"><strong>일상의 흐름을 끊지 않는 뷰티</strong></p>
+                <p class="xs--body-l sm--body-l body-l">야외 활동에서 다음 일정까지, 끊김 없이 <br>어디서든 이어지는 보호와 케어</p>
+                <p class="xs--body-l sm--body-l body-l"><strong>선크림 위로 이어지는 레이어</strong></p>
+                <p class="xs--body-l sm--body-l body-l">덧바르지 않아도 계속 유지되는 보호 </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination pdc-swiper-pagination" data-pdc-swiper-pagination></div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-why-intro" id="pdc-why-intro" data-pdc-section="why-intro" data-pdc-nav-title="선베일 · 언제 사용하면 좋나요?">
+    <div class="container container--md">
+      <h2 class="pdc-why-intro__title pdc-display-title heading-xxxl" data-scroll-reveal>이런 순간, 필요합니다.</h2>
+      <figure class="pdc-why-intro__visual" data-scroll-reveal>
+        <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-this-moment.webp?ver=1.05" alt="야외 활동 중 선베일" width="1184" height="1579" loading="lazy">
+      </figure>
+      <div class="pdc-why-intro__cards">
+        <article class="pdc-why-intro__card" data-scroll-reveal>
+          <h3 class="heading-xl">보호는 필요하지만, 드러나고 싶지 않을 때</h3>
+          <div class="accordion-ui pdc-why-intro__accordion" data-component="accordion">
+            <div class="accordion-ui__item pdc-why-intro__accordion-item">
+              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">자외선 차단제를 <strong>덧바르기 힘들 때</strong></button>
+              <div class="accordion-ui__content pdc-why-intro__accordion-content">
+                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
+                  <p class="sm--body-m body-l">다시 발라야 하는 건 알지만,<br>메이크업이 무너지거나 끈적일까 봐 손이 멈추는 순간</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-ui__item pdc-why-intro__accordion-item">
+              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">흐름을 끊지 않고 <strong>자외선 대응을 유지하고 싶을 때</strong></button>
+              <div class="accordion-ui__content pdc-why-intro__accordion-content">
+                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
+                  <p class="sm--body-m body-l">이동 중에도, 일하는 중에도, 약속 사이에도<br>흐름을 끊지 않고 관리하고 싶을 때</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-ui__item pdc-why-intro__accordion-item">
+              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">땀이나 유분이 올라온 얼굴에 <strong>덧바르기 찝찝할 때</strong></button>
+              <div class="accordion-ui__content pdc-why-intro__accordion-content">
+                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
+                  <p class="sm--body-m body-l">선크림을 덧바르기엔 찝찝하고, 그렇다고 그대로 두기엔<br>자외선 노출이 신경 쓰일 때</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-ui__item pdc-why-intro__accordion-item">
+              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">러닝·골프·테니스· 여행 등 <strong>야외 활동이 많은 날</strong></button>
+              <div class="accordion-ui__content pdc-why-intro__accordion-content">
+                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
+                  <p class="sm--body-m body-l">햇빛 아래 있는 시간이 길어질 때</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-ui__item pdc-why-intro__accordion-item">
+              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">햇살은 즐기고 싶은데 <strong>피부는 지키고 싶을 때</strong></button>
+              <div class="accordion-ui__content pdc-why-intro__accordion-content">
+                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
+                  <p class="sm--body-m body-l">오픈 테라스, 통창 카페, 햇살 산책.<br>햇빛은 좋지만 피부를 그대로 노출시키고 싶지 않을 때</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-why-intro__card" data-scroll-reveal>
+          <h3 class="heading-xl">피부가 예민해졌을 때는 더더욱</h3>
+          <ul>
+            <li class="xs--body-s sm--body-m body-l sm--left">피부 시술 후,<br>자외선 차단은 중요하지만 피부에 <strong>직접 바르기 부담스럽고 세안도 제한될 때</strong></li>
+            <li class="xs--body-s sm--body-m body-l sm--left">피부 트러블로 인해, <strong>선크림이나 쿠션을 덧바르기 어려울 때</strong></li>
+            <li class="xs--body-s sm--body-m body-l sm--left">외부 자극에 붉게 달아올라 <strong>떼어내는 순간 피부 자극이 염려될 때</strong></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--full pdc__section--band pdc-why-highlight" id="pdc-why-highlight" data-pdc-section="why-highlight">
+    <div class="pdc-why-highlight__banner">
+      <img class="pdc-why-highlight__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/why-sun-veil-banner-model.webp" alt="선베일 착용 모델" width="2520" height="1884" loading="lazy">
+      <div class="pdc-why-highlight__text" aria-label="보호는 필요하지만, 방식이 달라야 할 때 이럴 때 필요한 건, 선케어가 아니라 선베일입니다.">
+        <div class="pdc-why-highlight__group pdc-why-highlight__group--top" data-scroll-reveal>
+          <p class="sm--body-xl body-mega">숨 쉬는 에스테틱 선패치</p>
+          <p class="pdc-why-highlight__emphasis sm--heading-xl heading-xxxl" data-scroll-reveal data-scroll-delay="250"><strong>이제 필름 대신, 선베일을 시작하세요.</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="container container--fluid">
+      <p class="pdc-why-highlight__caption sm--body-s body-l">사진 속 모델은 선베일을 부착한 상태입니다.</p>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-standard" id="pdc-film-membrane-standard" data-pdc-section="film-membrane-standard">
+    <div class="container container--md">
+      <div class="pdc-standard__grid" data-scroll-reveal data-scroll-direction="none">
+        <figure class="pdc-standard__visual" data-pdc-video-section>
+          <video class="pdc-standard__video" data-pdc-video muted loop playsinline preload="metadata" aria-hidden="true">
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1197583904/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=3b4772603ab5b622629aaf30d248b290cd9ddce357b63ac4a633d357a99b6e2c" type="video/mp4">
+          </video>
+          <figcaption class="pdc-standard__visual-overlay heading-m"><span>Aeroflow<span class="pdc__tm">™</span></span></figcaption>
+        </figure>
+        <article class="pdc-standard__card pdc-standard__card--creme">
+          <h3 class="pdc-standard__card-title sm--heading-xxl heading-xl sm--center"><span class="sm--heading-m heading-m">덧바름과 답답함의 불편을 해결한</span><br>리버스 AG 코드<span class="pdc__tm">™</span> 선베일</h3>
+          <div class="pdc-standard__card-copy body-m">
+            <ol class="pdc-standard-flow" aria-label="숨 쉬는 선베일 작동 흐름">
+              <li class="pdc-standard-flow__item sm--center">
+                <span class="pdc-standard-flow__title body-m"><strong>0.004mm 기공구조 나노 섬유</strong>가 <br>초박막 보호 레이어 형성</span>
+              </li>
+              <li class="pdc-standard-flow__item sm--center">
+                <span class="pdc-standard-flow__title body-m">공기 흐름을 유지하는 <strong>숨 쉬는 구조</strong>로 <br><strong>열·습기·땀 자연 배출</strong></span>
+              </li>
+              <li class="pdc-standard-flow__item sm--center">
+                <span class="pdc-standard-flow__title body-m">답답함 없이 편안한 피부 상태 유지</span>
+              </li>
+              <li class="pdc-standard-flow__item pdc-standard-flow__item--plus sm--center">
+                <span class="pdc-standard-flow__title body-m">빛·열·외부 자극 최소화 및 <br><strong>피부 컨디션 정돈 케어</strong></span>
+              </li>
+            </ol>
+            <details class="pdc-standard-detail">
+              <summary class="pdc-standard-detail__summary body-m">
+                <span class="pdc-standard-detail__summary-more">친절한 설명</span>
+                <span class="pdc-standard-detail__summary-less">간단한 요약</span>
+                <span class="pdc-standard-detail__summary-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="pdc-standard-detail__copy body-m">
+                <p class="body-m">보이지 않을 만큼 얇은 <strong>0.004mm 기공구조 <br>나노 섬유</strong>가 피부 위에 초박막 보호 레이어를 형성해 <br class="sm--hide">공기 흐름을 유지하는 <strong>숨 쉬는 구조</strong>로 작동합니다.</p>
+                <p class="body-m">그 결과,<br><strong>열·습기·땀은 머무르지 않고 자연스럽게 배출</strong>되며, <br class="sm--hide">피부는 답답함 없이 편안한 상태를 유지합니다.</p>
+                <p class="body-m">동시에,<br>빛·열·외부 자극이 피부 환경에 미치는 영향을 최소화하고, 나노 섬유가 닿는 피부 표면에서는 <br class="sm--hide"><strong>피부 컨디션을 정돈하는 케어</strong>가 함께 이루어집니다.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+      <div class="pdc-standard__metrics" aria-label="Sun Veil 기준 데이터">
+        <span class="pdc-standard__metric body-l"><span class="sm--hide"> </span>99.9% <br class="sm--hide">자외선 차단</span>
+        <span class="pdc-standard__metric body-l"><span class="sm--hide"> </span>민감 피부 자극 지수 <br class="sm--hide">0.00</span>
+        <span class="pdc-standard__metric body-l"><span class="sm--hide"> </span>숨 쉬는 <br class="sm--hide">나노 섬유</span>
+        <span class="pdc-standard__metric body-l"><span class="sm--hide"> </span>0.004mm <br class="sm--hide">초박막</span>
+        <span class="pdc-standard__metric body-l"><span class="sm--hide"> </span>비건 <br class="sm--hide">포뮬러</span>
+      </div>
+      <div class="pdc-standard__certifications" aria-label="Sun Veil certification marks">
+        <img class="pdc-standard__certification-logo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/dermatest-sensitive-skin-original.webp?ver=1.01" alt="Dermatest Sensitive Skin" width="160" height="220" loading="lazy">
+        <img class="pdc-standard__certification-logo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/dermatest-skin-friendly-material.webp?ver=1.01" alt="Dermatest Skin Friendly Material" width="160" height="220" loading="lazy">
+        <img class="pdc-standard__certification-logo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ydermatest-sensitive-skin.webp?ver=1.01" alt="Dermatest Sensitive Skin" width="160" height="220" loading="lazy">
+        <img class="pdc-standard__certification-logo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/vegan-blue.webp?ver=1.01" alt="Vegan certification" width="192" height="220" loading="lazy">
+      </div>
+      <p class="pdc-standard__note pdc-note body-xs">*원단 기준 UVB 시험 결과 (측정 조건에 따라 상이할 수 있음)<br>*독일 더마테스트(Dermatest®) 민감 피부 대상 첩포·2주 임상 시험 완료<br>*영국 비건소사이어티(The Vegan Society) 비건 트레이드마크 인증</p>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc__section--band pdc-how-work" id="pdc-how-it-works" data-pdc-section="how-it-works" data-pdc-nav-title="선베일 · 어떻게 피부를 보호하나요?" data-pdc-how-works>
+    <div class="container container--md">
+      <div class="pdc-how-work__sticky">
+        <div class="pdc-how-work__grid">
+          <header class="pdc-how-work__header" data-scroll-reveal>
+            <p class="pdc__eyebrow pdc-how-work__eyebrow">How It Protects</p>
+            <h2 class="pdc-how-work__title heading-xxl">Unveiling Veil</h2>
+            <div class="pdc-how-work__chapter">
+              <h3 class="pdc-how-work__chapter-title heading-l">두 개의 레이어가 하나의 피부처럼 작동합니다</h3>
+              <p class="pdc-how-work__lead body-l">Sun Veil은 자외선 차단 필름이 아니라,<br><strong>UV 차단층과 스킨케어층이 결합된 초박막 나노 섬유입니다.</strong></p>
+            </div>
+          </header>
+          <div class="pdc-how-work__stage" aria-label="Sun Veil layer video" data-pdc-video-section>
+            <div class="container container--xl">
+              <div class="pdc-opening-hero__frame media-fullscreen" data-media-fullscreen>
+                <video class="pdc-opening-hero__video" data-pdc-video data-media-fullscreen-target muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="https://player.vimeo.com/progressive_redirect/playback/1197574679/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=8bcf739cab2c2fcfb300e1089d4a3197c580694adaeb5a39def94cbe649a682e" type="video/mp4">
+                </video>
+                <button class="media-fullscreen-button pdc-opening-hero__fullscreen" type="button" data-media-fullscreen-trigger aria-label="선베일 레이어 영상 전체화면으로 보기">
+                  <span class="media-fullscreen-button__icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">영상 전체화면으로 보기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pdc-how-work__detail-grid" data-scroll-reveal>
+            <article class="pdc-how-work__detail sm--center">
+              <h3 class="pdc-how-work__detail-title sm--heading-m heading-m">Layer 1 &middot; Aeroflow<span class="pdc__tm">™</span> 나노섬유</h3>
+              <p class="pdc-how-work__detail-copy sm--body-m body-m">
+                0.004mm 투명 베일 구조로, <br>
+                피부 결과 메이크업 질감을 해치지 않으면서 <br>
+                <strong>UV로부터 피부를 보호하는 층</strong>
+              </p>
+            </article>
+            <article class="pdc-how-work__detail sm--center">
+              <h3 class="pdc-how-work__detail-title sm--heading-m heading-m">Layer 2 &middot; Reverse AG Code<span class="pdc__tm">™</span></h3>
+              <p class="pdc-how-work__detail-copy sm--body-m body-m">
+                <strong>Reverse AG Code<span class="pdc__tm">™</span></strong>와 <strong>비건 포뮬러</strong>를 담아 <br>
+                외부 자극 환경에서도 피부 컨디션을 편안하게 <br>유지하도록 돕는 <strong>스킨케어층</strong>
+              </p>
+            </article>
+            <p class="pdc-how-work__detail-note body-s">[ Reverse AG Code<span class="pdc__tm">™</span> 기반 독자 조성물 특허 등록 ]<br>*특허 제 10-2966324 호</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-bonding" id="pdc-how-it-bonds" data-pdc-section="how-it-bonds">
+    <div class="container container--md">
+      <header class="pdc-bonding__header" data-scroll-reveal>
+        <p class="pdc__eyebrow pdc-bonding__eyebrow">How It Bonds</p>
+        <h2 class="pdc-bonding__title heading-xxl">Moisture-Bonding</h2>
+        <p class="pdc-bonding__lead body-m">접착하지 않고 수분으로 안착한다</p>
+      </header>
+      <p class="pdc-bonding__statement heading-l" data-scroll-reveal><span class="text-underline-mark text-underline-mark--creme">화학 점착제 없이</span> 구현한 밀착 구조</p>
+      <figure class="pdc-bonding__visual"  data-scroll-reveal data-scroll-direction="none">
+        <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/sun-veil-moisture-bonding.webp" alt="Moisture-Bonding 구조 다이어그램" width="1200" height="640" loading="lazy">
+      </figure>
+      <div class="pdc-bonding__details" data-scroll-reveal>
+        <article class="pdc-bonding__detail sm--center">
+          <h3 class="pdc-bonding__detail-title sm--heading-m heading-m">Bonding 1 &middot; 구조적 물성</h3>
+          <p class="pdc-bonding__detail-copy sm--body-m body-m">피부를 압박하지 않고, <br>초박막 기공 구조를 통해 <br>피부 위에 자연스럽게 안착되는 메커니즘</p>
+        </article>
+        <article class="pdc-bonding__detail sm--center">
+          <h3 class="pdc-bonding__detail-title sm--heading-m heading-m">Bonding 2 &middot; 포뮬러 점성 밀착</h3>
+          <p class="pdc-bonding__detail-copy sm--body-m body-m">스킨케어 포뮬러의 점성과 <br>초박막 나노 섬유가 만나, 별도의 점착제 없이도 <br>피부에 부드럽게 밀착되는 구조</p>
+        </article>
+      </div>
+      <figure class="pdc-image-moment pdc-image-moment--removal" data-scroll-reveal data-scroll-direction="none">
+        <img class="-sm--hide" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-gentle-removal.webp?ver=202606160549" alt="피부에 밀착된 선베일" width="1772" height="997" loading="lazy">
+        <figcaption class="pdc-image-moment__caption sm--body-s body-l">보호 시트 제거 후, 선베일이 피부에 밀착된 상태입니다.</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-formula-code" id="pdc-reverse-ag-code-formula" data-pdc-section="reverse-ag-code-formula" data-pdc-nav-title="선베일 · 어떤 기술과 성분이 들어있나요?">
+    <div class="container container--md">
+      <h2 class="pdc-formula-code__section-title heading-xxl" data-scroll-reveal>Reverse AG Code<span class="pdc__tm">™</span> 포뮬러</h2>
+      <div class="pdc-formula-code__grid">
+        <article class="pdc-formula-code__hero" data-scroll-reveal>
+          <div class="pdc-formula-code__hero-copy">
+            <header class="pdc-formula-code__hero-header">
+              <p class="pdc__eyebrow pdc-formula-code__eyebrow"><strong>코어 포뮬러</strong></p>
+              <h3 class="pdc-formula-code__hero-title heading-l"><strong>Triple Core Module</strong></h3>
+            </header>
+            <div class="pdc-formula-code__core-grid" aria-label="Reverse AG Code core formula">
+              <article class="pdc-formula-code__core-item">
+                <p class="pdc-formula-code__core-kicker body-l">에너지 밸런스 지원</p>
+                <h4 class="body-l">NMN</h4>
+                <p class="sm--body-m body-m">원료 기준 순도 99% 이상의 NMN</p>
+              </article>
+              <article class="pdc-formula-code__core-item">
+                <p class="pdc-formula-code__core-kicker body-l">피부 환경 밸런스 케어</p>
+                <h4 class="body-l">Resveratrol</h4>
+                <p class="sm--body-m body-m">[레스베라트롤] 외부 자극 환경 대응 폴리페놀</p>
+              </article>
+              <article class="pdc-formula-code__core-item">
+                <p class="pdc-formula-code__core-kicker body-l">포뮬러 안정성 지원</p>
+                <h4 class="body-l">Pterostilbene</h4>
+                <p class="sm--body-m body-m">[피테로스틸벤] 안정성을 고려한 차세대 폴리페놀</p>
+              </article>
+            </div>
+          </div>
+          <div class="pdc-formula-code__video" data-pdc-video-section>
+            <div class="pdc-formula-code__video-frame">
+              <video class="pdc-formula-code__video-media" data-pdc-video loop muted playsinline preload="metadata" aria-hidden="true">
+                <source src="https://player.vimeo.com/progressive_redirect/playback/1197509940/rendition/2160p/file.mp4%20%282160p%29.mp4?loc=external&amp;signature=102a9cd81623448133374576a8e6c926390c19a79a722bbcbf06d2b5e3aa3dde" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </article>
+        <div class="pdc-formula-code__support-stack">
+          <article class="pdc-formula-code__support-card pdc-formula-code__support-card--merlot" data-scroll-reveal>
+            <p class="pdc__eyebrow pdc-formula-code__card-eyebrow"><strong>서포트 비건 포뮬러</strong></p>
+            <h3 class="heading-l"><strong>Synergy Modules</strong></h3>
+            <ul class="sm--body-m body-m">
+              <li>Vegan PRN: 화이트 트러플 유래 효모 RNA</li>
+              <li>Phyto PDRN: 생어린 병풀 유래 DNA</li>
+              <li>Quercetin: 다마스크 장미 유래</li>
+              <li>OPT-anti UV: 미역 유래 비건 유산균</li>
+            </ul>
+          </article>
+          <article class="pdc-formula-code__support-card pdc-formula-code__support-card--ciel" data-scroll-reveal>
+            <p class="pdc__eyebrow pdc-formula-code__card-eyebrow"><strong>포뮬러 베이스</strong></p>
+            <h3 class="heading-l"><strong>Eco-LTVE<span class="pdc__tm">™</span> <small class="body-s">저온진공 추출 블랙사파이어 포도수</small></strong></h3>
+            <p class="sm--body-m body-m">정제수 대신,<br>블랙사파이어 포도를 저온·진공 방식으로 응축한<br><strong>Eco-LTVE<span class="pdc__tm">™</span></strong>를 포뮬러 베이스로 설계했습니다.</p>
+          </article>
+        </div>
+        <p class="pdc-formula-code__note pdc-note body-xs" data-scroll-reveal>*상기 내용은 포뮬러 구성 및 설계 방향에 대한 설명이며, 제품의 효능·효과를 의미하지 않습니다.</p>
+        <figure class="pdc-formula-code-banner__frame" data-scroll-reveal data-scroll-direction="none" data-pdc-scroll-pan>
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-reverse-ag-code-clean-ingredients.webp?ver=2026061201" alt="Reverse AG Code 비건 성분" width="2560" height="1280" loading="lazy" data-pdc-scroll-pan-image>
+        </figure>
+      </div>
+    </div>
+    <div class="container container--fluid">
+      <article class="pdc-formula-code__vegan pdc-formula-code__vegan-card" data-scroll-reveal>
+        <div class="pdc-proof-data__vegan-body">
+          <div class="pdc-proof-data__vegan-copy">
+            <h3 class="heading-xs"><strong>비건 인증 (The Vegan Society)</strong></h3>
+            <p class="body-s">동물성 원료 무첨가 비건 포뮬러</p>
+          </div>
+          <img class="pdc-proof-data__vegan-logo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-vegan-society-logo-gray.webp?ver=20260516" alt="The Vegan Society" width="240" height="192" loading="lazy">
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-proof-data" id="pdc-proven-data" data-pdc-section="proven-data" data-pdc-nav-title="선베일 · 어떤 테스트로 검증되었나요?">
+    <div class="container container--md">
+      <header class="pdc-proof-data__header" data-scroll-reveal>
+        <h2 class="pdc-proof-data__title heading-xxxl sm--center">데이터로 검증된 기술</h2>
+      </header>
+      <div class="pdc-proof-data__patent">
+        <h3 class="pdc-proof-data__patent-title sm--heading-xl heading-xl">압도적 기술 위에<br>완성된 베일</h3>
+        <div class="pdc-proof-data__patent-grid" aria-label="Sun Veil patent and technology IP metrics">
+          <article class="pdc-proof-data__patent-item">
+            <p class="pdc-proof-data__patent-label sm--heading-m heading-m">등록 특허</p>
+            <p class="pdc-proof-data__patent-value type-display" data-scroll-reveal><span data-pdc-count data-count-to="59" data-count-decimals="0">0</span>건</p>
+          </article>
+          <article class="pdc-proof-data__patent-item">
+            <p class="pdc-proof-data__patent-label sm--heading-m heading-m">누적 기술 IP</p>
+            <p class="pdc-proof-data__patent-value type-display" data-scroll-reveal><span data-pdc-count data-count-to="240" data-count-decimals="0">0</span>건</p>
+          </article>
+        </div>
+      </div>
+      <section class="pdc-proof-data__group">
+        <div class="pdc-proof-data__swiper pdc-proof-data__swiper--metric swiper" data-pdc-proof-swiper data-ps-slides-per-view="1.25" data-ps-slides-per-view-compact="1.25" data-ps-slides-per-view-desktop="3" data-ps-slides-per-view-lg="3" data-ps-slides-per-group="1" data-ps-slides-per-group-desktop="3" data-ps-slides-per-group-lg="3" data-ps-space-between="8" data-ps-space-between-desktop="20" data-scroll-reveal="stagger-slides" aria-label="숨 쉬는 구조 데이터">
+          <div class="pdc-proof-data__track swiper-wrapper">
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__metric-card pdc-proof-data__metric-card--ciel">
+                <h4 class="sm--heading-xl heading-xl"><strong>투습도</strong></h4>
+                <div class="pdc-proof-data__metric-body">
+                  <img src="https://ayrow.co/assets/icon-vapor-rate-blue.svg" alt="" loading="lazy">
+                  <p class="sm--type-display body-xxl"><span class="sm--type-display body-xxl" data-pdc-count data-count-to="12356" data-count-decimals="0" data-count-grouping="true">0</span><small class="sm--body-m body-s">g/m²·24h</small></p>
+                </div>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__metric-card pdc-proof-data__metric-card--ciel">
+                <h4 class="sm--heading-xl heading-xl"><strong>공기 투과도</strong></h4>
+                <div class="pdc-proof-data__metric-body">
+                  <img src="https://ayrow.co/assets/icon-air-flow-blue.svg" alt="" loading="lazy">
+                  <p class="sm--type-display body-xxl"><span class="sm--type-display body-xxl" data-pdc-count data-count-to="1" data-count-decimals="1">0.0</span> 미만<small class="sm--body-m body-s">mm/s</small></p>
+                </div>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__metric-card pdc-proof-data__metric-card--ciel">
+                <h4 class="sm--heading-xl heading-xl"><strong>평균 기공 크기</strong></h4>
+                <div class="pdc-proof-data__metric-body">
+                  <img src="https://ayrow.co/assets/icon-pore-size-blue.svg" alt="" loading="lazy">
+                  <p class="sm--type-display body-xxl"><span class="sm--type-display body-xxl" data-pdc-count data-count-to="0.7" data-count-decimals="1">0.0</span>μm<small class="sm--body-m body-s">(0.0007mm)</small></p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-pagination pdc-swiper-pagination" data-pdc-swiper-pagination></div>
+        </div>
+        <p class="pdc-proof-data__source pdc-note body-xs">FITI 시험 연구원 · FITI Testing &amp; Research Institute</p>
+      </section>
+      <section class="pdc-proof-data__group">
+        <div class="pdc-proof-data__swiper pdc-proof-data__swiper--metric swiper" data-pdc-proof-swiper data-ps-slides-per-view="1.25" data-ps-slides-per-view-compact="1.25" data-ps-slides-per-view-desktop="3" data-ps-slides-per-view-lg="3" data-ps-slides-per-group="1" data-ps-slides-per-group-desktop="3" data-ps-slides-per-group-lg="3" data-ps-space-between="8" data-ps-space-between-desktop="20" data-scroll-reveal="stagger-slides" aria-label="자외선 차단 데이터">
+          <div class="pdc-proof-data__track swiper-wrapper">
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__metric-card pdc-proof-data__metric-card--creme">
+                <h4 class="sm--heading-xl heading-xl">UVB</h4>
+                <div class="pdc-proof-data__metric-body">
+                  <img src="https://ayrow.co/assets/icon-uvb.svg" alt="" loading="lazy">
+                  <p class="sm--type-display body-xxl"><span class="sm--type-display body-xxl" data-pdc-count data-count-to="99.9" data-count-decimals="1">0.0</span>% 차단<small class="sm--body-m body-s">(파장범위: 290-315 nm)</small></p>
+                </div>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__metric-card pdc-proof-data__metric-card--creme">
+                <h4 class="sm--heading-xl heading-xl">UVA</h4>
+                <div class="pdc-proof-data__metric-body">
+                  <img src="https://ayrow.co/assets/icon-uva.svg" alt="" loading="lazy">
+                  <p class="sm--type-display body-xxl"><span class="sm--type-display body-xxl" data-pdc-count data-count-to="95.3" data-count-decimals="1">0.0</span>% 차단<small class="sm--body-m body-s">(파장범위: 315-400 nm)</small></p>
+                </div>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__metric-card pdc-proof-data__metric-card--creme">
+                <h4 class="sm--heading-xl heading-xl">UVR</h4>
+                <div class="pdc-proof-data__metric-body">
+                  <img src="https://ayrow.co/assets/icon-uvr.svg" alt="" loading="lazy">
+                  <p class="sm--type-display body-xxl"><span class="sm--type-display body-xxl" data-pdc-count data-count-to="96.3" data-count-decimals="1">0.0</span>% 차단<small class="sm--body-m body-s">(파장범위: 290-400 nm)</small></p>
+                </div>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__metric-card pdc-proof-data__metric-card--creme">
+                <h4 class="sm--heading-xl heading-xl">UPF</h4>
+                <div class="pdc-proof-data__metric-body">
+                  <img src="https://ayrow.co/assets/icon-upf.svg" alt="" loading="lazy">
+                  <p class="sm--type-display body-xxl"><span class="sm--type-display body-xxl" data-pdc-count data-count-to="50" data-count-decimals="0">0</span>+<small class="sm--body-m body-s">(AS 4399:2020 기준)</small></p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-pagination pdc-swiper-pagination" data-pdc-swiper-pagination></div>
+        </div>
+        <p class="pdc-proof-data__source pdc-note body-xs">*원단 기준 시험 결과</p>
+      </section>
+      <section class="pdc-proof-data__group">
+        <div class="pdc-proof-data__swiper swiper" data-pdc-proof-swiper data-ps-slides-per-view="1.25" data-ps-slides-per-view-compact="1.25" data-ps-slides-per-view-desktop="2" data-ps-slides-per-view-lg="2" data-ps-slides-per-group="1" data-ps-slides-per-group-desktop="1" data-ps-slides-per-group-lg="1" data-ps-space-between="8" data-ps-space-between-desktop="20" data-scroll-reveal="stagger-slides" aria-label="검증된 데이터 카드">
+          <div class="pdc-proof-data__track swiper-wrapper">
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__card">
+                <h3 class="sm--heading-l heading-l">피부 적합성</h3>
+                <dl class="pdc-proof-data__table">
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>피부 자극 지수</dt>
+                    <dd>0.00 <br>(자극 반응 없음)</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>더마테스트</dt>
+                    <dd>EXCELLENT 등급</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>피부 친화 소재</dt>
+                    <dd>Skin-friendly Material 기준 충족</dd>
+                  </div>
+                </dl>
+                <p class="pdc-proof-data__footnote pdc-note body-xs">*민감 피부 대상 첩포 시험 및 2주 임상 시험 기준</p>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__card">
+                <h3 class="sm--heading-l heading-l">물성 &amp; 설계</h3>
+                <dl class="pdc-proof-data__table">
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>중량</dt>
+                    <dd>0.05g <br>(1 piece 기준 초경량)</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>두께</dt>
+                    <dd>0.004mm <br>(초박막)</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>구조</dt>
+                    <dd>숨 쉬는 나노 멤브레인</dd>
+                  </div>
+                </dl>
+                <p class="pdc-proof-data__footnote pdc-note body-xs">*완제품 기준</p>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__card">
+                <h3 class="sm--heading-l heading-l">숨 쉬는 구조 데이터</h3>
+                <dl class="pdc-proof-data__table">
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>공기 투과도</dt>
+                    <dd>1.0 미만 mm/s <br>(공기 흐름 유지)</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>투습도</dt>
+                    <dd>12,356 g/m²·24h <br>(습기 배출 가능)</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>기공 크기</dt>
+                    <dd>0.7μm <br>(초미세 기공 구조)</dd>
+                  </div>
+                </dl>
+                <p class="pdc-proof-data__footnote pdc-note body-xs">*물성 시험 측정 기준</p>
+              </div>
+            </article>
+            <article class="pdc-proof-data__slide swiper-slide">
+              <div class="pdc-proof-data__card">
+                <h3 class="sm--heading-l heading-l">자외선 차단 성능</h3>
+                <dl class="pdc-proof-data__table">
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>UVB 차단율</dt>
+                    <dd>99.9%</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>UVA 차단율</dt>
+                    <dd>95.3%</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>UVR 차단율</dt>
+                    <dd>96.3%</dd>
+                  </div>
+                  <div class="pdc-proof-data__row sm--body-s body-m">
+                    <dt>UPF 지수</dt>
+                    <dd>UPF 50+</dd>
+                  </div>
+                </dl>
+                <p class="pdc-proof-data__footnote pdc-note body-xs">*원단 시험 기준</p>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-pagination pdc-swiper-pagination" data-pdc-swiper-pagination></div>
+        </div>
+        <p class="pdc-proof-data__source pdc-note body-xs">Dermatest® · FITI 시험 연구원 데이터 기반</p>
+      </section>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-usage" id="pdc-how-to-use" data-pdc-section="how-to-use" data-pdc-nav-title="선베일 · 어떻게 사용하나요?">
+    <div class="container container--md">
+      <header class="pdc__head">
+        <p class="pdc__eyebrow">How to Use</p>
+        <h2 class="pdc__head-title pdc-display-title heading-xxxl">사용 방법</h2>
+        <p class="pdc__head-lead body-l">세 단계로 끝나는 얇은 보호 레이어</p>
+      </header>
+      <div class="pdc-usage__layout">
+        <figure class="pdc-usage__visual" data-pdc-video-section>
+          <video class="pdc-usage__video" data-pdc-video muted loop playsinline preload="metadata" aria-hidden="true">
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1199622531/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=4e63a420e0ebab007c7787bcd07fae94868eee8166ed22f77687ce991f5ce9a6" type="video/mp4">
+          </video>
+        </figure>
+        <div class="pdc-usage__steps" aria-label="Sun Veil 사용 방법" data-pdc-usage-steps>
+          <button type="button" data-scroll-reveal data-pdc-usage-step data-pdc-usage-time="1">
+            <strong class="sm--body-m heading-xl">01 · Ready</strong>
+            <p class="sm--body-s body-l">파우치를 열고, 직관적인 L/R 방향을 확인합니다.</p>
+          </button>
+          <button type="button" data-scroll-reveal data-pdc-usage-step data-pdc-usage-time="10">
+            <strong class="sm--body-m heading-xl">02 · Set</strong>
+            <p class="sm--body-s body-l">햇살이 먼저 닿는 눈가 아래·광대존에 올린 뒤 <br>가볍게 눌러 안착시켜 줍니다.</p>
+          </button>
+          <button type="button" data-scroll-reveal data-pdc-usage-step data-pdc-usage-time="24">
+            <strong class="sm--body-m heading-xl">03 · Go</strong>
+            <p class="sm--body-s body-l">피부와 하나가 된 듯한 피팅감으로 일상을 이어갑니다.</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pdc__section pdc__section--contained pdc-makeup-routine" id="pdc-makeup-routine" data-pdc-section="makeup-routine">
+    <div class="container container--xl">
+      <header class="pdc__head" data-scroll-reveal>
+        <p class="pdc__head-title pdc-makeup-routine__statement sm--body-xxl body-mega"><strong>선베일 위에<br>평소처럼 메이크업 루틴을 이어가세요</strong></p>
+      </header>
+      <figure class="pdc-image-moment pdc-image-moment--makeup" data-scroll-reveal data-scroll-delay="250">
+        <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-makeup-over-veil.webp?ver=202606151039" alt="선베일 위 메이크업" width="1180" height="1476" loading="lazy">
+      </figure>
+    </div>
+  </section>
+  </div>
+
+  <!-- 4. FAQ — 제품별 탭 -->
+  <section class="pdc__section pdc__section--contained pdc-set-faq" data-pdc-nav-title="자주 묻는 질문" data-pdc-section="set-faq">
+    <div class="container container--md">
+      <h2 class="pdc-set-faq__title heading-xxxl">FAQ</h2>
+      <div class="pdc-set-tabs" role="tablist" aria-label="제품별 자주 묻는 질문" data-pdc-set-tabs>
+        <button class="pdc-set-tabs__tab heading-s" type="button" role="tab" data-pdc-set-tab="elixir">바이오 엘릭서</button>
+        <button class="pdc-set-tabs__tab heading-s" type="button" role="tab" data-pdc-set-tab="sun-veil">선베일</button>
+      </div>
+    </div>
+  </section>
+  <div class="pdc--elixir pdc-set__group" role="tabpanel" data-pdc-set-panel="elixir">
+  <section class="pdc__section pdc__section--contained pdc-faq" data-pdc-section="faq">
+    <div class="container container--md">
+      <header class="pdc-faq__header">
+        <h2 class="pdc-faq__title heading-xxxl">FAQ</h2>
+      </header>
+      <div class="pdc-faq__list" data-pdc-faq>
+        <article class="pdc-faq__item is-open" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">바이오 엘릭서는 미스트인가요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">분사해서 사용하지만, <strong>피부에 수분을 더하는 일반적인 미스트와는 사용 목적이 다릅니다.</strong></p>
+              <p class="body-m">바이오 엘릭서는 <strong>분사 방식의 편의성과 컨센트레이트의 스킨케어 가치를 결합해</strong> 피부 관리가 필요한 순간 언제든 사용할 수 있도록 설계한 <strong>페이스 컨센트레이트</strong>입니다.</p>
+              <p class="body-m">스킨케어 단계에서는 물론, 메이크업 전후나 피부 컨디션이 떨어지는 순간에도 간편하게 분사해 <strong>일상 속에서 고기능 스킨케어를 이어갈 수 있습니다.</strong></p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">스킨케어 어느 단계에서 사용하나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">세안 후 <strong>첫 단계에 사용하면 피부 컨디션을 정돈해 다음 스킨케어를 편안하게 이어갈 수 있습니다.</strong></p>
+              <p class="body-m">피부 상태에 따라 <strong>집중적인 스킨케어가 필요하거나 피부 컨디션의 변화가 느껴지는 순간에도</strong><br class="sm--hide"> 덧뿌려 사용할 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">메이크업 위에도 사용할 수 있나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">네. <strong>메이크업 전후 모두 사용할 수 있습니다.</strong></p>
+              <p class="body-m">충분한 거리를 두고 얼굴 전체에 고르게 분사한 뒤 자연스럽게 밀착되도록 기다려 주세요.<br class="sm--hide"> 메이크업 위에서는 한 번에 많은 양을 사용하기보다 <strong>얇게 분사하고 필요한 만큼<br class="sm--hide"> 레이어링하는 것을 권장합니다.</strong></p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">하루에 몇 번 사용할 수 있나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">정해진 사용 횟수 없이 피부가 필요로 할 때마다 사용할 수 있습니다.</p>
+              <p class="body-m">아침과 저녁의 기본 스킨케어는 물론, 낮 동안 건조함이나 피부 컨디션 변화가 느껴질 때 수시로 덧사용해 보세요.</p>
+              <p class="body-m"><strong>가볍게, 필요한 순간 반복하는 것이 바이오 엘릭서의 사용법입니다.</strong></p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">민감성 피부도 사용할 수 있나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">네, 민감성 피부도 사용하실 수 있습니다.</p>
+              <p class="body-m"><strong>민감성 피부를 가진 성인 남녀 31명을 대상으로 한 피부 일차자극 시험에서 피부자극지수 0.00으로 비(무)자극성 판정을 받았으며, 민감성 피부에 사용 적합한 것으로 평가되었습니다.</strong></p>
+              <p class="body-m">다만 피부 컨디션에는 개인차가 있으므로, 유난히 예민한 날에는 작은 부위에 먼저 사용해 보시는 것을 권장합니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">향이 첨가되어 있나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">매일 여러 번 레이어링하는 제품인 만큼, 향에 대한 부담을 덜고 스킨케어 자체에 집중하기 위해 별도의 향료를 더하지 않았습니다.</p>
+              <p class="body-m">사용 중 은은하게 느껴지는 향은 <strong>포뮬러에 담긴 원료 고유의 향</strong>입니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">피뿌리풀수 74%와 피뿌리풀추출물 4%는 무엇이 다른가요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m"><strong>피뿌리풀수는 포뮬러의 바탕을 이루는 Botanical Water(식물 세포수)이고,<br class="sm--hide"> 피뿌리풀추출물은 피뿌리풀에서 추출한 액티브 원료입니다.</strong></p>
+              <p class="body-m">74%와 4%는 각각의 원료가 처방에 투입된 함량을 기준으로 한 수치입니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">Reverse AG Code<span class="pdc-tm">™</span>는 무엇인가요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m"><strong>Reverse AG Code<span class="pdc-tm">™</span>는 장수과학(Longevity Science)에서 영감을 받아 설계한 AYROW의 독자적인 Science Platform입니다.</strong></p>
+              <p class="body-m">NMN, Resveratrol, Pterostilbene을 비롯한 성분 연구와 자체 기술을 바탕으로 하며,<br class="sm--hide"> 자세한 연구 배경은 <a class="pdc-link" href="https://www.ayrow.co/reverse-ag-code/index.html">Reverse AG Code<span class="pdc-tm">™</span> 페이지</a>에서 확인하실 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="pdc--sun-veil pdc-set__group" role="tabpanel" data-pdc-set-panel="sun-veil">
+  <section class="pdc__section pdc__section--contained pdc-full-faq" id="pdc-full-faq" data-pdc-section="full-faq">
+    <div class="container container--md">
+      <header class="pdc-full-faq__header">
+        <h2 class="pdc-full-faq__title heading-xxxl">FAQ</h2>
+      </header>
+      <div class="pdc-full-faq__quick swiper" data-pdc-quick-faq-swiper data-ps-slides-per-view="1.25" data-ps-space-between="8" data-ps-space-between-desktop="20" data-scroll-reveal="stagger-slides" aria-label="Quick FAQ">
+        <div class="pdc-full-faq__quick-track swiper-wrapper">
+          <article class="pdc-full-faq__quick-card swiper-slide">
+            <h3 class="heading-m">일상에서 눈에 띄지 않나요?</h3>
+            <p class="pdc-full-faq__quick-response pdc-full-faq__quick-response--yes heading-xl">YES</p>
+            <div class="pdc-full-faq__quick-answer body-m">
+              <p class="body-m">0.004mm의 초박막 두께와 압도적인 투명도로 <strong>메이크업 위에서도 식별이 어려울 만큼 자연스럽습니다.</strong></p>
+            </div>
+          </article>
+          <article class="pdc-full-faq__quick-card swiper-slide">
+            <h3 class="heading-m">메이크업 위에 붙여도 되나요?</h3>
+            <p class="pdc-full-faq__quick-response pdc-full-faq__quick-response--yes heading-xl">YES</p>
+            <div class="pdc-full-faq__quick-answer body-m">
+              <p class="body-m">쿠션 팩트, 파운데이션 등 대부분의 메이크업 위에서도 <strong>투명하고 들뜸 없이 밀착</strong>되어 <strong>피부 표현을 방해하지 않습니다.</strong></p>
+            </div>
+          </article>
+          <article class="pdc-full-faq__quick-card swiper-slide">
+            <h3 class="heading-m">점착 성분 없이도 잘 붙나요?</h3>
+            <p class="pdc-full-faq__quick-response pdc-full-faq__quick-response--yes heading-xl">YES</p>
+            <div class="pdc-full-faq__quick-answer body-m">
+              <p class="body-m">초박막 나노 섬유의 <strong>기공 구조</strong>와 스킨케어 제형의 점성 기반 <strong>‘Moisture-Bonding’ 방식</strong>이 결합되어 <strong>점착 성분 없이도 피부에 자연스럽게 안착</strong>됩니다.</p>
+            </div>
+          </article>
+          <article class="pdc-full-faq__quick-card swiper-slide">
+            <h3 class="heading-m">민감한 피부에도 사용할 수 있나요?</h3>
+            <p class="pdc-full-faq__quick-response pdc-full-faq__quick-response--yes heading-xl">YES</p>
+            <div class="pdc-full-faq__quick-answer body-m">
+              <p class="body-m"><strong>민감 피부 대상 첩포 및 2주 임상 테스트를 완료</strong>했으며, <strong>자극 및 알레르기 반응 없이</strong> <strong>Dermatest</strong>® <strong>‘Excellent’</strong> 등급을 획득했습니다.</p>
+            </div>
+          </article>
+          <article class="pdc-full-faq__quick-card swiper-slide">
+            <h3 class="heading-m">재사용 가능한가요?</h3>
+            <p class="pdc-full-faq__quick-response pdc-full-faq__quick-response--no heading-xl">NO</p>
+            <div class="pdc-full-faq__quick-answer body-m">
+              <p class="body-m">위생과 기능 유지를 고려해 <strong>1회 사용을 권장합니다.</strong></p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination pdc-swiper-pagination" data-pdc-swiper-pagination></div>
+      </div>
+      <div class="pdc-full-faq__accordion" data-pdc-faq>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-1-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-1-panel">
+              <span class="pdc-full-faq__text heading-m">선베일은 정확히 어떤 제품인가요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-1-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-1-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m">선베일은 <strong>UV차단층과</strong> 스킨케어 성분을 담은 <strong>케어층</strong>이 결합된 <br class="sm--hide"><strong>반건식(hybrid dry-to-wet) 구조의 이중 레이어 패치형 제품</strong>입니다.</p>
+              <p class="body-m">초박막 기공형 나노 섬유는 피부 호흡을 방해하지 않고 편안하게 밀착되며, <br class="sm--hide"><strong>투명한 보호 레이어</strong>로 작동하도록 설계되었습니다.</p>
+              <p class="body-m">동시에, 케어층에는 <strong>Reverse AG Code<span class="pdc__tm">™</span> 기반의 스킨케어 성분</strong>이 담겨 <br class="sm--hide"><strong>외부 자극으로 흔들린 피부 컨디션을 정돈하는 케어</strong>가 함께 이루어집니다.</p>
+              <p class="body-m">피부 위에 안착되어 <strong>자외선 차단과 피부 컨디션 케어를 동시에 해결해 주는 <br class="sm--hide">새로운 방식의 스킨 프로텍션 솔루션</strong>입니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-2-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-2-panel">
+              <span class="pdc-full-faq__text heading-m">투명한데 자외선 차단이 가능한가요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-2-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-2-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m"><strong>네, 투명하지만 차단됩니다.</strong></p>
+              <p class="body-m"><strong>나노 섬유 내부에 균일하게 분포된 자외선 대응 구조</strong>가 빛에 반응해 <br class="sm--hide">가시광선은 투과시키고, 자외선 파장은 흡수하거나 산란시키기 때문입니다.</p>
+              <p class="body-m">쉽게 말해,</p>
+              <ul>
+                <li class="body-m">가시광선 → 통과 (그래서 투명하게 보임)</li>
+                <li class="body-m">자외선 → 흡수·산란 (그래서 차단됨)</li>
+              </ul>
+              <p class="body-m">되는 원리이기 때문입니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-3-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-3-panel">
+              <span class="pdc-full-faq__text heading-m">일반 필름형 선패치와 무엇이 다른가요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-3-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-3-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m">일반 투명 선패치는 필름 형태로 피부를 <strong>덮고 가두는 구조입니다.</strong> <br class="sm--hide">대부분의 필름형 선패치는 <strong>사실상 ‘차단막(occlusive film)’에 가깝습니다.</strong></p>
+              <p class="body-m">이로 인해 공기 흐름이 차단되고, 열·습기가 내부에 머물러 <br class="sm--hide">장시간 사용 시 답답함이나 자극이 발생할 수 있습니다.</p>
+              <p class="body-m">선베일은 나노 섬유 기반 멤브레인 구조로 피부를 <strong>가두지 않고 밀착됩니다.</strong></p>
+              <p class="body-m">공기와 수분 흐름을 유지하면서도 자외선은 차단하도록 설계되어, <br class="sm--hide"><strong>붙여도 피부가 계속 숨 쉴 수 있습니다.</strong></p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-4-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-4-panel">
+              <span class="pdc-full-faq__text heading-m">점착 성분 없이 어떻게 밀착되나요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-4-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-4-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m"><strong>선베일은 별도의 점착제를 사용하지 않습니다.</strong></p>
+              <ul>
+                <li class="body-m"><strong>초박막 나노 섬유의 기공 구조</strong>와</li>
+                <li class="body-m"><strong>스킨케어 제형의 점성 기반 ‘Moisture-Bonding’ 방식</strong>이 결합된 선베일은</li>
+              </ul>
+              <ul>
+                <li class="body-m">피부 굴곡을 따라 <strong>얇게 밀착</strong></li>
+                <li class="body-m"><strong>공기 흐름을 유지</strong>하면서 안정적으로 고정</li>
+                <li class="body-m">피부 수분과 제형의 점성에 반응해 <strong>촉촉하게 안착</strong></li>
+                <li class="body-m">제거 시 <strong>자극 최소화</strong></li>
+              </ul>
+              <p class="body-m"><strong>즉, 붙이는 방식이 아니라, 피부 위에 ‘안착’되는 구조입니다.</strong></p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-5-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-5-panel">
+              <span class="pdc-full-faq__text heading-m">왜 점착제를 사용하지 않았나요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-5-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-5-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m">일반적인 점착 패치는 제거 과정에서</p>
+              <ul>
+                <li class="body-m"><strong>점착 성분이 피부에 남거나,</strong></li>
+                <li class="body-m">특히 눈가·광대 등 <strong>피부가 얇은 민감 부위에 물리적 자극(2차 자극)</strong>을 유발할 수 있습니다.</li>
+              </ul>
+              <p class="body-m">또한, 일부 점착 성분은 피부 표면에 잔류해 <strong>완전한 세정이 어려운 경우도 있습니다.</strong></p>
+              <p class="body-m">선베일은 이러한 점착제 구조를 배제하고, <br class="sm--hide"><strong>피부를 가두지 않고 밀착되는 방식</strong>으로 <strong>자극과 잔류 부담을 최소화</strong>했습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-6-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-6-panel">
+              <span class="pdc-full-faq__text heading-m">피부과 시술 후에도 사용할 수 있나요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-6-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-6-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m">선베일은 자극을 최소화한 무점착 초박막 구조를 기반으로, <br class="sm--hide">민감한 피부 환경에서도 부담을 줄이는 방향으로 설계되었습니다.</p>
+              <p class="body-m">피부과 시술 후에는 자외선 노출과 외부 자극에 더욱 민감해질 수 있기 때문에, <br class="sm--hide">선베일을 피부 보호 가드처럼 사용할 수 있도록 고려했습니다.</p>
+              <p class="body-m">또한, 독일 Dermatest®에서 민감 피부 대상 첩포 시험 및 2주 임상 시험 결과 피부 자극 및 <strong>알레르기 반응이 관찰되지 않았으며 EXCELLENT (매우 우수)</strong> 등급을 받았습니다.</p>
+              <p class="body-m">자극을 최소화한 <strong>무점착·초박막 구조</strong>로 장시간 사용이나 시술 직후 예민해진 피부, 민감 피부에도 <strong>부담 없이 사용</strong>할 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-7-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-7-panel">
+              <span class="pdc-full-faq__text heading-m">UPF와 SPF의 차이는 무엇인가요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-7-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-7-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m"><strong>SPF</strong>는 자외선 차단제를 피부에 바른 후, <br class="sm--hide">주로 <strong>UVB로부터 피부를 얼마나 보호하는지를 나타내는 지표</strong>입니다.</p>
+              <p class="body-m">반면, <strong>UPF</strong>는 <strong>원단이나 소재 자체가 <br class="sm--hide">자외선을 얼마나 물리적으로 차단하는지를 나타내는 지표</strong>입니다.</p>
+              <p class="body-m">즉,</p>
+              <ul>
+                <li class="body-m">SPF → 피부에 ‘바르는’ 차단 (도포형 보호)</li>
+                <li class="body-m">UPF → 소재가 ‘막아주는’ 차단 (구조 기반 차단)</li>
+              </ul>
+              <p class="body-m">선베일은 <br>원단 기준 자외선 차단 시험에서 <strong>UPF 50+</strong> 성능을 확인했습니다.</p>
+              <p class="pdc-note body-xs">*원단 기준 시험 결과이며, 실제 사용 환경 및 부착 상태 등에 따라 차이가 있을 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-8-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-8-panel">
+              <span class="pdc-full-faq__text heading-m">촉감이 어떤가요? 붙어 있는 게 느껴지나요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-8-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-8-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m"><strong>0.004mm의 두께</strong>로 촉감이 거의 느껴지지 않으며, <br class="sm--hide">시간이 지나면 <strong>붙어 있는 사실조차 잊을 만큼 편안한 착용감</strong>을 구현했습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-9-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-9-panel">
+              <span class="pdc-full-faq__text heading-m">부착 후 표정을 지을 때 어색하거나 불편하지 않나요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-9-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-9-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m">웃고 말하는 순간에도 <strong>이질감 없이 자연스럽게 따라 움직이며,</strong> <br class="sm--hide">피부 움직임을 방해하지 않는 <strong>편안한 착용감</strong>을 구현했습니다.</p>
+              <p class="body-m"><strong>기공 기반의 플렉서블 나노 섬유 구조</strong>로 피부 조임 없이 유연하게 밀착되어 <br class="sm--hide"><strong>주름이 부각되거나 끼는 현상을 최소화</strong>했습니다.</p>
+              <p class="body-m">(일반 점착 패치는 필름 텐션이나 점착 강도에 따라 피부 조임 또는 뻣뻣함이 느껴질 수 있습니다)</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-10-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-10-panel">
+              <span class="pdc-full-faq__text heading-m">거울 없이도 부착 가능한가요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-10-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-10-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m"><strong>L/R 방향 구분이 표시된 직관적 디자인</strong>으로 <br class="sm--hide">손끝 감각만으로도 <strong>비교적 쉽게 부착</strong>할 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-full-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-full-faq__question heading-m">
+            <button class="pdc-full-faq__button" type="button" id="pdc-full-faq-11-button" data-pdc-faq-button aria-expanded="false" aria-controls="pdc-full-faq-11-panel">
+              <span class="pdc-full-faq__text heading-m">왜 선베일을 사용해야 하나요?</span>
+              <span class="pdc-full-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-full-faq__panel" id="pdc-full-faq-11-panel" data-pdc-faq-panel hidden aria-labelledby="pdc-full-faq-11-button">
+            <div class="pdc-full-faq__answer body-m">
+              <p class="body-m">눈가 아래·광대 부위는 <strong>자외선 노출이 높으면서도 <br class="sm--hide">피부가 얇고 민감해, 보호가 가장 까다로운 영역입니다.</strong></p>
+              <p class="body-m">또한, <strong>기미·잡티와 잔주름이 쉽게 드러나는 부위</strong>이기 때문에 <br class="sm--hide">보다 섬세한 방식의 보호가 필요합니다.</p>
+              <p class="body-m"><strong>선크림 등 기존 도포형 제형</strong>은 물리적 지워짐 또는 땀 등으로 인해 <strong>덧바르는 과정이 필요하고,</strong> 필름형 패치는 피부를 답답하게 만들고 자극을 줄 수 있습니다.</p>
+              <p class="body-m">선베일은</p>
+              <ul>
+                <li class="body-m"><strong>클린 무점착 밀착 구조</strong>로 피부 자극과 잔류 부담을 최소화하고,</li>
+                <li class="body-m">피부 위에 얹히는 <strong>초박막 나노 섬유 구조</strong>로, 바르지 않아도 자외선이 먼저 차단되는 방식의 보호를 구현합니다.</li>
+                <li class="body-m">동시에, <strong>반건식 듀얼 레이어 설계</strong>를 통해 외부 자극으로부터 흔들린 피부 컨디션을 <strong>보이지 않게 케어하는 것</strong>까지 함께 고려했습니다.</li>
+              </ul>
+              <p class="body-m"><strong>투명하게, 느껴지지 않게.</strong> <br>일상 속 어디서든 부담 없이 이어지는 보호</p>
+              <p class="body-m">선베일은 <br>선케어의 방식을 재정의한 Aesthetic Guard입니다.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  </div>
+</div>

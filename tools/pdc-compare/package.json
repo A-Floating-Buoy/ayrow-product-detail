@@ -1,0 +1,9 @@
+{
+  "name": "pdc-compare",
+  "private": true,
+  "description": "상품 상세(PDC) 이전 전후 화면 비교 — 섹션별 스크린샷",
+  "type": "module",
+  "dependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}
