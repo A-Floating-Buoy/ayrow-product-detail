@@ -1,19 +1,409 @@
-<!-- 세트 상세 초안 — pdc 체계 · tools/pdc-set/build.py 가 두 제품 상세에서 조립한다(구조 확정 전까지 직접 고치지 않는다) -->
+<!-- SKIN LONGEVITY READY KIT 상세 — pdc 체계 · tools/pdc-set/build.py 가 조립한다(직접 고치지 않는다) -->
 <!-- 제품 섹션의 문구 · 마크업은 원본 그대로. 제품 섹션은 <div class="pdc--제품 pdc-set__group">으로 묶는다 · 규칙: 스킨 레포 docs/pdc-convention.md -->
 <link rel="stylesheet" href="/css/module/product/pdc-elixir.css?ver=20261112000007">
 <link rel="stylesheet" href="/css/module/product/pdc-sun-veil.css?ver=20261112000006">
-<link rel="stylesheet" href="/css/module/product/pdc-set.css?ver=20261113000009">
-<div class="pdc pdc--set" data-pdc data-pdc-product="elixir sun-veil set" data-pdc-ver="20261113000009">
-  <!-- 1. Hero — 자리만 잡아 둠. 문구 · 이미지는 클라이언트 확인 뒤 -->
-  <section class="pdc__section pdc__section--contained pdc-set-hero" data-pdc-section="set-hero">
+<link rel="stylesheet" href="/css/module/product/pdc-set.css?ver=20261114000011">
+<div class="pdc pdc--set" data-pdc data-pdc-product="elixir sun-veil set" data-pdc-ver="20261114000011">
+  <!-- 00. LAUNCH SPECIAL — 런칭 기간(11.15 – 11.30) 한정 배너. 기간이 끝나면 build.py --no-launch 로 뺀다 -->
+  <section class="pdc__section pdc__section--full pdc-launch" data-pdc-section="set-launch">
     <div class="container container--md">
-      <div class="pdc-set-hero__placeholder" aria-hidden="true"></div>
+      <div class="pdc-launch__inner" data-scroll-reveal data-scroll-direction="none">
+        <p class="pdc-launch__products heading-xl">BIO ELIXIR <span class="pdc-launch__plus">+</span> SUN VEIL</p>
+        <h2 class="pdc-launch__title type-display">LAUNCH SPECIAL SALE</h2>
+        <p class="pdc-launch__period body-mega">11.15 - 11.30</p>
+        <div class="pdc-launch__offer">
+          <p class="pdc-launch__limit body-xl">500세트 한정</p>
+          <p class="pdc-launch__rate heading-xxxl">30<span class="pdc-launch__unit">%</span> OFF</p>
+          <p class="pdc-launch__detail body-xl">런칭 기념 20% + 회원 추가 10%</p>
+        </div>
+        <div class="pdc-launch__extra">
+          <img class="pdc-launch__icon" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-launch-icon.svg" alt="" width="43" height="63" loading="eager">
+          <p class="pdc-launch__detail body-xl">카카오톡 채널 친구 3,000원 적립금</p>
+          <p class="pdc-launch__note body-l">신규 · 기존 회원 동일 혜택</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 2. 엘릭서 -->
+  <!-- 01. KIT CONCEPT -->
+  <section class="pdc__section pdc__section--contained pdc-set-concept" data-pdc-section="set-concept" data-pdc-nav-title="스킨 롱제비티 레디 키트">
+    <div class="container container--lg">
+      <div class="pdc-set-concept__grid">
+        <div class="pdc-set-concept__copy" data-scroll-reveal>
+          <p class="pdc__eyebrow">Ready for Skin Longevity, Wherever You Are.</p>
+          <h2 class="pdc-set-concept__title type-display">SKIN LONGEVITY<br>READY KIT</h2>
+          <p class="pdc-set-concept__body body-xl">피부에 깊이를 더하는 <strong>BIO ELIXIR</strong><br>피부 위에 보호를 더하는 <strong>SUN VEIL</strong></p>
+          <p class="pdc-set-concept__body body-xl">서로 다른 두 가지 솔루션.<br><strong>하나의 스킨 롱제비티.</strong></p>
+        </div>
+        <figure class="pdc-set-concept__visual" data-scroll-reveal data-scroll-direction="none">
+          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-concept.jpg" alt="바이오 엘릭서와 선베일로 구성한 스킨 롱제비티 레디 키트" width="1600" height="1585" loading="eager" fetchpriority="high" itemprop="image">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. TWO FORMS -->
+  <section class="pdc__section pdc__section--contained pdc-set-forms" data-pdc-section="set-forms">
+    <div class="container container--lg">
+      <header class="pdc-set-forms__head" data-scroll-reveal>
+        <h2 class="pdc-set-forms__title type-display"><span class="pdc-set-forms__title-kicker">TWO FORMS.</span><br>ONE SKIN LONGEVITY.</h2>
+        <p class="pdc-set-forms__lead body-xl">서로 다른 형태, 하나의 스킨 롱제비티.</p>
+      </header>
+      <ul class="pdc-set-forms__list">
+        <li class="pdc-set-forms__item" data-scroll-reveal>
+          <figure class="pdc-set-forms__visual">
+            <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-forms-elixir.jpg" alt="바이오 엘릭서" width="735" height="1080" loading="lazy">
+          </figure>
+          <div class="pdc-set-forms__copy">
+            <div class="pdc-set-forms__name">
+              <p class="pdc-set-forms__no pdc__eyebrow">01 / CARE</p>
+              <h3 class="heading-xl">BIO ELIXIR</h3>
+              <p class="body-xl">고농축 스킨 롱제비티 케어</p>
+            </div>
+            <div class="pdc-set-forms__desc">
+              <p class="sm--body-m body-xl">피부 컨디션을 집중적으로<br>관리하는 고농축 컨센트레이트</p>
+              <p class="pdc-set-forms__tag sm--body-m body-xl">LAYERABLE CARE</p>
+            </div>
+          </div>
+        </li>
+        <li class="pdc-set-forms__item" data-scroll-reveal data-scroll-delay="120">
+          <figure class="pdc-set-forms__visual">
+            <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-forms-sun-veil.jpg" alt="선베일" width="735" height="1080" loading="lazy">
+          </figure>
+          <div class="pdc-set-forms__copy">
+            <div class="pdc-set-forms__name">
+              <p class="pdc-set-forms__no pdc__eyebrow">02 / PROTECTION</p>
+              <h3 class="heading-xl">SUN VEIL</h3>
+              <p class="body-xl">자외선 차단 웰니스 패치</p>
+            </div>
+            <div class="pdc-set-forms__desc">
+              <p class="sm--body-m body-xl">4μm 나노섬유에 자외선 차단과 Reverse AG Code<span class="pdc__tm">™</span> 성분을 결합한 초박막 에스테틱 패치</p>
+              <p class="pdc-set-forms__tag sm--body-m body-xl">WEARABLE AESTHETICS</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. CLINICAL PROOF -->
+  <!-- 03. CLINICAL PROOF — 병행 사용 인체적용시험
+       탭: pdc-set.js(data-pdc-set-tabs) · 그래프 그리기 · 전후 비교 슬라이더 · VIEW THE STUDY 모양: 엘릭서 블록(pdc-chart · pdc-elixir-compare · pdc-disclosure · pdc-study) -->
+  <section class="pdc__section pdc__section--contained pdc__section--band pdc-set-clinical" id="pdc-set-clinical" data-pdc-section="set-clinical" data-pdc-nav-title="함께 쓰면 어떤 변화가 있나요?">
+    <div class="container container--lg">
+      <header class="pdc__head" data-scroll-reveal>
+        <p class="pdc__eyebrow">Clinically Tested · 2 Weeks</p>
+        <h2 class="pdc__head-title pdc-set-clinical__title heading-xxxl">자외선 노출로 손상된 피부, 2주 후의 변화</h2>
+        <p class="pdc__head-lead body-xl">Bio Elixir와 Sun Veil의 병행 사용 결과를<br>다섯 가지 피부 지표로 확인했습니다.</p>
+      </header>
+
+      <div class="pdc-set-clinical__hero pdc-set-clinical__card" data-scroll-reveal>
+        <div class="pdc-set-clinical__hero-copy">
+          <p class="pdc__eyebrow">BIO ELIXIR + SUN VEIL 병행 사용</p>
+          <h3 class="pdc-set-clinical__hero-title heading-xxxl">피부 진정 개선율</h3>
+          <p class="pdc-set-clinical__hero-note body-xl">자외선 조사 24시간 후 대비 2주 사용 후</p>
+        </div>
+        <div class="pdc-set-clinical__ring">
+          <svg class="pdc-set-clinical__ring-svg" viewBox="0 0 310 310" aria-hidden="true" focusable="false">
+            <circle class="pdc-set-clinical__ring-track" cx="155" cy="155" r="148"/>
+            <circle class="pdc-set-clinical__ring-value" cx="155" cy="155" r="148" pathLength="100"/>
+          </svg>
+          <p class="pdc-set-clinical__ring-number"><strong>71.844<span class="pdc-set-clinical__unit">%</span></strong></p>
+        </div>
+      </div>
+
+      <div class="pdc-set-clinical__tabs" role="tablist" aria-label="임상 항목" data-pdc-set-tabs>
+        <button class="pdc-set-clinical__tab" type="button" role="tab" data-pdc-set-tab="clinical-soothing"><span class="pdc-set-clinical__tab-no">01</span><span class="pdc-set-clinical__tab-label heading-m">자극받은 피부 진정</span></button>
+        <button class="pdc-set-clinical__tab" type="button" role="tab" data-pdc-set-tab="clinical-moisture"><span class="pdc-set-clinical__tab-no">02</span><span class="pdc-set-clinical__tab-label heading-m">수분 손실 회복</span></button>
+        <button class="pdc-set-clinical__tab" type="button" role="tab" data-pdc-set-tab="clinical-texture"><span class="pdc-set-clinical__tab-no">03</span><span class="pdc-set-clinical__tab-label heading-m">거친 피부결 개선</span></button>
+      </div>
+
+      <!-- 01 · 피부 진정 -->
+      <div class="pdc-set-clinical__panel" role="tabpanel" data-pdc-set-panel="clinical-soothing">
+        <article class="pdc-set-clinical__card">
+          <header class="pdc-set-clinical__card-head">
+            <div class="pdc-set-clinical__card-title">
+              <p class="pdc__eyebrow">Skin Soothing</p>
+              <h3 class="heading-xxl">피부 진정, 눈에 보이는 2주간의 변화.</h3>
+              <p class="body-l">자외선 조사 24시간 후 대비 병행 사용 2주 후</p>
+            </div>
+          </header>
+          <div class="pdc-set-clinical__shots">
+            <figure class="pdc-set-clinical__shot">
+              <div class="pdc-set-clinical__frame pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 50%;">
+                <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-clinical-soothing-before-none.jpg" alt="자외선 조사 전 무도포 부위" width="401" height="401" loading="lazy" draggable="false">
+                <div class="pdc-elixir-compare__after">
+                  <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-clinical-soothing-before-kit.jpg" alt="자외선 조사 전 병행 사용 예정 부위" width="401" height="401" loading="lazy" draggable="false">
+                </div>
+                <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="50" aria-label="자외선 조사 전 — 무도포 부위와 병행 사용 부위 비교" data-pdc-compare-range>
+                <span class="pdc-timepoints__ba pdc-timepoints__ba--before">무도포</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">병행 사용</span>
+              </div>
+              <figcaption class="pdc-set-clinical__shot-caption body-l">자외선 조사 전</figcaption>
+            </figure>
+            <figure class="pdc-set-clinical__shot">
+              <div class="pdc-set-clinical__frame pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 50%;">
+                <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-clinical-soothing-24h-none.jpg" alt="자외선 조사 24시간 후 무도포 부위" width="401" height="401" loading="lazy" draggable="false">
+                <div class="pdc-elixir-compare__after">
+                  <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-clinical-soothing-24h-kit.jpg" alt="자외선 조사 24시간 후 병행 사용 부위" width="401" height="401" loading="lazy" draggable="false">
+                </div>
+                <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="50" aria-label="자외선 조사 24시간 후 — 무도포 부위와 병행 사용 부위 비교" data-pdc-compare-range>
+                <span class="pdc-timepoints__ba pdc-timepoints__ba--before">무도포</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">병행 사용</span>
+              </div>
+              <figcaption class="pdc-set-clinical__shot-caption body-l">자외선 조사 24시간 후</figcaption>
+            </figure>
+            <figure class="pdc-set-clinical__shot">
+              <div class="pdc-set-clinical__frame pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 50%;">
+                <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-clinical-soothing-2w-none.jpg" alt="2주 후 무도포 부위" width="401" height="401" loading="lazy" draggable="false">
+                <div class="pdc-elixir-compare__after">
+                  <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-clinical-soothing-2w-kit.jpg" alt="병행 사용 2주 후 부위" width="401" height="401" loading="lazy" draggable="false">
+                </div>
+                <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="50" aria-label="병행 사용 2주 후 — 무도포 부위와 병행 사용 부위 비교" data-pdc-compare-range>
+                <span class="pdc-timepoints__ba pdc-timepoints__ba--before">무도포</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">병행 사용</span>
+              </div>
+              <figcaption class="pdc-set-clinical__shot-caption body-l">병행 사용 2주 후</figcaption>
+            </figure>
+          </div>
+          <p class="pdc-set-clinical__note body-m">동일 시험대상자 · 동일 측정부위 · 동일 촬영조건</p>
+          <p class="pdc-set-clinical__note pdc-set-clinical__note--sub body-s">P&amp;K 피부임상연구센타㈜ · 시험대상자 26615-UE1-15</p>
+        </article>
+      </div>
+
+      <!-- 02 · 수분 손실량 -->
+      <div class="pdc-set-clinical__panel" role="tabpanel" data-pdc-set-panel="clinical-moisture">
+        <article class="pdc-set-clinical__card">
+          <header class="pdc-set-clinical__card-head">
+            <div class="pdc-set-clinical__card-title">
+              <p class="pdc__eyebrow">Moisture Loss</p>
+              <h3 class="heading-xxl">자외선 노출로 손상된 피부,<br>데이터로 확인한 변화.</h3>
+              <p class="body-xl">자외선 노출로 증가한 피부 수분 손실량,<br><strong>2주 사용 후 회복.</strong></p>
+            </div>
+            <p class="pdc-set-clinical__metric"><strong class="heading-xxxl">124.573<span class="pdc-set-clinical__unit">%</span></strong><span class="heading-l">수분 손실량 개선</span></p>
+          </header>
+          <ul class="pdc-set-clinical__legend body-s" aria-label="범례">
+            <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--kit">병행 사용</li>
+            <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--none">무도포</li>
+          </ul>
+          <div class="pdc-set-clinical__chart">
+            <svg class="pdc-chart pdc-set-chart pdc-set-chart--wide" viewBox="0 0 720 330" role="img" aria-labelledby="pdc-set-chart-moisture-title">
+              <title id="pdc-set-chart-moisture-title">피부 수분 손실량(g/m²h) — 병행 사용 7.389 → 9.029 → 6.986, 무도포 7.400 → 9.021 → 8.041</title>
+              <line class="pdc-chart__grid" x1="56" y1="40.0" x2="690" y2="40.0"/>
+              <text class="pdc-chart__tick" x="46" y="40.0" text-anchor="end" dominant-baseline="middle" font-size="11">9.5</text>
+              <line class="pdc-chart__grid" x1="56" y1="110.0" x2="690" y2="110.0"/>
+              <text class="pdc-chart__tick" x="46" y="110.0" text-anchor="end" dominant-baseline="middle" font-size="11">8.5</text>
+              <line class="pdc-chart__grid" x1="56" y1="180.0" x2="690" y2="180.0"/>
+              <text class="pdc-chart__tick" x="46" y="180.0" text-anchor="end" dominant-baseline="middle" font-size="11">7.5</text>
+              <line class="pdc-chart__grid" x1="56" y1="250.0" x2="690" y2="250.0"/>
+              <text class="pdc-chart__tick" x="46" y="250.0" text-anchor="end" dominant-baseline="middle" font-size="11">6.5</text>
+              <text class="pdc-chart__tick" x="46" y="14.0" text-anchor="end" dominant-baseline="middle" font-size="11">g/m²h</text>
+              <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="56,187.0 373,73.5 690,142.1"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="56" cy="187.0" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="373" cy="73.5" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="690" cy="142.1" r="4"/>
+              <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="56,187.8 373,73.0 690,216.0"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="56" cy="187.8" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="373" cy="73.0" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="690" cy="216.0" r="4"/>
+              <!-- 값 라벨 — 선이 지나지 않는 쪽에 둔다. 점 바로 뒤에 두지 않는다(pdc-elixir.js가 y를 다시 놓지 않게) · 위치는 dy(em) -->
+              <g class="pdc-set-chart__values">
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="56" y="187.0" dy="2.65em" text-anchor="start" font-size="14">7.400</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="373" y="73.5" dy="-0.75em" text-anchor="middle" font-size="14">9.021</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="696" y="142.1" dy="-0.95em" text-anchor="end" font-size="14">8.041</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="56" y="187.8" dy="1.5em" text-anchor="start" font-size="14">7.389</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="373" y="73.0" dy="-1.9em" text-anchor="middle" font-size="14">9.029</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="696" y="216.0" dy="1.5em" text-anchor="end" font-size="14">6.986</text>
+              </g>
+              <text class="pdc-chart__label" x="56" y="302" text-anchor="start" font-size="12">자외선 조사 전</text>
+              <text class="pdc-chart__label" x="373" y="302" text-anchor="middle" font-size="12">조사 24시간 후</text>
+              <text class="pdc-chart__label" x="690" y="302" text-anchor="end" font-size="12">사용 2주 후</text>
+            </svg>
+            <!-- 좁은 화면(≤1023px)용 — 같은 값을 좁은 화면 비율로 다시 그린 것. 넓은 그래프를 줄이면 높이가 낮아 라벨이 축 글자에 닿는다 -->
+            <svg class="pdc-chart pdc-set-chart pdc-set-chart--narrow" viewBox="0 0 468 292" role="img" aria-labelledby="pdc-set-chart-moisture-narrow-title">
+              <title id="pdc-set-chart-moisture-narrow-title">피부 수분 손실량(g/m²h) — 병행 사용 7.389 → 9.029 → 6.986, 무도포 7.400 → 9.021 → 8.041</title>
+              <line class="pdc-chart__grid" x1="58" y1="40.0" x2="446" y2="40.0"/>
+              <text class="pdc-chart__tick" x="48" y="40.0" text-anchor="end" dominant-baseline="middle" font-size="11">9.5</text>
+              <line class="pdc-chart__grid" x1="58" y1="93.0" x2="446" y2="93.0"/>
+              <text class="pdc-chart__tick" x="48" y="93.0" text-anchor="end" dominant-baseline="middle" font-size="11">8.5</text>
+              <line class="pdc-chart__grid" x1="58" y1="146.0" x2="446" y2="146.0"/>
+              <text class="pdc-chart__tick" x="48" y="146.0" text-anchor="end" dominant-baseline="middle" font-size="11">7.5</text>
+              <line class="pdc-chart__grid" x1="58" y1="199.0" x2="446" y2="199.0"/>
+              <text class="pdc-chart__tick" x="48" y="199.0" text-anchor="end" dominant-baseline="middle" font-size="11">6.5</text>
+              <text class="pdc-chart__tick" x="48" y="14.0" text-anchor="end" dominant-baseline="middle" font-size="11">g/m²h</text>
+              <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="58,151.3 252,65.4 446,117.3"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="58" cy="151.3" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="252" cy="65.4" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="446" cy="117.3" r="4"/>
+              <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="58,151.9 252,65.0 446,173.2"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="58" cy="151.9" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="252" cy="65.0" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="446" cy="173.2" r="4"/>
+              <g class="pdc-set-chart__values">
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="58" y="151.3" dy="2.65em" text-anchor="start" font-size="14">7.400</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="252" y="65.4" dy="-0.75em" text-anchor="middle" font-size="14">9.021</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="452" y="117.3" dy="-1.15em" text-anchor="end" font-size="14">8.041</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="58" y="151.9" dy="1.5em" text-anchor="start" font-size="14">7.389</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="252" y="65.0" dy="-1.9em" text-anchor="middle" font-size="14">9.029</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="452" y="173.2" dy="1.5em" text-anchor="end" font-size="14">6.986</text>
+              </g>
+              <text class="pdc-chart__label" x="58" y="268" text-anchor="start" font-size="12">자외선 조사 전</text>
+              <text class="pdc-chart__label" x="252" y="268" text-anchor="middle" font-size="12">조사 24시간 후</text>
+              <text class="pdc-chart__label" x="446" y="268" text-anchor="end" font-size="12">사용 2주 후</text>
+            </svg>
+          </div>
+          <p class="pdc-set-clinical__chart-note body-s">낮을수록 수분 손실량이 적음 · n=21 평균값</p>
+        </article>
+      </div>
+
+      <!-- 03 · 피부결 · 피부 보습 -->
+      <div class="pdc-set-clinical__panel" role="tabpanel" data-pdc-set-panel="clinical-texture">
+        <div class="pdc-set-clinical__pair">
+          <article class="pdc-set-clinical__card pdc-set-clinical__card--sm">
+            <header class="pdc-set-clinical__card-head">
+              <div class="pdc-set-clinical__card-title">
+                <p class="pdc__eyebrow">Skin Texture</p>
+                <h3 class="heading-l">자외선에 거칠어진 피부결,<br>2주 사용 후 매끄럽게.</h3>
+                <p class="pdc-set-clinical__basis body-s">자외선 조사 24시간 후 대비 2주 후</p>
+              </div>
+              <p class="pdc-set-clinical__metric"><strong class="heading-xxl">11.742<span class="pdc-set-clinical__unit">%</span></strong><span class="heading-m">피부결 개선</span></p>
+            </header>
+            <ul class="pdc-set-clinical__legend body-s" aria-label="범례">
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--kit">병행 사용</li>
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--none">무도포</li>
+            </ul>
+            <div class="pdc-set-clinical__chart">
+              <svg class="pdc-chart pdc-set-chart" viewBox="0 0 468 292" role="img" aria-labelledby="pdc-set-chart-texture-title">
+                <title id="pdc-set-chart-texture-title">피부결(Pixel) — 병행 사용 41216.714 → 47805.524 → 42192.048, 무도포 41257.238 → 47732.333 → 46020.952</title>
+                <line class="pdc-chart__grid" x1="58" y1="38.0" x2="446" y2="38.0"/>
+                <text class="pdc-chart__tick" x="48" y="38.0" text-anchor="end" dominant-baseline="middle" font-size="11">49000</text>
+                <line class="pdc-chart__grid" x1="58" y1="91.0" x2="446" y2="91.0"/>
+                <text class="pdc-chart__tick" x="48" y="91.0" text-anchor="end" dominant-baseline="middle" font-size="11">46000</text>
+                <line class="pdc-chart__grid" x1="58" y1="144.0" x2="446" y2="144.0"/>
+                <text class="pdc-chart__tick" x="48" y="144.0" text-anchor="end" dominant-baseline="middle" font-size="11">43000</text>
+                <line class="pdc-chart__grid" x1="58" y1="197.0" x2="446" y2="197.0"/>
+                <text class="pdc-chart__tick" x="48" y="197.0" text-anchor="end" dominant-baseline="middle" font-size="11">40000</text>
+                <text class="pdc-chart__tick" x="48" y="12.0" text-anchor="end" dominant-baseline="middle" font-size="11">Pixel</text>
+                <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="58,174.8 252,60.4 446,90.6"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="58" cy="174.8" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="252" cy="60.4" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="446" cy="90.6" r="4"/>
+                <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="58,175.5 252,59.1 446,158.3"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="58" cy="175.5" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="252" cy="59.1" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="446" cy="158.3" r="4"/>
+                <!-- 값 라벨 — 선이 지나지 않는 쪽에 둔다. 점 바로 뒤에 두지 않는다(pdc-elixir.js가 y를 다시 놓지 않게) · 위치는 dy(em) -->
+                <g class="pdc-set-chart__values">
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="58" y="174.8" dy="2.65em" text-anchor="start" font-size="14">41257.238</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="252" y="60.4" dy="-0.75em" text-anchor="middle" font-size="14">47732.333</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="452" y="90.6" dy="-1.15em" text-anchor="end" font-size="14">46020.952</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="58" y="175.5" dy="1.5em" text-anchor="start" font-size="14">41216.714</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="252" y="59.1" dy="-1.9em" text-anchor="middle" font-size="14">47805.524</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="452" y="158.3" dy="1.5em" text-anchor="end" font-size="14">42192.048</text>
+                </g>
+                <text class="pdc-chart__label" x="58" y="268" text-anchor="start" font-size="12">자외선 조사 전</text>
+                <text class="pdc-chart__label" x="252" y="268" text-anchor="middle" font-size="12">조사 24시간 후</text>
+                <text class="pdc-chart__label" x="446" y="268" text-anchor="end" font-size="12">사용 2주 후</text>
+              </svg>
+            </div>
+            <p class="pdc-set-clinical__chart-note body-s">낮을수록 개선 방향 · n=21 평균값</p>
+          </article>
+          <article class="pdc-set-clinical__card pdc-set-clinical__card--sm">
+            <header class="pdc-set-clinical__card-head">
+              <div class="pdc-set-clinical__card-title">
+                <p class="pdc__eyebrow">Skin Hydration</p>
+                <h3 class="heading-l">자외선에 건조해진 피부,<br>2주 사용 후 촉촉하게.</h3>
+                <p class="pdc-set-clinical__basis body-s">자외선 조사 24시간 후 대비 2주 후</p>
+              </div>
+              <p class="pdc-set-clinical__metric"><strong class="heading-xxl">15.989<span class="pdc-set-clinical__unit">%</span></strong><span class="heading-m">피부 보습 개선</span></p>
+            </header>
+            <ul class="pdc-set-clinical__legend body-s" aria-label="범례">
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--kit">병행 사용</li>
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--none">무도포</li>
+            </ul>
+            <div class="pdc-set-clinical__chart">
+              <svg class="pdc-chart pdc-set-chart" viewBox="0 0 468 292" role="img" aria-labelledby="pdc-set-chart-hydration-title">
+                <title id="pdc-set-chart-hydration-title">피부 보습(A.U.) — 병행 사용 34.892 → 32.654 → 37.875, 무도포 34.802 → 32.675 → 33.471</title>
+                <line class="pdc-chart__grid" x1="58" y1="50.0" x2="446" y2="50.0"/>
+                <text class="pdc-chart__tick" x="48" y="50.0" text-anchor="end" dominant-baseline="middle" font-size="11">38</text>
+                <line class="pdc-chart__grid" x1="58" y1="98.0" x2="446" y2="98.0"/>
+                <text class="pdc-chart__tick" x="48" y="98.0" text-anchor="end" dominant-baseline="middle" font-size="11">36</text>
+                <line class="pdc-chart__grid" x1="58" y1="146.0" x2="446" y2="146.0"/>
+                <text class="pdc-chart__tick" x="48" y="146.0" text-anchor="end" dominant-baseline="middle" font-size="11">34</text>
+                <line class="pdc-chart__grid" x1="58" y1="194.0" x2="446" y2="194.0"/>
+                <text class="pdc-chart__tick" x="48" y="194.0" text-anchor="end" dominant-baseline="middle" font-size="11">32</text>
+                <text class="pdc-chart__tick" x="48" y="24.0" text-anchor="end" dominant-baseline="middle" font-size="11">A.U.</text>
+                <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="58,126.8 252,177.8 446,158.7"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="58" cy="126.8" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="252" cy="177.8" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="446" cy="158.7" r="4"/>
+                <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="58,124.6 252,178.3 446,53.0"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="58" cy="124.6" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="252" cy="178.3" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="446" cy="53.0" r="4"/>
+                <!-- 값 라벨 — 선이 지나지 않는 쪽에 둔다. 점 바로 뒤에 두지 않는다(pdc-elixir.js가 y를 다시 놓지 않게) · 위치는 dy(em) -->
+                <g class="pdc-set-chart__values">
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="58" y="126.8" dy="-0.75em" text-anchor="start" font-size="14">34.802</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="252" y="177.8" dy="2.65em" text-anchor="middle" font-size="14">32.675</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="452" y="158.7" dy="1.5em" text-anchor="end" font-size="14">33.471</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="58" y="124.6" dy="-1.9em" text-anchor="start" font-size="14">34.892</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="252" y="178.3" dy="1.5em" text-anchor="middle" font-size="14">32.654</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="452" y="53.0" dy="-0.75em" text-anchor="end" font-size="14">37.875</text>
+                </g>
+                <text class="pdc-chart__label" x="58" y="268" text-anchor="start" font-size="12">자외선 조사 전</text>
+                <text class="pdc-chart__label" x="252" y="268" text-anchor="middle" font-size="12">조사 24시간 후</text>
+                <text class="pdc-chart__label" x="446" y="268" text-anchor="end" font-size="12">사용 2주 후</text>
+              </svg>
+            </div>
+            <p class="pdc-set-clinical__chart-note body-s">높을수록 보습 개선 방향 · n=21 평균값</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- 다섯 가지 결과 요약 -->
+      <div class="pdc-set-clinical__summary" data-scroll-reveal>
+        <header class="pdc__head pdc-set-clinical__summary-head">
+          <p class="pdc__eyebrow">2 Weeks. Five Clinical Measures.</p>
+          <h3 class="pdc__head-title heading-xxl">다섯 가지 지표로 확인한 변화</h3>
+        </header>
+        <div class="pdc-set-clinical__card pdc-set-clinical__card--table">
+          <dl class="pdc-set-clinical__table">
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부 진정</dt><dd class="heading-m">71.844<span class="pdc-set-clinical__unit">%</span> 개선</dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부 수분 손실량</dt><dd class="heading-m">124.573<span class="pdc-set-clinical__unit">%</span> 개선<span class="pdc-set-clinical__mark">*</span></dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부결</dt><dd class="heading-m">11.742<span class="pdc-set-clinical__unit">%</span> 개선</dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부 보습</dt><dd class="heading-m">15.989<span class="pdc-set-clinical__unit">%</span> 개선</dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">색소침착</dt><dd class="heading-m">무도포 대비 유의한 차이 확인</dd></div>
+          </dl>
+          <p class="pdc-set-clinical__table-note body-m">* 자외선 노출로 증가한 수분 손실량의 회복률</p>
+        </div>
+        <p class="pdc-set-clinical__summary-note body-m">각 수치는 평가 항목별 서로 다른 산출 기준을 적용한 결과입니다.</p>
+      </div>
+
+      <details class="pdc-disclosure pdc-set-clinical__study">
+        <summary class="pdc-disclosure__summary sm--body-m body-l">VIEW THE STUDY<span class="pdc-disclosure__icon" aria-hidden="true"></span></summary>
+        <div class="pdc-disclosure__body">
+          <table class="pdc-study">
+            <caption class="visually-hidden">BIO ELIXIR + SUN VEIL 병행 사용 인체적용시험 개요</caption>
+            <tbody>
+              <tr><th scope="row">시험기관</th><td>P&amp;K 피부임상연구센타㈜</td></tr>
+              <tr><th scope="row">시험기간</th><td>2026.06.15 – 2026.07.09</td></tr>
+              <tr><th scope="row">시험대상</th><td>만 35~60세 성인 여성 21명</td></tr>
+              <tr><th scope="row">시험제품</th><td>AYROW BIO ELIXIR + SUN VEIL</td></tr>
+              <tr><th scope="row">시험방법</th><td>자외선 조사 후 두 제품의 병행 사용부위와 무도포 부위 비교 (2주간, 1일 1회)</td></tr>
+              <tr><th scope="row">평가시점</th><td>자외선 조사 전 / 자외선 조사 24시간 후 / 병행 사용 2주 후</td></tr>
+              <tr><th scope="row">평가항목</th><td>피부 진정, 피부 수분 손실량, 피부결, 피부 보습, 색소침착</td></tr>
+              <tr><th scope="row">안전성 평가</th><td>시험기간 동안 연구자의 육안 평가 및 시험대상자 설문에서 특별한 피부 이상반응이 확인되지 않음</td></tr>
+            </tbody>
+          </table>
+          <p class="pdc-study__disclaimer body-xs">인체적용시험 결과가 모든 사용자에게 동일하게 나타나는 것은 아닙니다.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 4. 엘릭서 -->
   <div class="pdc--elixir pdc-set__group">
-  <section class="pdc__section pdc__section--full pdc-elixir-hero" data-pdc-section="elixir-hero" data-pdc-hero-video>
+  <section class="pdc__section pdc__section--full pdc-elixir-hero" data-pdc-section="elixir-hero" data-pdc-nav-title="바이오 엘릭서는 무엇인가요?" data-pdc-hero-video>
     <!-- 포스터 = loop 영상 첫 프레임 · 영상은 pdc-elixir.js가 위에 얹는다(재생되면 포스터를 숨김) -->
     <picture>
       <img class="pdc-elixir-hero__bg" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/hero-loop-poster.jpg" alt="" width="2400" height="1350" loading="eager" fetchpriority="high">
@@ -23,28 +413,6 @@
       <p class="pdc__eyebrow">Skin Longevity Concentrate</p>
       <h2 class="pdc-elixir-hero__title heading-xl">BIO ELIXIR<span class="pdc-elixir-hero__tm">™</span></h2>
       <a class="pdc-elixir-hero__link body-xl" href="#pdc-elixir-clinical">피부 변화 확인하기 <span aria-hidden="true">↓</span></a>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--contained pdc-concentrate" data-pdc-section="concentrate" data-pdc-nav-title="바이오 엘릭서는 무엇인가요?">
-    <div class="container container--lg">
-      <div class="pdc-concentrate__grid">
-        <figure class="pdc-concentrate__visual" data-scroll-reveal data-scroll-direction="none">
-          <img class="pdc-concentrate__layer pdc-concentrate__layer--crop" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/concentrate-crop.png" alt="" width="1024" height="1536" loading="lazy" aria-hidden="true">
-          <img class="pdc-concentrate__layer pdc-concentrate__layer--back" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/concentrate-0347.png" alt="" width="1677" height="1950" loading="lazy" aria-hidden="true">
-          <img class="pdc-concentrate__layer pdc-concentrate__layer--front" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/concentrate-0500.jpg" alt="바이오 엘릭서 제품 이미지" width="1300" height="1950" loading="lazy" itemprop="image">
-        </figure>
-        <div class="pdc-concentrate__copy" data-scroll-reveal>
-          <p class="pdc__eyebrow pdc-concentrate__eyebrow">Layerable Skin Longevity Concentrate</p>
-          <h2 class="pdc-concentrate__title">
-            <span class="pdc-concentrate__title-kicker heading-xl">A New Way to</span>
-            <span class="pdc-concentrate__title-swap">
-              <s class="pdc-concentrate__title-old" aria-hidden="true">MIST</s>
-              <span class="pdc-concentrate__title-main type-display">CONCENTRATE</span>
-            </span>
-          </h2>
-          <p class="pdc-concentrate__body sm--body-m body-l">피뿌리풀을 베이스로 한 고기능 포뮬러를<br class="sm--hide"> 쉽게 뿌리고, 얇게 쌓고, 필요한 순간 다시 레이어링합니다.</p>
-        </div>
-      </div>
     </div>
   </section>
   <section class="pdc__section pdc__section--contained pdc__section--band pdc-clinical pdc-clinical--timepoints pdc-clinical--labels pdc-clinical--sv" id="pdc-elixir-clinical" data-pdc-section="clinical" data-pdc-nav-title="엘릭서 · 어떤 변화를 확인했나요?">
@@ -558,110 +926,9 @@
       </div>
     </div>
   </section>
-  <section class="pdc__section pdc__section--contained pdc-ritual" data-pdc-section="ritual" data-pdc-nav-title="엘릭서 · 언제 사용하면 좋나요?">
-    <div class="container container--lg">
-      <header class="pdc__head pdc-ritual__head" data-scroll-reveal>
-        <p class="pdc__eyebrow">From Routine to Ritual</p>
-        <h2 class="pdc__head-title pdc-elixir__title sm--heading-xxl heading-xxxl">아침·저녁 두 번의 루틴에서,<br>하루 종일 이어지는 리추얼로</h2>
-        <p class="pdc-ritual__brand heading-xl">Whereable Beauty<span class="pdc-tm pdc-tm--sm">™</span></p>
-      </header>
-      <!-- 데스크톱: 순서 고정, 선택한 장면(.is-active)만 제자리에서 넓어진다 · 모바일: 가로 스와이프
-           data-pdc-ritual-autoplay(ms): 화면에 보이는 동안 자동 전환 — 속성을 지우면 꺼진다 -->
-      <div class="pdc-ritual__carousel" data-pdc-ritual data-pdc-ritual-autoplay="2500" data-scroll-reveal>
-        <ol class="pdc-ritual__list" aria-label="하루의 사용 장면">
-          <li class="pdc-ritual__item is-active" data-pdc-ritual-item tabindex="0" aria-current="true">
-            <p class="pdc-ritual__time"><strong>07:30</strong> MORNING</p>
-            <figure class="pdc-ritual__figure pdc-ritual__figure--morning"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-morning-0405.jpg" alt="안경·이어폰과 함께 놓인 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
-            <div class="pdc-ritual__copy">
-              <h3 class="pdc-ritual__title">하루의 첫 레이어가<br>필요할 때</h3>
-              <p class="pdc-ritual__desc">세안 직후, 메이크업 전 피부 컨디션을 정돈합니다.</p>
-            </div>
-          </li>
-          <li class="pdc-ritual__item" data-pdc-ritual-item tabindex="0">
-            <p class="pdc-ritual__time"><strong>14:00</strong> WORK</p>
-            <figure class="pdc-ritual__figure"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-work-0420.jpg" alt="업무 책상 위의 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
-            <div class="pdc-ritual__copy">
-              <h3 class="pdc-ritual__title">업무 중 피부 컨디션이<br>떨어질 때</h3>
-              <p class="pdc-ritual__desc">메이크업 위로<br>가볍게 한 번 더 뿌립니다.</p>
-            </div>
-          </li>
-          <li class="pdc-ritual__item" data-pdc-ritual-item tabindex="0">
-            <p class="pdc-ritual__time"><strong>19:00</strong> ACTIVE</p>
-            <figure class="pdc-ritual__figure"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-active-0435.jpg" alt="골프 장갑과 함께 놓인 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
-            <div class="pdc-ritual__copy">
-              <h3 class="pdc-ritual__title">운동 후 피부가<br>달아올랐을 때</h3>
-              <p class="pdc-ritual__desc">운동·골프·수영 후,<br>다시 한 번 레이어링합니다.</p>
-            </div>
-          </li>
-          <li class="pdc-ritual__item" data-pdc-ritual-item tabindex="0">
-            <p class="pdc-ritual__time"><strong>ANYWHERE</strong> TRAVEL</p>
-            <figure class="pdc-ritual__figure"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ritual-travel-0398.jpg" alt="여행 파우치 속 바이오 엘릭서" width="1300" height="1950" loading="lazy"></figure>
-            <div class="pdc-ritual__copy">
-              <h3 class="pdc-ritual__title">건조한 기내나 호텔에<br>머물 때</h3>
-              <p class="pdc-ritual__desc">휴대하기 좋은 엘릭서로<br>어디서든 같은 루틴으로</p>
-            </div>
-          </li>
-        </ol>
-        <!-- 모바일(가로 스와이프)에서만 보이는 위치 표시 -->
-        <div class="pdc-ritual__dots">
-          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="07:30 MORNING" aria-current="true"></button>
-          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="14:00 WORK"></button>
-          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="19:00 ACTIVE"></button>
-          <button class="pdc-ritual__dot" type="button" data-pdc-ritual-dot aria-label="ANYWHERE TRAVEL"></button>
-        </div>
-      </div>
-      <p class="pdc-ritual__closing" data-pdc-slogan>
-        <span class="pdc-ritual__closing-line pdc-ritual__closing-lead sm--body-l heading-m">어디서나 이어지는</span>
-        <strong class="pdc-ritual__closing-line pdc-ritual__closing-main sm--heading-xl heading-xxl">스킨 롱제비티</strong>
-        <span class="pdc-ritual__closing-line pdc-ritual__closing-en sm--body-m body-l">Skin Longevity, Wherever You Are.</span>
-      </p>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--contained pdc-elixir-usage" data-pdc-section="usage" data-pdc-nav-title="엘릭서 · 어떻게 사용하나요?">
-    <div class="container container--md">
-      <header class="pdc__head" data-scroll-reveal>
-        <p class="pdc__eyebrow">How to Use</p>
-        <h2 class="pdc__head-title pdc-elixir__title sm--heading-xxl heading-xxxl">사용방법</h2>
-        <p class="pdc__head-lead body-l">뿌리고, 두드리고, 다시 쌓는 세 단계</p>
-      </header>
-      <div class="pdc-elixir-usage__layout">
-        <figure class="pdc-elixir-usage__visual">
-          <img class="pdc-elixir-usage__video" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/how-to-use.png" alt="바이오 엘릭서를 분사하는 모습" width="1024" height="1536" loading="lazy">
-        </figure>
-        <!-- data-pdc-steps-autoplay(ms): 화면에 보이는 동안 다음 단계로 — 속성을 지우면 꺼진다 -->
-        <div class="pdc-elixir-usage__steps" aria-label="바이오 엘릭서 사용 방법" data-pdc-steps data-pdc-steps-autoplay="2500">
-          <article class="pdc-elixir-usage__step" data-scroll-reveal data-pdc-step role="button" tabindex="0">
-            <strong class="sm--body-m heading-xl">01 · Apply</strong>
-            <p class="sm--body-s body-l">눈을 감고 얼굴에서 약 20cm 거리를 두어<br class="sm--hide"> 고르게 분사합니다.</p>
-          </article>
-          <article class="pdc-elixir-usage__step" data-scroll-reveal data-pdc-step role="button" tabindex="0">
-            <strong class="sm--body-m heading-xl">02 · Layer</strong>
-            <p class="sm--body-s body-l">자연스럽게 건조시키거나 가볍게 두드려<br class="sm--hide"> 피부에 밀착시킵니다.</p>
-          </article>
-          <article class="pdc-elixir-usage__step" data-scroll-reveal data-pdc-step role="button" tabindex="0">
-            <strong class="sm--body-m heading-xl">03 · Repeat</strong>
-            <p class="sm--body-s body-l">피부 컨디션 변화가 느껴질 때 다시 레이어링합니다.</p>
-          </article>
-        </div>
-      </div>
-    </div>
-    <div class="container container--lg">
-      <div class="pdc-elixir-usage__when" data-scroll-reveal>
-        <p class="heading-m"><strong>이럴 때 사용하세요</strong></p>
-        <ul class="pdc-elixir-usage__chips">
-          <li class="body-m">세안 직후 첫 단계</li>
-          <li class="body-m">메이크업 전</li>
-          <li class="body-m">메이크업 위 수시 사용</li>
-          <li class="body-m">운동·골프·수영 후</li>
-          <li class="body-m">비행기·호텔 등 건조한 이동 환경</li>
-          <li class="body-m">저녁 세안 후</li>
-        </ul>
-      </div>
-    </div>
-  </section>
   </div>
 
-  <!-- 3. 선베일 -->
+  <!-- 5. 선베일 -->
   <div class="pdc--sun-veil pdc-set__group">
   <section class="pdc__section pdc__section--contained pdc__section--hero" id="pdc-hero" data-pdc-section="hero" data-pdc-nav-title="선베일은 무엇인가요?">
     <div class="container container--md">
@@ -719,84 +986,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--contained pdc-membrane-intro" id="pdc-membrane-intro" data-pdc-section="membrane-intro">
-    <div class="container container--md">
-      <div class="pdc-membrane-intro__content" data-scroll-reveal>
-        <h2 class="pdc-membrane-intro__title heading-xxxl">우리가 붙이고 있던 건<br>‘필름’이었습니다.</h2>
-        <div class="pdc-membrane-intro__statement-group">
-          <div class="pdc-membrane-intro__statement heading-xxxl">
-            선베일은<br>
-            <details class="pdc-membrane-intro__caption">
-              <summary class="pdc-membrane-intro__caption-trigger" aria-label="숨 쉬는 나노 섬유 설명 보기">
-                <span class="pdc-membrane-intro__caption-term">숨 쉬는 나노 ‘섬유’</span><span class="pdc-membrane-intro__caption-icon" aria-hidden="true">i</span><span class="pdc-membrane-intro__caption-suffix">입니다.</span>
-              </summary>
-              <div class="pdc-membrane-intro__caption-panel">
-                <h3 class="heading-s">Aeroflow Nanofibers<span class="pdc__tm">™</span></h3>
-                <p class="sm--body-s body-m">막는 필름과 달리, 열·습기·땀은 배출하고 피부를<br>가두지 않는 통기성 섬유</p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--full pdc__section--band pdc-problem" id="pdc-problem" data-pdc-section="problem">
-    <div class="container container--xl">
-      <div class="pdc-problem__grid">
-        <figure class="pdc-problem__visual">
-          <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-problem.webp?ver=1.01" alt="선베일 착용 모델" width="878" height="1316" loading="lazy">
-          <figcaption class="pdc-problem__caption sm--body-m body-l">사진 속 모델은 선베일을 부착한 상태입니다.</figcaption>
-        </figure>
-        <article class="pdc-problem__copy">
-          <header class="pdc-problem__header" data-scroll-reveal>
-            <p class="pdc__eyebrow pdc-problem__eyebrow">선케어가 가장 먼저 무너지는 자리</p>
-            <h2 class="pdc-problem__title pdc-display-title sm--type-display heading-xxl xxl--display">
-              <span class="pdc-problem__title-kicker">눈가 아래,</span>
-              <span class="pdc-problem__title-question">바르는 선케어만으로<br>충분할까요?</span>
-            </h2>
-          </header>
-          <div class="pdc-problem__body body-xl" data-scroll-reveal>
-            <p class="body-xxl">눈가 아래 광대 부위는</p>
-            <ul class="pdc-problem__list">
-              <li class="body-l">피지선이 적어 피부 보호막이 얇고</li>
-              <li class="body-l">자외선에 가장 먼저 노출되며</li>
-              <li class="body-l">표정 움직임과 마찰로 선케어가 쉽게 밀리기에</li>
-            </ul>
-            <p class="body-xxl"><strong>선케어가 가장 먼저 지워집니다.</strong><br><strong>문제는 그 다음입니다.</strong></p>
-            <ul class="pdc-problem-friction__list" aria-label="선케어 지속을 어렵게 만드는 일상 고민">
-              <li class="sm--body-xl body-xl"><span class="-text-underline-mark -text-underline-mark--creme"><strong>덧바르기 번거롭고</strong></span></li>
-              <li class="sm--body-xl body-xl"><span class="-text-underline-mark -text-underline-mark--creme"><strong>그냥 두기엔 불안한 순간이 생깁니다.</strong></span></li>
-              <li class="sm--body-xl body-xl"><strong>그래서 선패치를 찾게 되지만, 또 다른 불편함이 남습니다.</strong></li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--full pdc-pain" id="pdc-film-membrane-pain" data-pdc-section="film-membrane-pain">
-    <div class="pdc-pain__inner">
-      <div class="pdc-pain__copy" data-scroll-reveal>
-        <p class="heading-m"><strong>선패치, 불편했던 이유는 단 하나입니다.</strong></p>
-        <h2 class="pdc-display-title heading-xxl">“숨을 못 쉬기 때문입니다.”</h2>
-      </div>
-      <div class="pdc-text-bubbles" aria-label="기존 선패치 불편 요소">
-        <div class="pdc-text-bubbles__row pdc-text-bubbles__row--forward" data-scroll-reveal data-scroll-direction="left" data-scroll-distance="32" data-scroll-delay="180">
-          <span class="pdc-text-bubbles__pill sm--body-l body-xl">땀/열/습기로<br>답답함</span>
-          <span class="pdc-text-bubbles__pill sm--body-l body-xl">필름 텐션으로 인한<br>밀폐감, 피부 조임</span>
-          <span class="pdc-text-bubbles__pill sm--body-l body-xl">메이크업 위에서<br>들뜸</span>
-        </div>
-        <div class="pdc-text-bubbles__row pdc-text-bubbles__row--reverse" data-scroll-reveal data-scroll-direction="right" data-scroll-distance="32" data-scroll-delay="320">
-          <span class="pdc-text-bubbles__pill sm--body-l body-xl">접착 성분으로 인한<br>뻣뻣함, 잔주름 픽스</span>
-          <span class="pdc-text-bubbles__pill sm--body-l body-xl">오래 붙이면<br>피부 피로감</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--full pdc-choice" id="pdc-film-membrane-choice" data-pdc-section="film-membrane-choice">
-    <div class="pdc-choice__inner">
-      <h2 class="pdc-choice__text sm--heading-xl heading-xxxl" data-pdc-scroll-highlight aria-label="그래서 우리는 필름막을 버리고 나노 섬유를 선택했습니다."><span class="pdc-choice__group-start">그래서 우리는 ‘필름막’을 버리고</span><br>‘나노 섬유’를 선택했습니다.</h2>
     </div>
   </section>
   <section class="pdc__section pdc__section--contained pdc-compare" id="pdc-film-membrane" data-pdc-section="film-membrane" data-pdc-nav-title="선베일 · 왜 필름형 선패치와 다른가요?">
@@ -861,140 +1050,6 @@
           </table>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--contained pdc-at-glance" id="pdc-at-a-glance" data-pdc-section="at-a-glance" data-pdc-nav-title="선베일을 하면 뭐가 달라지나요?">
-    <div class="container container--xl">
-      <header class="pdc-at-glance__header" data-scroll-reveal>
-        <p class="pdc__eyebrow pdc-at-glance__eyebrow">At a Glance</p>
-        <h2 class="pdc-at-glance__title pdc-display-title heading-xxxl">선패치의 기준을 다시 썼습니다.</h2>
-      </header>
-      <div class="pdc-at-glance__cards swiper" data-pdc-at-glance-text-swiper data-ps-slides-per-view="1" data-ps-slides-per-view-lg="2" data-ps-slides-per-view-wide="3" data-ps-space-between="20" aria-label="Sun Veil 일상 경험">
-        <div class="pdc-at-glance__cards-track swiper-wrapper">
-          <article class="pdc-at-glance__card pdc-at-glance__card--ciel swiper-slide is-active">
-            <img class="pdc-at-glance__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-a-glance-01-2.webp" alt="메이크업 위 투명한 선베일" width="876" height="1352" loading="eager">
-            <svg class="pdc-at-glance__shape" viewBox="0 0 754 707" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-              <defs>
-                <mask id="pdc-at-glance-shape-mask" maskUnits="userSpaceOnUse">
-                  <path class="pdc-at-glance__shape-mask-path" pathLength="1" d="M1.08478 235.848C1.08478 235.848 -9.81522 169.018 62.4248 164.978C86.2748 163.648 104.805 177.488 172.525 178.918C240.245 180.348 295.375 177.338 366.665 123.158C437.955 68.9775 481.425 -1.59247 575.525 0.547526C669.625 2.68753 713.105 100.348 713.105 100.348C713.105 100.348 806.495 276.428 708.825 470.328C611.155 664.228 466.665 776.568 302.405 657.338C161.985 555.398 7.28478 324.428 1.08478 235.848Z" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-                </mask>
-              </defs>
-              <path class="pdc-at-glance__shape-path" d="M1.08478 235.848C1.08478 235.848 -9.81522 169.018 62.4248 164.978C86.2748 163.648 104.805 177.488 172.525 178.918C240.245 180.348 295.375 177.338 366.665 123.158C437.955 68.9775 481.425 -1.59247 575.525 0.547526C669.625 2.68753 713.105 100.348 713.105 100.348C713.105 100.348 806.495 276.428 708.825 470.328C611.155 664.228 466.665 776.568 302.405 657.338C161.985 555.398 7.28478 324.428 1.08478 235.848Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-dasharray="8 6" vector-effect="non-scaling-stroke" mask="url(#pdc-at-glance-shape-mask)"/>
-            </svg>
-            <div class="pdc-at-glance__content">
-              <h3 class="pdc-at-glance__card-title heading-xl"><span class="pdc-at-glance__number heading-xxxl">01</span> <br>Invisible &amp; Seamless</h3>
-              <div class="pdc-at-glance__copy">
-                <p class="xs--body-l sm--body-l body-l"><strong>보이지 않는 0.004mm</strong></p>
-                <p class="xs--body-l sm--body-l body-l">붙였는지 잊을 만큼, 얇고 투명한 존재감</p>
-                <p class="xs--body-l sm--body-l body-l"><strong>메이크업과 자연스럽게 호환</strong></p>
-                <p class="xs--body-l sm--body-l body-l">경계 없이 매끄럽게 이어지는 피부 표현</p>
-              </div>
-            </div>
-          </article>
-          <article class="pdc-at-glance__card pdc-at-glance__card--glass swiper-slide">
-            <img class="pdc-at-glance__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-a-glance-02-2.webp" alt="수분으로 밀착된 선베일" width="876" height="1352" loading="eager">
-            <div class="pdc-at-glance__content">
-              <h3 class="pdc-at-glance__card-title heading-xl"><span class="pdc-at-glance__number heading-xxxl">02</span> <br>Effortless Fit</h3>
-              <div class="pdc-at-glance__copy">
-                <p class="xs--body-l sm--body-l body-l"><strong>점착제 없이, 자연스럽게 밀착</strong></p>
-                <p class="xs--body-l sm--body-l body-l">수분에 반응해 피부에 스며들 듯 가볍게 밀착되는 <br><strong>Moisture-Bonding</strong></p>
-                <p class="xs--body-l sm--body-l body-l"><strong>헷갈림 없이, 한 번에</strong></p>
-                <p class="xs--body-l sm--body-l body-l">직관적 L/R 구분으로, 거울 없이도 한 번에 부착 <br><strong>No Mirror, One Go</strong></p>
-              </div>
-            </div>
-          </article>
-          <article class="pdc-at-glance__card pdc-at-glance__card--creme swiper-slide">
-            <img class="pdc-at-glance__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-a-glance-03-2.webp" alt="일상 속 선베일 착용" width="876" height="1352" loading="eager">
-            <div class="pdc-at-glance__content">
-              <h3 class="pdc-at-glance__card-title heading-xl"><span class="pdc-at-glance__number heading-xxxl">03</span> <br>Whereable Beauty<span class="pdc__tm">™</span></h3>
-              <div class="pdc-at-glance__copy">
-                <p class="xs--body-l sm--body-l body-l"><strong>일상의 흐름을 끊지 않는 뷰티</strong></p>
-                <p class="xs--body-l sm--body-l body-l">야외 활동에서 다음 일정까지, 끊김 없이 <br>어디서든 이어지는 보호와 케어</p>
-                <p class="xs--body-l sm--body-l body-l"><strong>선크림 위로 이어지는 레이어</strong></p>
-                <p class="xs--body-l sm--body-l body-l">덧바르지 않아도 계속 유지되는 보호 </p>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="swiper-pagination pdc-swiper-pagination" data-pdc-swiper-pagination></div>
-      </div>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--contained pdc-why-intro" id="pdc-why-intro" data-pdc-section="why-intro" data-pdc-nav-title="선베일 · 언제 사용하면 좋나요?">
-    <div class="container container--md">
-      <h2 class="pdc-why-intro__title pdc-display-title heading-xxxl" data-scroll-reveal>이런 순간, 필요합니다.</h2>
-      <figure class="pdc-why-intro__visual" data-scroll-reveal>
-        <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/ayrow-sun-veil-at-this-moment.webp?ver=1.05" alt="야외 활동 중 선베일" width="1184" height="1579" loading="lazy">
-      </figure>
-      <div class="pdc-why-intro__cards">
-        <article class="pdc-why-intro__card" data-scroll-reveal>
-          <h3 class="heading-xl">보호는 필요하지만, 드러나고 싶지 않을 때</h3>
-          <div class="accordion-ui pdc-why-intro__accordion" data-component="accordion">
-            <div class="accordion-ui__item pdc-why-intro__accordion-item">
-              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">자외선 차단제를 <strong>덧바르기 힘들 때</strong></button>
-              <div class="accordion-ui__content pdc-why-intro__accordion-content">
-                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
-                  <p class="sm--body-m body-l">다시 발라야 하는 건 알지만,<br>메이크업이 무너지거나 끈적일까 봐 손이 멈추는 순간</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-ui__item pdc-why-intro__accordion-item">
-              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">흐름을 끊지 않고 <strong>자외선 대응을 유지하고 싶을 때</strong></button>
-              <div class="accordion-ui__content pdc-why-intro__accordion-content">
-                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
-                  <p class="sm--body-m body-l">이동 중에도, 일하는 중에도, 약속 사이에도<br>흐름을 끊지 않고 관리하고 싶을 때</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-ui__item pdc-why-intro__accordion-item">
-              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">땀이나 유분이 올라온 얼굴에 <strong>덧바르기 찝찝할 때</strong></button>
-              <div class="accordion-ui__content pdc-why-intro__accordion-content">
-                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
-                  <p class="sm--body-m body-l">선크림을 덧바르기엔 찝찝하고, 그렇다고 그대로 두기엔<br>자외선 노출이 신경 쓰일 때</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-ui__item pdc-why-intro__accordion-item">
-              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">러닝·골프·테니스· 여행 등 <strong>야외 활동이 많은 날</strong></button>
-              <div class="accordion-ui__content pdc-why-intro__accordion-content">
-                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
-                  <p class="sm--body-m body-l">햇빛 아래 있는 시간이 길어질 때</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-ui__item pdc-why-intro__accordion-item">
-              <button type="button" class="accordion-ui__title pdc-why-intro__accordion-title xs--body-s sm--body-m body-l sm--left">햇살은 즐기고 싶은데 <strong>피부는 지키고 싶을 때</strong></button>
-              <div class="accordion-ui__content pdc-why-intro__accordion-content">
-                <div class="accordion-ui__content-inner pdc-why-intro__accordion-inner">
-                  <p class="sm--body-m body-l">오픈 테라스, 통창 카페, 햇살 산책.<br>햇빛은 좋지만 피부를 그대로 노출시키고 싶지 않을 때</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="pdc-why-intro__card" data-scroll-reveal>
-          <h3 class="heading-xl">피부가 예민해졌을 때는 더더욱</h3>
-          <ul>
-            <li class="xs--body-s sm--body-m body-l sm--left">피부 시술 후,<br>자외선 차단은 중요하지만 피부에 <strong>직접 바르기 부담스럽고 세안도 제한될 때</strong></li>
-            <li class="xs--body-s sm--body-m body-l sm--left">피부 트러블로 인해, <strong>선크림이나 쿠션을 덧바르기 어려울 때</strong></li>
-            <li class="xs--body-s sm--body-m body-l sm--left">외부 자극에 붉게 달아올라 <strong>떼어내는 순간 피부 자극이 염려될 때</strong></li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-  <section class="pdc__section pdc__section--full pdc__section--band pdc-why-highlight" id="pdc-why-highlight" data-pdc-section="why-highlight">
-    <div class="pdc-why-highlight__banner">
-      <img class="pdc-why-highlight__image" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/sun-veil/why-sun-veil-banner-model.webp" alt="선베일 착용 모델" width="2520" height="1884" loading="lazy">
-      <div class="pdc-why-highlight__text" aria-label="보호는 필요하지만, 방식이 달라야 할 때 이럴 때 필요한 건, 선케어가 아니라 선베일입니다.">
-        <div class="pdc-why-highlight__group pdc-why-highlight__group--top" data-scroll-reveal>
-          <p class="sm--body-xl body-mega">숨 쉬는 에스테틱 선패치</p>
-          <p class="pdc-why-highlight__emphasis sm--heading-xl heading-xxxl" data-scroll-reveal data-scroll-delay="250"><strong>이제 필름 대신, 선베일을 시작하세요.</strong></p>
-        </div>
-      </div>
-    </div>
-    <div class="container container--fluid">
-      <p class="pdc-why-highlight__caption sm--body-s body-l">사진 속 모델은 선베일을 부착한 상태입니다.</p>
     </div>
   </section>
   <section class="pdc__section pdc__section--contained pdc-standard" id="pdc-film-membrane-standard" data-pdc-section="film-membrane-standard">
@@ -1390,36 +1445,6 @@
       </section>
     </div>
   </section>
-  <section class="pdc__section pdc__section--contained pdc-usage" id="pdc-how-to-use" data-pdc-section="how-to-use" data-pdc-nav-title="선베일 · 어떻게 사용하나요?">
-    <div class="container container--md">
-      <header class="pdc__head">
-        <p class="pdc__eyebrow">How to Use</p>
-        <h2 class="pdc__head-title pdc-display-title heading-xxxl">사용 방법</h2>
-        <p class="pdc__head-lead body-l">세 단계로 끝나는 얇은 보호 레이어</p>
-      </header>
-      <div class="pdc-usage__layout">
-        <figure class="pdc-usage__visual" data-pdc-video-section>
-          <video class="pdc-usage__video" data-pdc-video muted loop playsinline preload="metadata" aria-hidden="true">
-            <source src="https://player.vimeo.com/progressive_redirect/playback/1199622531/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=4e63a420e0ebab007c7787bcd07fae94868eee8166ed22f77687ce991f5ce9a6" type="video/mp4">
-          </video>
-        </figure>
-        <div class="pdc-usage__steps" aria-label="Sun Veil 사용 방법" data-pdc-usage-steps>
-          <button type="button" data-scroll-reveal data-pdc-usage-step data-pdc-usage-time="1">
-            <strong class="sm--body-m heading-xl">01 · Ready</strong>
-            <p class="sm--body-s body-l">파우치를 열고, 직관적인 L/R 방향을 확인합니다.</p>
-          </button>
-          <button type="button" data-scroll-reveal data-pdc-usage-step data-pdc-usage-time="10">
-            <strong class="sm--body-m heading-xl">02 · Set</strong>
-            <p class="sm--body-s body-l">햇살이 먼저 닿는 눈가 아래·광대존에 올린 뒤 <br>가볍게 눌러 안착시켜 줍니다.</p>
-          </button>
-          <button type="button" data-scroll-reveal data-pdc-usage-step data-pdc-usage-time="24">
-            <strong class="sm--body-m heading-xl">03 · Go</strong>
-            <p class="sm--body-s body-l">피부와 하나가 된 듯한 피팅감으로 일상을 이어갑니다.</p>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="pdc__section pdc__section--contained pdc-makeup-routine" id="pdc-makeup-routine" data-pdc-section="makeup-routine">
     <div class="container container--xl">
       <header class="pdc__head" data-scroll-reveal>
@@ -1432,16 +1457,197 @@
   </section>
   </div>
 
-  <!-- 4. FAQ — 제품별 탭 -->
+  <!-- 6. THE KIT RITUAL · WHEREABLE BEAUTY -->
+  <!-- 06. THE KIT RITUAL · WHEREABLE BEAUTY — 시안 없음. TWO FORMS의 카드 구성을 빌린 임시 구현(이미지 · 배치는 디자인 확인 뒤 바꾼다)
+       키트의 사용 순서(LAYER · WEAR)를 먼저 보이고 Whereable Beauty 문구로 마무리한다. 제품별 사용방법 섹션은 키트에 싣지 않는다 -->
+  <section class="pdc__section pdc__section--contained pdc-set-ritual" data-pdc-section="set-ritual" data-pdc-nav-title="키트는 어떻게 사용하나요?">
+    <div class="container container--md">
+      <div class="pdc-set-ritual__kit">
+        <header class="pdc-set-forms__head" data-scroll-reveal>
+          <p class="pdc__eyebrow">The Kit Ritual</p>
+          <h2 class="pdc-set-forms__title type-display">LAYER. WEAR. GO.</h2>
+          <p class="pdc-set-forms__lead body-xl">Ready for Skin Longevity, Wherever You Are.</p>
+        </header>
+        <ol class="pdc-set-forms__list">
+          <li class="pdc-set-forms__item" data-scroll-reveal>
+            <figure class="pdc-set-forms__visual">
+              <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/how-to-use.png" alt="바이오 엘릭서를 분사하는 모습" width="1024" height="1536" loading="lazy">
+            </figure>
+            <div class="pdc-set-forms__copy">
+              <div class="pdc-set-forms__name">
+                <p class="pdc-set-forms__no pdc__eyebrow">01 / LAYER</p>
+                <h3 class="heading-xl">BIO ELIXIR</h3>
+                <p class="sm--body-m body-xl">고농축 스킨 롱제비티 케어</p>
+              </div>
+            </div>
+          </li>
+          <li class="pdc-set-forms__item" data-scroll-reveal data-scroll-delay="120">
+            <figure class="pdc-set-forms__visual">
+              <img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-ritual-sun-veil.jpg" alt="선베일 파우치를 든 모델" width="735" height="1080" loading="lazy">
+            </figure>
+            <div class="pdc-set-forms__copy">
+              <div class="pdc-set-forms__name">
+                <p class="pdc-set-forms__no pdc__eyebrow">02 / WEAR</p>
+                <h3 class="heading-xl">SUN VEIL</h3>
+                <p class="sm--body-m body-xl">자외선 차단 웰니스 패치</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <!-- 마무리 문구 — 상세의 마지막 메시지(FAQ 앞) -->
+      <div class="pdc__head pdc-set-ritual__closing" data-scroll-reveal>
+        <p class="pdc__eyebrow">Whereable Beauty<span class="pdc__tm">™</span></p>
+        <h3 class="pdc__head-title heading-xxxl">일상의 흐름을 바꾸지 않는 에스테틱.</h3>
+        <p class="pdc__head-lead body-xl">정해진 장소와 루틴을 넘어,<br class="sm-up--hide"> 어디서나 이어지는 스킨 롱제비티.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ — 탭 -->
   <section class="pdc__section pdc__section--contained pdc-set-faq" data-pdc-nav-title="자주 묻는 질문" data-pdc-section="set-faq">
     <div class="container container--md">
       <h2 class="pdc-set-faq__title heading-xxxl">FAQ</h2>
       <div class="pdc-set-tabs" role="tablist" aria-label="제품별 자주 묻는 질문" data-pdc-set-tabs>
+        <button class="pdc-set-tabs__tab heading-s" type="button" role="tab" data-pdc-set-tab="kit">레디 키트</button>
         <button class="pdc-set-tabs__tab heading-s" type="button" role="tab" data-pdc-set-tab="elixir">바이오 엘릭서</button>
         <button class="pdc-set-tabs__tab heading-s" type="button" role="tab" data-pdc-set-tab="sun-veil">선베일</button>
       </div>
     </div>
   </section>
+  <div class="pdc--elixir pdc-set__group" role="tabpanel" data-pdc-set-panel="kit">
+  <!-- 키트 FAQ — 모양은 엘릭서 FAQ 블록(pdc-faq), 동작은 공통(pdc.js) -->
+  <section class="pdc__section pdc__section--contained pdc-faq" data-pdc-section="set-faq-kit">
+    <div class="container container--md">
+      <div class="pdc-faq__list" data-pdc-faq>
+        <article class="pdc-faq__item is-open" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">스킨 롱제비티 레디 키트는 어떤 제품인가요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">바이오 엘릭서와 선베일, 서로 다른 두 가지 에스테틱 케어를 하나의 일상으로 연결한 스킨 롱제비티 키트입니다.</p>
+              <p class="body-m">바이오 엘릭서는 피부 컨디션을 집중적으로 관리하는 고농축 컨센트레이트이며, 선베일은 자외선 차단과 스킨케어 성분을 결합한 초박막 웰니스 패치입니다.</p>
+              <p class="body-m"><strong>정해진 장소와 루틴을 넘어, 일상 어디서나 스킨 롱제비티를 이어갈 수 있도록 설계했습니다.</strong></p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">두 제품을 함께 사용하면 어떤 점이 다른가요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">피부 컨디션을 집중적으로 관리하는 케어와 자외선 노출 부위를 보호하는 패치가 서로 다른 역할을 수행합니다.</p>
+              <p class="body-m">바이오 엘릭서는 고농축 스킨케어 성분을 피부에 전달하고, 선베일은 초박막 나노섬유 구조로 자외선을 차단하면서 Reverse AG Code<span class="pdc__tm">™</span> 기반의 스킨케어 성분을 함께 담았습니다.</p>
+              <p class="body-m"><strong>피부 컨디션은 집중적으로 케어하고, 자외선 노출 부위는 보호하는 새로운 스킨 롱제비티 경험을 제안합니다.</strong></p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">두 제품은 어떤 순서로 사용하나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m"><strong>LAYER → WEAR.</strong> 먼저 바이오 엘릭서로 케어하고, 필요한 부위에 선베일을 착용합니다.</p>
+              <p class="body-m">세안 후 바이오 엘릭서를 얼굴 전체에 고르게 분사해 피부 컨디션을 정돈한 뒤, 자외선 보호가 필요한 부위에 선베일을 부착합니다.</p>
+              <p class="body-m"><strong>선베일 부착 후에도 바이오 엘릭서를 수시로 분사</strong>해 피부 컨디션에 따라 스킨케어를 이어갈 수 있습니다.</p>
+              <p class="body-m">두 제품을 매번 동시에 사용할 필요는 없으며, 피부 컨디션과 활동 환경에 따라 각각 활용할 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">두 제품을 함께 사용했을 때 피부 변화가 확인되었나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">네. 바이오 엘릭서와 선베일을 2주간 병행 사용한 인체적용시험에서 <strong>자외선에 노출된 피부의 5가지 지표에서 개선이 확인되었습니다.</strong></p>
+              <p class="body-m"><strong>피부 진정 개선율 71.844%, 피부 수분 손실량 개선율 124.573%, 피부결 개선율 11.742%, 피부 보습 개선율 15.989%</strong>를 확인했으며, <strong>자외선 노출로 인한 색소침착 완화</strong>에도 도움을 주는 것으로 평가되었습니다.</p>
+              <p class="body-m">해당 시험은 성인 여성 21명을 대상으로 진행되었으며, 병행 사용 부위와 무도포 부위를 비교한 결과입니다.</p>
+              <p class="body-m">인체적용시험 결과는 개인에 따라 차이가 있을 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">메이크업 위에도 함께 사용할 수 있나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m"><strong>네. 두 제품 모두 메이크업과 함께 사용할 수 있도록 고려되었습니다.</strong></p>
+              <p class="body-m">바이오 엘릭서는 메이크업 전후에 얇게 분사해 레이어링할 수 있으며, 선베일은 별도의 점착 레이어 없이 피부에 밀착되는 초박막 패치로 메이크업 위에도 사용할 수 있습니다.</p>
+              <p class="body-m">다만 두 제품을 연속해서 사용할 때는 바이오 엘릭서가 충분히 마른 후 선베일을 부착해 주세요. 메이크업 상태와 피부 표면의 유분 등에 따라 밀착 상태는 달라질 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">외출하거나 운동할 때도 사용할 수 있나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m"><strong>네. 정해진 스킨케어 시간뿐 아니라 일상의 다양한 순간에 활용할 수 있습니다.</strong></p>
+              <p class="body-m">바이오 엘릭서는 이동 중이나 운동 후 피부 컨디션을 관리하고 싶을 때 간편하게 사용할 수 있습니다.</p>
+              <p class="body-m">선베일은 골프, 러닝 등 야외 활동에서 자외선 노출이 신경 쓰이는 특정 부위를 보호하는 데 활용할 수 있습니다.</p>
+              <p class="body-m">두 제품은 각자의 활동과 피부 상태에 맞춰 선택적으로 사용하는 스킨 롱제비티 경험을 제안합니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">민감성 피부도 두 제품을 함께 사용할 수 있나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m">두 제품 모두 민감성 피부를 대상으로 피부 자극에 대한 안전성 평가를 진행했습니다.</p>
+              <p class="body-m">바이오 엘릭서는 민감성 피부 대상 일차자극 시험에서 <strong>피부자극지수 0.00</strong>으로 비(무)자극성 판정을 받았으며, 선베일은 독일 Dermatest®의 민감성 피부 대상 2주 시험에서 <strong>EXCELLENT 등급</strong>을 획득했습니다.</p>
+              <p class="body-m"><strong>두 제품 모두 민감성 피부에 사용하기 적합한 것으로 평가되었습니다.</strong> 다만 피부 반응에는 개인차가 있으므로, 피부가 특히 예민한 경우에는 각 제품을 작은 부위에 먼저 사용해 보시는 것을 권장합니다.</p>
+            </div>
+          </div>
+        </article>
+        <article class="pdc-faq__item" data-pdc-faq-item>
+          <h3 class="pdc-faq__question heading-m">
+            <button class="pdc-faq__button" type="button" data-pdc-faq-button>
+              <span class="pdc-faq__text heading-m">기존 스킨케어 제품과 함께 사용해도 되나요?</span>
+              <span class="pdc-faq__icon heading-m" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="pdc-faq__panel" data-pdc-faq-panel hidden>
+            <div class="pdc-faq__answer body-m">
+              <p class="body-m"><strong>네. 기존 스킨케어 루틴을 바꿀 필요 없습니다.</strong></p>
+              <p class="body-m">바이오 엘릭서는 세안 후 첫 단계는 물론, 피부 컨디션에 따라 기존 스킨케어와 함께 레이어링할 수 있습니다.</p>
+              <p class="body-m">선베일은 자외선 노출이 신경 쓰이는 특정 부위에 사용하는 웰니스 패치로, 기존 자외선 차단 루틴을 보완하는 방식으로 활용할 수 있습니다.</p>
+              <p class="body-m"><strong>피부 관리가 일상을 바꾸는 것이 아니라, 일상에 맞춰 이어지는 것. AYROW가 제안하는 Whereable Beauty<span class="pdc__tm">™</span>입니다.</strong></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  </div>
   <div class="pdc--elixir pdc-set__group" role="tabpanel" data-pdc-set-panel="elixir">
   <section class="pdc__section pdc__section--contained pdc-faq" data-pdc-section="faq">
     <div class="container container--md">

@@ -1,0 +1,313 @@
+  <!-- 03. CLINICAL PROOF — 병행 사용 인체적용시험
+       탭: pdc-set.js(data-pdc-set-tabs) · 그래프 그리기 · 전후 비교 슬라이더 · VIEW THE STUDY 모양: 엘릭서 블록(pdc-chart · pdc-elixir-compare · pdc-disclosure · pdc-study) -->
+  <section class="pdc__section pdc__section--contained pdc__section--band pdc-set-clinical" id="pdc-set-clinical" data-pdc-section="set-clinical" data-pdc-nav-title="함께 쓰면 어떤 변화가 있나요?">
+    <div class="container container--lg">
+      <header class="pdc__head" data-scroll-reveal>
+        <p class="pdc__eyebrow">Clinically Tested · 2 Weeks</p>
+        <h2 class="pdc__head-title pdc-set-clinical__title heading-xxxl">자외선 노출로 손상된 피부, 2주 후의 변화</h2>
+        <p class="pdc__head-lead body-xl">Bio Elixir와 Sun Veil의 병행 사용 결과를<br>다섯 가지 피부 지표로 확인했습니다.</p>
+      </header>
+
+      <div class="pdc-set-clinical__hero pdc-set-clinical__card" data-scroll-reveal>
+        <div class="pdc-set-clinical__hero-copy">
+          <p class="pdc__eyebrow">BIO ELIXIR + SUN VEIL 병행 사용</p>
+          <h3 class="pdc-set-clinical__hero-title heading-xxxl">피부 진정 개선율</h3>
+          <p class="pdc-set-clinical__hero-note body-xl">자외선 조사 24시간 후 대비 2주 사용 후</p>
+        </div>
+        <div class="pdc-set-clinical__ring">
+          <svg class="pdc-set-clinical__ring-svg" viewBox="0 0 310 310" aria-hidden="true" focusable="false">
+            <circle class="pdc-set-clinical__ring-track" cx="155" cy="155" r="148"/>
+            <circle class="pdc-set-clinical__ring-value" cx="155" cy="155" r="148" pathLength="100"/>
+          </svg>
+          <p class="pdc-set-clinical__ring-number"><strong>71.844<span class="pdc-set-clinical__unit">%</span></strong></p>
+        </div>
+      </div>
+
+      <div class="pdc-set-clinical__tabs" role="tablist" aria-label="임상 항목" data-pdc-set-tabs>
+        <button class="pdc-set-clinical__tab" type="button" role="tab" data-pdc-set-tab="clinical-soothing"><span class="pdc-set-clinical__tab-no">01</span><span class="pdc-set-clinical__tab-label heading-m">자극받은 피부 진정</span></button>
+        <button class="pdc-set-clinical__tab" type="button" role="tab" data-pdc-set-tab="clinical-moisture"><span class="pdc-set-clinical__tab-no">02</span><span class="pdc-set-clinical__tab-label heading-m">수분 손실 회복</span></button>
+        <button class="pdc-set-clinical__tab" type="button" role="tab" data-pdc-set-tab="clinical-texture"><span class="pdc-set-clinical__tab-no">03</span><span class="pdc-set-clinical__tab-label heading-m">거친 피부결 개선</span></button>
+      </div>
+
+      <!-- 01 · 피부 진정 -->
+      <div class="pdc-set-clinical__panel" role="tabpanel" data-pdc-set-panel="clinical-soothing">
+        <article class="pdc-set-clinical__card">
+          <header class="pdc-set-clinical__card-head">
+            <div class="pdc-set-clinical__card-title">
+              <p class="pdc__eyebrow">Skin Soothing</p>
+              <h3 class="heading-xxl">피부 진정, 눈에 보이는 2주간의 변화.</h3>
+              <p class="body-l">자외선 조사 24시간 후 대비 병행 사용 2주 후</p>
+            </div>
+          </header>
+          <div class="pdc-set-clinical__shots">
+            <figure class="pdc-set-clinical__shot">
+              <div class="pdc-set-clinical__frame pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 50%;">
+                <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="{{IMG}}/kit-clinical-soothing-before-none.jpg" alt="자외선 조사 전 무도포 부위" width="401" height="401" loading="lazy" draggable="false">
+                <div class="pdc-elixir-compare__after">
+                  <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="{{IMG}}/kit-clinical-soothing-before-kit.jpg" alt="자외선 조사 전 병행 사용 예정 부위" width="401" height="401" loading="lazy" draggable="false">
+                </div>
+                <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="50" aria-label="자외선 조사 전 — 무도포 부위와 병행 사용 부위 비교" data-pdc-compare-range>
+                <span class="pdc-timepoints__ba pdc-timepoints__ba--before">무도포</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">병행 사용</span>
+              </div>
+              <figcaption class="pdc-set-clinical__shot-caption body-l">자외선 조사 전</figcaption>
+            </figure>
+            <figure class="pdc-set-clinical__shot">
+              <div class="pdc-set-clinical__frame pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 50%;">
+                <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="{{IMG}}/kit-clinical-soothing-24h-none.jpg" alt="자외선 조사 24시간 후 무도포 부위" width="401" height="401" loading="lazy" draggable="false">
+                <div class="pdc-elixir-compare__after">
+                  <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="{{IMG}}/kit-clinical-soothing-24h-kit.jpg" alt="자외선 조사 24시간 후 병행 사용 부위" width="401" height="401" loading="lazy" draggable="false">
+                </div>
+                <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="50" aria-label="자외선 조사 24시간 후 — 무도포 부위와 병행 사용 부위 비교" data-pdc-compare-range>
+                <span class="pdc-timepoints__ba pdc-timepoints__ba--before">무도포</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">병행 사용</span>
+              </div>
+              <figcaption class="pdc-set-clinical__shot-caption body-l">자외선 조사 24시간 후</figcaption>
+            </figure>
+            <figure class="pdc-set-clinical__shot">
+              <div class="pdc-set-clinical__frame pdc-elixir-compare" data-pdc-compare style="--pdc-compare: 50%;">
+                <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="{{IMG}}/kit-clinical-soothing-2w-none.jpg" alt="2주 후 무도포 부위" width="401" height="401" loading="lazy" draggable="false">
+                <div class="pdc-elixir-compare__after">
+                  <img class="pdc-elixir-compare__img pdc-set-clinical__photo" src="{{IMG}}/kit-clinical-soothing-2w-kit.jpg" alt="병행 사용 2주 후 부위" width="401" height="401" loading="lazy" draggable="false">
+                </div>
+                <span class="pdc-elixir-compare__handle" aria-hidden="true"><img src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/bio-elixir/ba-indicator.svg" alt="" width="56" height="56" draggable="false"></span>
+                <input class="pdc-elixir-compare__range" type="range" min="0" max="100" step="0.5" value="50" aria-label="병행 사용 2주 후 — 무도포 부위와 병행 사용 부위 비교" data-pdc-compare-range>
+                <span class="pdc-timepoints__ba pdc-timepoints__ba--before">무도포</span><span class="pdc-timepoints__ba pdc-timepoints__ba--after">병행 사용</span>
+              </div>
+              <figcaption class="pdc-set-clinical__shot-caption body-l">병행 사용 2주 후</figcaption>
+            </figure>
+          </div>
+          <p class="pdc-set-clinical__note body-m">동일 시험대상자 · 동일 측정부위 · 동일 촬영조건</p>
+          <p class="pdc-set-clinical__note pdc-set-clinical__note--sub body-s">P&amp;K 피부임상연구센타㈜ · 시험대상자 26615-UE1-15</p>
+        </article>
+      </div>
+
+      <!-- 02 · 수분 손실량 -->
+      <div class="pdc-set-clinical__panel" role="tabpanel" data-pdc-set-panel="clinical-moisture">
+        <article class="pdc-set-clinical__card">
+          <header class="pdc-set-clinical__card-head">
+            <div class="pdc-set-clinical__card-title">
+              <p class="pdc__eyebrow">Moisture Loss</p>
+              <h3 class="heading-xxl">자외선 노출로 손상된 피부,<br>데이터로 확인한 변화.</h3>
+              <p class="body-xl">자외선 노출로 증가한 피부 수분 손실량,<br><strong>2주 사용 후 회복.</strong></p>
+            </div>
+            <p class="pdc-set-clinical__metric"><strong class="heading-xxxl">124.573<span class="pdc-set-clinical__unit">%</span></strong><span class="heading-l">수분 손실량 개선</span></p>
+          </header>
+          <ul class="pdc-set-clinical__legend body-s" aria-label="범례">
+            <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--kit">병행 사용</li>
+            <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--none">무도포</li>
+          </ul>
+          <div class="pdc-set-clinical__chart">
+            <svg class="pdc-chart pdc-set-chart pdc-set-chart--wide" viewBox="0 0 720 330" role="img" aria-labelledby="pdc-set-chart-moisture-title">
+              <title id="pdc-set-chart-moisture-title">피부 수분 손실량(g/m²h) — 병행 사용 7.389 → 9.029 → 6.986, 무도포 7.400 → 9.021 → 8.041</title>
+              <line class="pdc-chart__grid" x1="56" y1="40.0" x2="690" y2="40.0"/>
+              <text class="pdc-chart__tick" x="46" y="40.0" text-anchor="end" dominant-baseline="middle" font-size="11">9.5</text>
+              <line class="pdc-chart__grid" x1="56" y1="110.0" x2="690" y2="110.0"/>
+              <text class="pdc-chart__tick" x="46" y="110.0" text-anchor="end" dominant-baseline="middle" font-size="11">8.5</text>
+              <line class="pdc-chart__grid" x1="56" y1="180.0" x2="690" y2="180.0"/>
+              <text class="pdc-chart__tick" x="46" y="180.0" text-anchor="end" dominant-baseline="middle" font-size="11">7.5</text>
+              <line class="pdc-chart__grid" x1="56" y1="250.0" x2="690" y2="250.0"/>
+              <text class="pdc-chart__tick" x="46" y="250.0" text-anchor="end" dominant-baseline="middle" font-size="11">6.5</text>
+              <text class="pdc-chart__tick" x="46" y="14.0" text-anchor="end" dominant-baseline="middle" font-size="11">g/m²h</text>
+              <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="56,187.0 373,73.5 690,142.1"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="56" cy="187.0" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="373" cy="73.5" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="690" cy="142.1" r="4"/>
+              <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="56,187.8 373,73.0 690,216.0"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="56" cy="187.8" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="373" cy="73.0" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="690" cy="216.0" r="4"/>
+              <!-- 값 라벨 — 선이 지나지 않는 쪽에 둔다. 점 바로 뒤에 두지 않는다(pdc-elixir.js가 y를 다시 놓지 않게) · 위치는 dy(em) -->
+              <g class="pdc-set-chart__values">
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="56" y="187.0" dy="2.65em" text-anchor="start" font-size="14">7.400</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="373" y="73.5" dy="-0.75em" text-anchor="middle" font-size="14">9.021</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="696" y="142.1" dy="-0.95em" text-anchor="end" font-size="14">8.041</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="56" y="187.8" dy="1.5em" text-anchor="start" font-size="14">7.389</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="373" y="73.0" dy="-1.9em" text-anchor="middle" font-size="14">9.029</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="696" y="216.0" dy="1.5em" text-anchor="end" font-size="14">6.986</text>
+              </g>
+              <text class="pdc-chart__label" x="56" y="302" text-anchor="start" font-size="12">자외선 조사 전</text>
+              <text class="pdc-chart__label" x="373" y="302" text-anchor="middle" font-size="12">조사 24시간 후</text>
+              <text class="pdc-chart__label" x="690" y="302" text-anchor="end" font-size="12">사용 2주 후</text>
+            </svg>
+            <!-- 좁은 화면(≤1023px)용 — 같은 값을 좁은 화면 비율로 다시 그린 것. 넓은 그래프를 줄이면 높이가 낮아 라벨이 축 글자에 닿는다 -->
+            <svg class="pdc-chart pdc-set-chart pdc-set-chart--narrow" viewBox="0 0 468 292" role="img" aria-labelledby="pdc-set-chart-moisture-narrow-title">
+              <title id="pdc-set-chart-moisture-narrow-title">피부 수분 손실량(g/m²h) — 병행 사용 7.389 → 9.029 → 6.986, 무도포 7.400 → 9.021 → 8.041</title>
+              <line class="pdc-chart__grid" x1="58" y1="40.0" x2="446" y2="40.0"/>
+              <text class="pdc-chart__tick" x="48" y="40.0" text-anchor="end" dominant-baseline="middle" font-size="11">9.5</text>
+              <line class="pdc-chart__grid" x1="58" y1="93.0" x2="446" y2="93.0"/>
+              <text class="pdc-chart__tick" x="48" y="93.0" text-anchor="end" dominant-baseline="middle" font-size="11">8.5</text>
+              <line class="pdc-chart__grid" x1="58" y1="146.0" x2="446" y2="146.0"/>
+              <text class="pdc-chart__tick" x="48" y="146.0" text-anchor="end" dominant-baseline="middle" font-size="11">7.5</text>
+              <line class="pdc-chart__grid" x1="58" y1="199.0" x2="446" y2="199.0"/>
+              <text class="pdc-chart__tick" x="48" y="199.0" text-anchor="end" dominant-baseline="middle" font-size="11">6.5</text>
+              <text class="pdc-chart__tick" x="48" y="14.0" text-anchor="end" dominant-baseline="middle" font-size="11">g/m²h</text>
+              <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="58,151.3 252,65.4 446,117.3"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="58" cy="151.3" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="252" cy="65.4" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="446" cy="117.3" r="4"/>
+              <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="58,151.9 252,65.0 446,173.2"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="58" cy="151.9" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="252" cy="65.0" r="4"/>
+              <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="446" cy="173.2" r="4"/>
+              <g class="pdc-set-chart__values">
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="58" y="151.3" dy="2.65em" text-anchor="start" font-size="14">7.400</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="252" y="65.4" dy="-0.75em" text-anchor="middle" font-size="14">9.021</text>
+                <text class="pdc-chart__value pdc-set-chart__value--none" x="452" y="117.3" dy="-1.15em" text-anchor="end" font-size="14">8.041</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="58" y="151.9" dy="1.5em" text-anchor="start" font-size="14">7.389</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="252" y="65.0" dy="-1.9em" text-anchor="middle" font-size="14">9.029</text>
+                <text class="pdc-chart__value pdc-set-chart__value--kit" x="452" y="173.2" dy="1.5em" text-anchor="end" font-size="14">6.986</text>
+              </g>
+              <text class="pdc-chart__label" x="58" y="268" text-anchor="start" font-size="12">자외선 조사 전</text>
+              <text class="pdc-chart__label" x="252" y="268" text-anchor="middle" font-size="12">조사 24시간 후</text>
+              <text class="pdc-chart__label" x="446" y="268" text-anchor="end" font-size="12">사용 2주 후</text>
+            </svg>
+          </div>
+          <p class="pdc-set-clinical__chart-note body-s">낮을수록 수분 손실량이 적음 · n=21 평균값</p>
+        </article>
+      </div>
+
+      <!-- 03 · 피부결 · 피부 보습 -->
+      <div class="pdc-set-clinical__panel" role="tabpanel" data-pdc-set-panel="clinical-texture">
+        <div class="pdc-set-clinical__pair">
+          <article class="pdc-set-clinical__card pdc-set-clinical__card--sm">
+            <header class="pdc-set-clinical__card-head">
+              <div class="pdc-set-clinical__card-title">
+                <p class="pdc__eyebrow">Skin Texture</p>
+                <h3 class="heading-l">자외선에 거칠어진 피부결,<br>2주 사용 후 매끄럽게.</h3>
+                <p class="pdc-set-clinical__basis body-s">자외선 조사 24시간 후 대비 2주 후</p>
+              </div>
+              <p class="pdc-set-clinical__metric"><strong class="heading-xxl">11.742<span class="pdc-set-clinical__unit">%</span></strong><span class="heading-m">피부결 개선</span></p>
+            </header>
+            <ul class="pdc-set-clinical__legend body-s" aria-label="범례">
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--kit">병행 사용</li>
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--none">무도포</li>
+            </ul>
+            <div class="pdc-set-clinical__chart">
+              <svg class="pdc-chart pdc-set-chart" viewBox="0 0 468 292" role="img" aria-labelledby="pdc-set-chart-texture-title">
+                <title id="pdc-set-chart-texture-title">피부결(Pixel) — 병행 사용 41216.714 → 47805.524 → 42192.048, 무도포 41257.238 → 47732.333 → 46020.952</title>
+                <line class="pdc-chart__grid" x1="58" y1="38.0" x2="446" y2="38.0"/>
+                <text class="pdc-chart__tick" x="48" y="38.0" text-anchor="end" dominant-baseline="middle" font-size="11">49000</text>
+                <line class="pdc-chart__grid" x1="58" y1="91.0" x2="446" y2="91.0"/>
+                <text class="pdc-chart__tick" x="48" y="91.0" text-anchor="end" dominant-baseline="middle" font-size="11">46000</text>
+                <line class="pdc-chart__grid" x1="58" y1="144.0" x2="446" y2="144.0"/>
+                <text class="pdc-chart__tick" x="48" y="144.0" text-anchor="end" dominant-baseline="middle" font-size="11">43000</text>
+                <line class="pdc-chart__grid" x1="58" y1="197.0" x2="446" y2="197.0"/>
+                <text class="pdc-chart__tick" x="48" y="197.0" text-anchor="end" dominant-baseline="middle" font-size="11">40000</text>
+                <text class="pdc-chart__tick" x="48" y="12.0" text-anchor="end" dominant-baseline="middle" font-size="11">Pixel</text>
+                <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="58,174.8 252,60.4 446,90.6"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="58" cy="174.8" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="252" cy="60.4" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="446" cy="90.6" r="4"/>
+                <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="58,175.5 252,59.1 446,158.3"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="58" cy="175.5" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="252" cy="59.1" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="446" cy="158.3" r="4"/>
+                <!-- 값 라벨 — 선이 지나지 않는 쪽에 둔다. 점 바로 뒤에 두지 않는다(pdc-elixir.js가 y를 다시 놓지 않게) · 위치는 dy(em) -->
+                <g class="pdc-set-chart__values">
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="58" y="174.8" dy="2.65em" text-anchor="start" font-size="14">41257.238</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="252" y="60.4" dy="-0.75em" text-anchor="middle" font-size="14">47732.333</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="452" y="90.6" dy="-1.15em" text-anchor="end" font-size="14">46020.952</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="58" y="175.5" dy="1.5em" text-anchor="start" font-size="14">41216.714</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="252" y="59.1" dy="-1.9em" text-anchor="middle" font-size="14">47805.524</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="452" y="158.3" dy="1.5em" text-anchor="end" font-size="14">42192.048</text>
+                </g>
+                <text class="pdc-chart__label" x="58" y="268" text-anchor="start" font-size="12">자외선 조사 전</text>
+                <text class="pdc-chart__label" x="252" y="268" text-anchor="middle" font-size="12">조사 24시간 후</text>
+                <text class="pdc-chart__label" x="446" y="268" text-anchor="end" font-size="12">사용 2주 후</text>
+              </svg>
+            </div>
+            <p class="pdc-set-clinical__chart-note body-s">낮을수록 개선 방향 · n=21 평균값</p>
+          </article>
+          <article class="pdc-set-clinical__card pdc-set-clinical__card--sm">
+            <header class="pdc-set-clinical__card-head">
+              <div class="pdc-set-clinical__card-title">
+                <p class="pdc__eyebrow">Skin Hydration</p>
+                <h3 class="heading-l">자외선에 건조해진 피부,<br>2주 사용 후 촉촉하게.</h3>
+                <p class="pdc-set-clinical__basis body-s">자외선 조사 24시간 후 대비 2주 후</p>
+              </div>
+              <p class="pdc-set-clinical__metric"><strong class="heading-xxl">15.989<span class="pdc-set-clinical__unit">%</span></strong><span class="heading-m">피부 보습 개선</span></p>
+            </header>
+            <ul class="pdc-set-clinical__legend body-s" aria-label="범례">
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--kit">병행 사용</li>
+              <li class="pdc-set-clinical__legend-item pdc-set-clinical__legend-item--none">무도포</li>
+            </ul>
+            <div class="pdc-set-clinical__chart">
+              <svg class="pdc-chart pdc-set-chart" viewBox="0 0 468 292" role="img" aria-labelledby="pdc-set-chart-hydration-title">
+                <title id="pdc-set-chart-hydration-title">피부 보습(A.U.) — 병행 사용 34.892 → 32.654 → 37.875, 무도포 34.802 → 32.675 → 33.471</title>
+                <line class="pdc-chart__grid" x1="58" y1="50.0" x2="446" y2="50.0"/>
+                <text class="pdc-chart__tick" x="48" y="50.0" text-anchor="end" dominant-baseline="middle" font-size="11">38</text>
+                <line class="pdc-chart__grid" x1="58" y1="98.0" x2="446" y2="98.0"/>
+                <text class="pdc-chart__tick" x="48" y="98.0" text-anchor="end" dominant-baseline="middle" font-size="11">36</text>
+                <line class="pdc-chart__grid" x1="58" y1="146.0" x2="446" y2="146.0"/>
+                <text class="pdc-chart__tick" x="48" y="146.0" text-anchor="end" dominant-baseline="middle" font-size="11">34</text>
+                <line class="pdc-chart__grid" x1="58" y1="194.0" x2="446" y2="194.0"/>
+                <text class="pdc-chart__tick" x="48" y="194.0" text-anchor="end" dominant-baseline="middle" font-size="11">32</text>
+                <text class="pdc-chart__tick" x="48" y="24.0" text-anchor="end" dominant-baseline="middle" font-size="11">A.U.</text>
+                <polyline class="pdc-chart__line pdc-set-chart__line--none" pathLength="1" points="58,126.8 252,177.8 446,158.7"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="58" cy="126.8" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="252" cy="177.8" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--none" cx="446" cy="158.7" r="4"/>
+                <polyline class="pdc-chart__line pdc-set-chart__line--kit" pathLength="1" points="58,124.6 252,178.3 446,53.0"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="58" cy="124.6" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="252" cy="178.3" r="4"/>
+                <circle class="pdc-chart__dot pdc-set-chart__dot--kit" cx="446" cy="53.0" r="4"/>
+                <!-- 값 라벨 — 선이 지나지 않는 쪽에 둔다. 점 바로 뒤에 두지 않는다(pdc-elixir.js가 y를 다시 놓지 않게) · 위치는 dy(em) -->
+                <g class="pdc-set-chart__values">
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="58" y="126.8" dy="-0.75em" text-anchor="start" font-size="14">34.802</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="252" y="177.8" dy="2.65em" text-anchor="middle" font-size="14">32.675</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--none" x="452" y="158.7" dy="1.5em" text-anchor="end" font-size="14">33.471</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="58" y="124.6" dy="-1.9em" text-anchor="start" font-size="14">34.892</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="252" y="178.3" dy="1.5em" text-anchor="middle" font-size="14">32.654</text>
+                  <text class="pdc-chart__value pdc-set-chart__value--kit" x="452" y="53.0" dy="-0.75em" text-anchor="end" font-size="14">37.875</text>
+                </g>
+                <text class="pdc-chart__label" x="58" y="268" text-anchor="start" font-size="12">자외선 조사 전</text>
+                <text class="pdc-chart__label" x="252" y="268" text-anchor="middle" font-size="12">조사 24시간 후</text>
+                <text class="pdc-chart__label" x="446" y="268" text-anchor="end" font-size="12">사용 2주 후</text>
+              </svg>
+            </div>
+            <p class="pdc-set-clinical__chart-note body-s">높을수록 보습 개선 방향 · n=21 평균값</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- 다섯 가지 결과 요약 -->
+      <div class="pdc-set-clinical__summary" data-scroll-reveal>
+        <header class="pdc__head pdc-set-clinical__summary-head">
+          <p class="pdc__eyebrow">2 Weeks. Five Clinical Measures.</p>
+          <h3 class="pdc__head-title heading-xxl">다섯 가지 지표로 확인한 변화</h3>
+        </header>
+        <div class="pdc-set-clinical__card pdc-set-clinical__card--table">
+          <dl class="pdc-set-clinical__table">
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부 진정</dt><dd class="heading-m">71.844<span class="pdc-set-clinical__unit">%</span> 개선</dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부 수분 손실량</dt><dd class="heading-m">124.573<span class="pdc-set-clinical__unit">%</span> 개선<span class="pdc-set-clinical__mark">*</span></dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부결</dt><dd class="heading-m">11.742<span class="pdc-set-clinical__unit">%</span> 개선</dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">피부 보습</dt><dd class="heading-m">15.989<span class="pdc-set-clinical__unit">%</span> 개선</dd></div>
+            <div class="pdc-set-clinical__row"><dt class="body-xl">색소침착</dt><dd class="heading-m">무도포 대비 유의한 차이 확인</dd></div>
+          </dl>
+          <p class="pdc-set-clinical__table-note body-m">* 자외선 노출로 증가한 수분 손실량의 회복률</p>
+        </div>
+        <p class="pdc-set-clinical__summary-note body-m">각 수치는 평가 항목별 서로 다른 산출 기준을 적용한 결과입니다.</p>
+      </div>
+
+      <details class="pdc-disclosure pdc-set-clinical__study">
+        <summary class="pdc-disclosure__summary sm--body-m body-l">VIEW THE STUDY<span class="pdc-disclosure__icon" aria-hidden="true"></span></summary>
+        <div class="pdc-disclosure__body">
+          <table class="pdc-study">
+            <caption class="visually-hidden">BIO ELIXIR + SUN VEIL 병행 사용 인체적용시험 개요</caption>
+            <tbody>
+              <tr><th scope="row">시험기관</th><td>P&amp;K 피부임상연구센타㈜</td></tr>
+              <tr><th scope="row">시험기간</th><td>2026.06.15 – 2026.07.09</td></tr>
+              <tr><th scope="row">시험대상</th><td>만 35~60세 성인 여성 21명</td></tr>
+              <tr><th scope="row">시험제품</th><td>AYROW BIO ELIXIR + SUN VEIL</td></tr>
+              <tr><th scope="row">시험방법</th><td>자외선 조사 후 두 제품의 병행 사용부위와 무도포 부위 비교 (2주간, 1일 1회)</td></tr>
+              <tr><th scope="row">평가시점</th><td>자외선 조사 전 / 자외선 조사 24시간 후 / 병행 사용 2주 후</td></tr>
+              <tr><th scope="row">평가항목</th><td>피부 진정, 피부 수분 손실량, 피부결, 피부 보습, 색소침착</td></tr>
+              <tr><th scope="row">안전성 평가</th><td>시험기간 동안 연구자의 육안 평가 및 시험대상자 설문에서 특별한 피부 이상반응이 확인되지 않음</td></tr>
+            </tbody>
+          </table>
+          <p class="pdc-study__disclaimer body-xs">인체적용시험 결과가 모든 사용자에게 동일하게 나타나는 것은 아닙니다.</p>
+        </div>
+      </details>
+    </div>
+  </section>

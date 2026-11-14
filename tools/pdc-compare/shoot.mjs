@@ -20,7 +20,7 @@ const widths = (widthsArg || '375,768,1024,1280,1920').split(',').map(Number);
 let LOCAL_HTML = flags.html ? fs.readFileSync(flags.html, 'utf8') : null;
 const SKIN = path.resolve(flags.skin || path.join(import.meta.dirname, '../../../ayrow-cafe24-skin-2026'));
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
-const TYPES = { '.css': 'text/css', '.js': 'application/javascript' };
+const TYPES = { '.css': 'text/css', '.js': 'application/javascript', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
 const skinBase = new URL(url).pathname.match(/^\/skin-[^/]+/)?.[0] || '';
 const origin = new URL(url).origin;
 const remoteCache = new Map();
@@ -40,7 +40,9 @@ function spliceDetail(page) {
   const end = page.lastIndexOf('</div>', page.lastIndexOf('<script', reviews));
   if (start < 0 || end < start) throw new Error('상세 내용 구간을 찾지 못함');
   const detail = LOCAL_HTML.replace(/(href|src)="\/(css|js)\//g, `$1="${skinBase}/$2/`);
-  return page.slice(0, start) + detail + '\n      ' + page.slice(end);
+  // 아직 CDN(/web/src/set/)에 올리지 않은 키트 이미지는 스킨 레포 src/set/의 로컬 파일로 본다
+  const local = detail.replace(/https:\/\/ecimg\.cafe24img\.com\/[^"']*?\/web\/src\/set\//g, `${skinBase}/src/set/`);
+  return page.slice(0, start) + local + '\n      ' + page.slice(end);
 }
 
 // 묶음(optimizer) 안에 원문 그대로 들어 있는 스킨 파일을 로컬 파일로 바꾼다
@@ -79,7 +81,7 @@ async function intercept(page) {
         return req.respond({ contentType: TYPES[ext], body: await patchBundle(await remoteText(req.url()), ext) });
       }
       const file = path.join(SKIN, u.pathname.slice(skinBase.length));
-      if (/^\/(css|js)\//.test(u.pathname.slice(skinBase.length)) && fs.existsSync(file)) {
+      if (/^\/(css|js|src\/set)\//.test(u.pathname.slice(skinBase.length)) && fs.existsSync(file)) {
         return req.respond({ contentType: TYPES[path.extname(file)] || 'text/plain', body: fs.readFileSync(file) });
       }
       return req.continue();
@@ -90,7 +92,7 @@ async function intercept(page) {
   });
 }
 const SECTION = '[data-pdc-section],[data-pdp-section],[data-sv-sequence-pdp-section]';
-const HIDE = '#header,.site-header,header,.product-actions,.toc-bar,.announcement-bar,.alpha_widget,iframe{visibility:hidden!important}'
+const HIDE = '#header,.site-header,body>header,#wrap>header,.product-actions,.toc-bar,.announcement-bar,.alpha_widget,iframe{visibility:hidden!important}'
   + '*,*::before,*::after{animation-duration:0s!important;animation-delay:0s!important;transition-duration:0s!important;transition-delay:0s!important}';
 
 const browser = await puppeteer.launch({
