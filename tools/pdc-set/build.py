@@ -11,10 +11,10 @@ Run:  python3 tools/pdc-set/build.py [--full] [--no-launch] [--out=<파일>] [--
       --full  기획안이 뺀 제품 섹션까지 모두 실은 판(길이 비교용)
 
 구성 (2026-11-14 — docs/enhancement/skin-longevity-kit/brief.md)
-  0 LAUNCH SPECIAL              sections/launch.html (런칭 기간 한정)
   1 KIT CONCEPT · 2 TWO FORMS   sections/concept.html
+    LAUNCH SPECIAL              sections/launch.html (런칭 기간 한정 — 1과 2 사이에 놓는다 · 2026-11-15)
   3 CLINICAL PROOF              sections/clinical.html
-  4 엘릭서      hero(구간 표지) · clinical · origin · botanical · ltve · harmony
+  4 엘릭서      hero(구간 표지) · concentrate(2026-11-15에 되살림) · clinical · origin · botanical · ltve · harmony
   5 선베일      hero(구간 표지) · film-membrane · film-membrane-standard · how-it-works · how-it-bonds ·
                 reverse-ag-code-formula · proven-data · makeup-routine
                 (제품별 사용방법 usage · how-to-use는 2026-11-14에 뺌 — 키트 사용 순서는 6이 맡는다)
@@ -31,7 +31,7 @@ from pathlib import Path
 
 PLANNING = Path(__file__).resolve().parent.parent.parent
 flags = dict(a[2:].split("=", 1) if "=" in a else (a[2:], "1") for a in sys.argv[1:] if a.startswith("--"))
-VER = flags.get("ver", "20261114000011")
+VER = flags.get("ver", "20261115000004")
 FULL = "full" in flags
 IMG = "https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set"
 SECTIONS = Path(__file__).resolve().parent / "sections"
@@ -123,7 +123,7 @@ def rest(product, *keys):
 chapters = [
     ("3. CLINICAL PROOF", [part("clinical.html")]),
     ("4. 엘릭서", [
-        group(E, elixir_hero, *rest(E, "concentrate"), *sections(E, "clinical", "origin", "botanical", "ltve", "harmony"), *rest(E, "ritual", "usage")),
+        group(E, elixir_hero, no_nav(section(E, "concentrate")), *sections(E, "clinical", "origin", "botanical", "ltve", "harmony"), *rest(E, "ritual", "usage")),
     ]),
     ("5. 선베일", [
         group(S, sun_veil_hero, *rest(S, "membrane-intro", "problem", "film-membrane-pain", "film-membrane-choice"), *sections(S, "film-membrane"),
@@ -147,7 +147,10 @@ head = f"""<!-- SKIN LONGEVITY READY KIT 상세 — pdc 체계 · tools/pdc-set/
 <link rel="stylesheet" href="/css/module/product/pdc-set.css?ver={VER}">
 <div class="pdc pdc--set" data-pdc data-pdc-product="elixir sun-veil set" data-pdc-ver="{VER}">
 """
-body = ("" if "no-launch" in flags else part("launch.html")) + part("concept.html") + "".join("\n  <!-- %s -->\n%s" % (label, "".join(parts)) for label, parts in chapters)
+# 런칭 배너는 01 KIT CONCEPT 아래 · 02 TWO FORMS 위에 놓는다(2026-11-15)
+concept, forms = part("concept.html").split("  <!-- 02. TWO FORMS -->\n")
+launch = "" if "no-launch" in flags else part("launch.html") + "\n"
+body = concept + launch + "  <!-- 02. TWO FORMS -->\n" + forms + "".join("\n  <!-- %s -->\n%s" % (label, "".join(parts)) for label, parts in chapters)
 OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text(head + body + "</div>\n", encoding="utf-8")
 

@@ -18,7 +18,7 @@ BIO ELIXIR와 SUN VEIL을 묶은 키트 상품의 상세 페이지를 만든다.
 
 | 순서 | 섹션 | 역할 | 디자인 | 구현 |
 | --- | --- | --- | --- | --- |
-| 0 | LAUNCH SPECIAL | 런칭 혜택 배너(11.15 – 11.30 · 500세트 한정 30% OFF) | 시안 00 | 신규 — 런칭 기간이 끝나면 뺀다(`build.py --no-launch`) |
+| 0 | LAUNCH SPECIAL | 런칭 혜택 배너(11.15 – 11.30 · 500세트 한정 30% OFF) | 시안 00 | 신규 — 2026-11-15부터 1(KIT CONCEPT)과 2(TWO FORMS) 사이에 놓는다 · 런칭 기간이 끝나면 뺀다(`build.py --no-launch`) |
 | 1 | KIT CONCEPT | 키트의 정체성 | 시안 01 | 신규 |
 | 2 | TWO FORMS | 두 제품의 형태와 역할 | 시안 02 | 신규 |
 | 3 | CLINICAL PROOF | 병행 사용 인체적용시험 | 시안 03 | 신규(엘릭서 임상 블록 재사용) · 요약표 포함(2026-11-14 한때 뺐다가 같은 날 되돌림) |
@@ -44,7 +44,7 @@ BIO ELIXIR와 SUN VEIL을 묶은 키트 상품의 상세 페이지를 만든다.
 
 | 제품 | 남기는 섹션 | 빼는 섹션 |
 | --- | --- | --- |
-| BIO ELIXIR | hero(구간 표지) · clinical · origin(STECHA™) · botanical(74+4) · ltve · harmony(Reverse AG Code™) | concentrate · ritual(Whereable Beauty — 6번 섹션이 대신한다) · usage(사용방법 — 2026-11-14에 뺌) |
+| BIO ELIXIR | hero(구간 표지) · concentrate(2026-11-15에 되살림) · clinical · origin(STECHA™) · botanical(74+4) · ltve · harmony(Reverse AG Code™) | ritual(Whereable Beauty — 6번 섹션이 대신한다) · usage(사용방법 — 2026-11-14에 뺌) |
 | SUN VEIL | hero(구간 표지) · film-membrane(필름 vs 나노 섬유) · film-membrane-standard · how-it-works · how-it-bonds · reverse-ag-code-formula · proven-data · makeup-routine | how-to-use(사용 방법 — 2026-11-14에 뺌) · membrane-intro · problem · film-membrane-pain · film-membrane-choice · at-a-glance · why-intro · why-highlight |
 
 - 제품 Hero는 기획안 목록에 없지만 구간 표지로 남긴다(2026-11-13 결정: 엘릭서 → 선베일 전환을 제품 표지로 잇는다).

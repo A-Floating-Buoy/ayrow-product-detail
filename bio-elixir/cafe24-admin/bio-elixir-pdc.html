@@ -2,30 +2,10 @@
 <!-- 공통: /css/module/product/pdc.css · pdc.js(스킨 product/detail.html이 불러옴) · 제품: pdc-elixir.css(아래 link) · pdc-elixir.js(pdc.js가 불러옴) · CSS · JS 수정 후 ?ver= 와 data-pdc-ver 를 함께 올린다 -->
 <!-- 이미지: 관리자 /web/src/bio-elixir/ 업로드 · HTML에는 CDN 절대경로 · CSS mask는 CDN이 CORS를 막아 data URI -->
 <!-- 원본: bio-elixir-pdp.html 에서 이름을 변환했다(tools/pdc-convert/elixir-pass1.py). 이제 이 파일을 직접 고친다 -->
-<link rel="stylesheet" href="/css/module/product/pdc-elixir.css?ver=20261112000007">
-<div class="pdc pdc--elixir" data-pdc data-pdc-product="elixir" data-pdc-ver="20261112000007" itemscope itemtype="https://schema.org/Product">
+<link rel="stylesheet" href="/css/module/product/pdc-elixir.css?ver=20261115000002">
+<div class="pdc pdc--elixir" data-pdc data-pdc-product="elixir" data-pdc-ver="20261115000002" itemscope itemtype="https://schema.org/Product">
   <h1 class="visually-hidden" itemprop="name">에이로우 바이오 엘릭서</h1>
   <p class="visually-hidden" itemprop="description">에이로우 바이오 엘릭서는 피뿌리풀수 74%를 베이스로 설계해 쉽게 뿌리고, 얇게 쌓고, 필요한 순간 다시 레이어링하는 스킨 롱제비티 컨센트레이트입니다.</p>
-
-  <!-- 0. LAUNCH SPECIAL — 런칭 기간(11.15 – 11.30) 한정 배너. 기간이 끝나면 이 section을 통째로 지운다 · 모양: 공통 블록 pdc-launch(pdc.css) -->
-  <section class="pdc__section pdc__section--full pdc-launch" data-pdc-section="launch">
-    <div class="container container--md">
-      <div class="pdc-launch__inner" data-scroll-reveal data-scroll-direction="none">
-        <p class="pdc-launch__products heading-xl">BIO ELIXIR</p>
-        <h2 class="pdc-launch__title type-display">LAUNCH SPECIAL SALE</h2>
-        <p class="pdc-launch__period body-mega">11.15 - 11.30</p>
-        <div class="pdc-launch__offer">
-          <p class="pdc-launch__rate heading-xxxl">20<span class="pdc-launch__unit">%</span> OFF</p>
-          <p class="pdc-launch__detail body-xl">런칭 기념 10% + 회원 추가 10%</p>
-        </div>
-        <div class="pdc-launch__extra">
-          <img class="pdc-launch__icon" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-launch-icon.svg" alt="" width="43" height="63" loading="eager">
-          <p class="pdc-launch__detail body-xl">카카오톡 채널 친구 3,000원 적립금</p>
-          <p class="pdc-launch__note body-l">신규 · 기존 회원 동일 혜택</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- 1. Hero -->
   <section class="pdc__section pdc__section--full pdc-elixir-hero" data-pdc-section="hero" data-pdc-hero-video>
@@ -38,6 +18,26 @@
       <p class="pdc__eyebrow">Skin Longevity Concentrate</p>
       <h2 class="pdc-elixir-hero__title heading-xl">BIO ELIXIR<span class="pdc-elixir-hero__tm">™</span></h2>
       <a class="pdc-elixir-hero__link body-xl" href="#pdc-elixir-clinical">피부 변화 확인하기 <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
+  <!-- 1-1. LAUNCH SPECIAL — 런칭 기간(11.15 – 11.30) 한정 배너. 기간이 끝나면 이 section을 통째로 지운다 · 모양: 공통 블록 pdc-launch(pdc.css) -->
+  <section class="pdc__section pdc__section--full pdc-launch" data-pdc-section="launch">
+    <div class="container container--md">
+      <div class="pdc-launch__inner" data-scroll-reveal data-scroll-direction="none">
+        <p class="pdc-launch__products heading-xl">BIO ELIXIR</p>
+        <h2 class="pdc-launch__title type-display">LAUNCH SPECIAL SALE</h2>
+        <p class="pdc-launch__period body-mega">11.15 - 11.30</p>
+        <div class="pdc-launch__offer">
+          <p class="pdc-launch__rate heading-xxxl">20<span class="pdc-launch__unit">%</span> OFF</p>
+          <p class="pdc-launch__detail body-xl">런칭 기념 10% + 회원 추가 10%</p>
+        </div>
+        <div class="pdc-launch__extra">
+          <img class="pdc-launch__icon" src="https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set/kit-launch-icon.svg" alt="" width="43" height="63" loading="eager">
+          <p class="pdc-launch__detail body-xl">카카오톡 채널 친구 3,000원 쿠폰</p>
+          <p class="pdc-launch__note body-l">신규 · 기존 회원 동일 혜택</p>
+        </div>
+      </div>
     </div>
   </section>
 
