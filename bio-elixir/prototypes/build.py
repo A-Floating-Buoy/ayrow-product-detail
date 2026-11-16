@@ -1,7 +1,7 @@
 """BIO Elixir 상세 — 로컬 미리보기 만들기.
 
 Source: ../cafe24-admin/bio-elixir-pdp.html (카페24 상품 상세 설명에 붙여 넣는 원본 — 직접 수정)
-Output: preview.html (GitHub 폴더 루트에서 서버를 띄워 연다: python3 -m http.server → /ayrow-sun-veil-planning/bio-elixir/prototypes/preview.html)
+Output: preview.html (GitHub 폴더 루트에서 서버를 띄워 연다: python3 -m http.server → /ayrow-product-detail/bio-elixir/prototypes/preview.html)
 
 Run:  python3 bio-elixir/prototypes/build.py
 
