@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bottle Fill Motion</title>
+<style>
+:root {
+  --pdp-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ui-line: #e3e3e3;
+  --ui-text: #1a1a1a;
+  --ui-sub: #6b6b6b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ui-text);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+  word-break: keep-all;
+}
+
+.stage {
+  display: grid;
+  justify-content: center;
+  padding: 48px 16px 40px;
+}
+
+@property --pdp-blend-color { syntax: "<color>"; inherits: true; initial-value: #b3122e; }
+@property --pdp-diffuse { syntax: "<percentage>"; inherits: true; initial-value: 0%; }
+
+.bottle {
+  position: relative;
+  width: 160px;
+  aspect-ratio: 160.317 / 558;
+  margin: 0;
+}
+.bottle__body { display: block; width: 100%; height: auto; }
+
+.bottle__water {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: auto;
+}
+.bottle__blend {
+  --pdp-blend-color: #b3122e;
+  --pdp-blend-gold: #f9e9b0;
+  --pdp-blend-edge: 24px;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  aspect-ratio: 161 / 558;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-mask: var(--pdp-liquid-mask) center / 100% 100% no-repeat;
+  mask: var(--pdp-liquid-mask) center / 100% 100% no-repeat;
+}
+.bottle__blend::before,
+.bottle__blend::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 0;
+}
+.bottle__blend::before {
+  background: linear-gradient(0deg,
+    var(--pdp-blend-color) 0%,
+    var(--pdp-blend-color) 12%,
+    color-mix(in srgb, var(--pdp-blend-gold) var(--pdp-diffuse), var(--pdp-blend-color)) 70%,
+    color-mix(in srgb, var(--pdp-blend-gold) var(--pdp-diffuse), var(--pdp-blend-color)) 100%);
+  -webkit-mask: linear-gradient(0deg, #000 calc(100% - var(--pdp-blend-edge)), transparent 100%);
+  mask: linear-gradient(0deg, #000 calc(100% - var(--pdp-blend-edge)), transparent 100%);
+}
+.bottle__blend::after {
+  height: 76.6%;
+  background:
+    radial-gradient(ellipse 16% 42% at 32% 40%, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0)),
+    radial-gradient(ellipse 58% 62% at 50% 40%, rgba(150, 105, 20, 0) 70%, rgba(150, 105, 20, 0.14) 100%);
+  -webkit-mask: linear-gradient(0deg, #000 calc(100% - var(--pdp-blend-edge)), transparent 100%) bottom / 100% 0% no-repeat;
+  mask: linear-gradient(0deg, #000 calc(100% - var(--pdp-blend-edge)), transparent 100%) bottom / 100% 0% no-repeat;
+}
+.bottle__ink {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.bottle.is-revealed .bottle__water {
+  animation:
+    fill 1200ms var(--pdp-ease) 150ms both,
+    water-fade 1800ms ease 2700ms both;
+}
+.bottle.is-revealed .bottle__blend {
+  animation: blend-in 300ms ease 1700ms both;
+}
+.bottle.is-revealed .bottle__blend::before {
+  animation:
+    pour 800ms cubic-bezier(0.3, 0, 0.2, 1) 1700ms both,
+    expand 1900ms cubic-bezier(0.45, 0.05, 0.35, 1) 2700ms forwards,
+    dilute 1900ms ease-out 2700ms forwards,
+    tint 1500ms ease-in-out 3300ms forwards;
+}
+.bottle.is-revealed .bottle__blend::after {
+  animation:
+    shade-pour 800ms cubic-bezier(0.3, 0, 0.2, 1) 1700ms both,
+    shade-expand 1900ms cubic-bezier(0.45, 0.05, 0.35, 1) 2700ms forwards;
+}
+
+@keyframes fill { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(23% 0 0 0); } }
+@keyframes water-fade { to { opacity: 0; } }
+@keyframes blend-in { from { opacity: 0; } to { opacity: 0.92; } }
+@keyframes pour { from { height: 0; } to { height: 14%; } }
+@keyframes expand { from { height: 14%; } to { height: calc(76.6% + var(--pdp-blend-edge)); } }
+@keyframes dilute { from { --pdp-diffuse: 0%; } to { --pdp-diffuse: 100%; } }
+@keyframes tint { from { --pdp-blend-color: #b3122e; } to { --pdp-blend-color: #f4dc8a; } }
+@keyframes shade-pour {
+  from { -webkit-mask-size: 100% 0%; mask-size: 100% 0%; }
+  to { -webkit-mask-size: 100% 18.3%; mask-size: 100% 18.3%; }
+}
+@keyframes shade-expand {
+  from { -webkit-mask-size: 100% 18.3%; mask-size: 100% 18.3%; }
+  to { -webkit-mask-size: 100% calc(100% + var(--pdp-blend-edge)); mask-size: 100% calc(100% + var(--pdp-blend-edge)); }
+}
+
+.spec { max-width: 640px; margin: 0 auto 64px; padding: 0 16px; }
+.spec h2 { margin: 0 0 12px; padding-top: 24px; border-top: 1px solid var(--ui-line); font-size: 17px; }
+.table-wrap { overflow-x: auto; }
+.spec table { width: 100%; border-collapse: collapse; font-size: 13px; line-height: 1.6; }
+.spec th, .spec td { padding: 8px 10px; border-bottom: 1px solid var(--ui-line); text-align: left; vertical-align: top; }
+.spec th { color: var(--ui-sub); font-weight: 500; white-space: nowrap; }
+.spec td:first-child { white-space: nowrap; }
+.spec :is(th, td):first-child { padding-left: 0; }
+.spec code { font-size: 12px; }
+.chip { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 3px; vertical-align: -1px; }
+.ui-off .spec { display: none; }
+.frames {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(64px, 1fr));
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.frames figure { margin: 0; }
+.frames img { display: block; width: 100%; height: auto; }
+.spec + .spec { margin-top: -24px; }
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <figure class="bottle" id="bottle">
+    <img class="bottle__body" src="assets/botanical-bottle.svg" alt="바이오 엘릭서 용기" width="160" height="558">
+    <img class="bottle__water" src="assets/botanical-bottle-water-full.svg" alt="" width="161" height="558">
+    <span class="bottle__blend" style="--pdp-liquid-mask: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22161%22 height=%22558%22 viewBox=%220 0 161 558%22 preserveAspectRatio=%22none%22%3E%3Cpath fill=%22%23fff%22 d=%22M132.561 130.757L132.814 130.81C133.196 131.553 134.329 133.371 135.118 133.491C155.377 136.564 153.752 145.817 153.618 162.708C111.547 163.024 69.4738 163.091 27.4014 162.908C20.6789 162.686 13.6063 162.737 6.86983 162.714C6.84578 150.354 4.69095 137.728 20.6242 134.51C24.3662 133.754 25.4587 134.071 27.9625 131.061C30.6796 130.837 36.0345 131.369 38.9517 131.534C44.5794 131.85 50.2137 132.035 55.85 132.088C82.2806 132.338 106.189 132.452 132.561 130.757Z%22/%3E%3Cpath fill=%22%23fff%22 d=%22M5.08281 164.184C10.4961 163.772 20.5595 164.181 26.4328 164.234L64.8423 164.399L118.831 164.304C130.624 164.212 142.423 164.062 154.215 164.142C156.57 164.159 158.753 165.096 158.744 167.794C158.716 176.093 158.723 184.393 158.719 192.692L158.718 242.55L158.721 394.499L158.718 470.677L158.741 492.323C158.761 512.541 158.269 528.085 143.434 543.561C140.368 546.377 137.187 548.841 133.4 550.622C130.169 552.141 126.678 553.123 123.176 553.778C103.459 557.473 48.1166 558.278 29.8928 551.6C19.5154 547.799 11.6741 538.878 7.11683 529.024C3.75217 521.749 2.26637 514.084 1.87502 506.113C1.22373 492.853 1.75163 479.315 1.75793 466.032L1.75879 391.087L1.73618 173.208C1.75278 169.075 0.703275 165.608 5.08281 164.184Z%22/%3E%3C/svg%3E');"></span>
+    <img class="bottle__ink" src="assets/botanical-bottle-ink.svg" alt="" width="160" height="558">
+  </figure>
+</div>
+
+<section class="spec">
+<h2>색 · 움직임 값</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>값</th><th>비고</th></tr></thead>
+  <tbody>
+    <tr><td>추출물 시작색</td><td><span class="chip" style="background:#b3122e"></span>#B3122E</td><td>피뿌리풀 붉은색</td></tr>
+    <tr><td>희석 목표색(위쪽)</td><td><span class="chip" style="background:#f9e9b0"></span>#F9E9B0</td><td>확산 단계에서 위쪽 70% 이상 구간이 이 색으로 섞임</td></tr>
+    <tr><td>최종 바닥색</td><td><span class="chip" style="background:#f4dc8a"></span>#F4DC8A</td><td>톤 전환 단계 도착색</td></tr>
+    <tr><td>합성</td><td>Multiply · 92%</td><td>라벨 글씨가 액체 너머로 비침</td></tr>
+    <tr><td>경계 번짐</td><td>24px (용기 폭 160px 기준)</td><td>액체 윗면이 칼로 자른 선이 아니라 부드럽게 풀림</td></tr>
+    <tr><td>피뿌리풀수 차오름</td><td>0.15 – 1.35s · cubic-bezier(0.22, 1, 0.36, 1)</td><td>빠른 출발 · 긴 감속</td></tr>
+    <tr><td>추출물 부어짐</td><td>1.70 – 2.50s · cubic-bezier(0.3, 0, 0.2, 1)</td><td>붓듯이 가속 후 안착</td></tr>
+    <tr><td>위로 퍼지며 희석</td><td>2.70 – 4.60s · cubic-bezier(0.45, 0.05, 0.35, 1)</td><td>천천히 시작해 천천히 끝나는 S커브</td></tr>
+    <tr><td>골드로 톤 전환</td><td>3.30 – 4.80s · ease-in-out</td><td>바닥에 남은 붉은색까지 골드로</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section class="spec">
+<div class="frames">
+  <figure><img src="frames/t0000.png" alt="0.00초 · 빈 용기" width="400" height="1180" loading="lazy"></figure>
+  <figure><img src="frames/t0800.png" alt="0.80초 · 피뿌리풀수 차오르는 중" width="400" height="1180" loading="lazy"></figure>
+  <figure><img src="frames/t1350.png" alt="1.35초 · 피뿌리풀수 가득" width="400" height="1180" loading="lazy"></figure>
+  <figure><img src="frames/t2100.png" alt="2.10초 · 추출물 부어짐" width="400" height="1180" loading="lazy"></figure>
+  <figure><img src="frames/t2500.png" alt="2.50초 · 바닥 14% 붉은 층" width="400" height="1180" loading="lazy"></figure>
+  <figure><img src="frames/t3300.png" alt="3.30초 · 위로 퍼지며 희석" width="400" height="1180" loading="lazy"></figure>
+  <figure><img src="frames/t4000.png" alt="4.00초 · 골드로 톤 전환 중" width="400" height="1180" loading="lazy"></figure>
+  <figure><img src="frames/t4800.png" alt="4.80초 · 최종 상태" width="400" height="1180" loading="lazy"></figure>
+</div>
+</section>
+
+<script>
+(function () {
+  var bottle = document.getElementById('bottle');
+  var params = new URLSearchParams(location.search);
+  if (params.get('ui') === '0') document.documentElement.classList.add('ui-off');
+
+  var DURATION = 4800;
+  var HOLD = 1500;
+
+  function play() {
+    bottle.classList.remove('is-revealed');
+    void bottle.offsetWidth;
+    bottle.classList.add('is-revealed');
+  }
+
+  play();
+
+  if (params.has('t')) {
+    var t = +params.get('t');
+    document.getAnimations().forEach(function (a) { a.currentTime = t; a.pause(); });
+  } else {
+    setInterval(play, DURATION + HOLD);
+  }
+})();
+</script>
+</body>
+</html>

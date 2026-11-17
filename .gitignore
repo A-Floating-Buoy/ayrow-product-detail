@@ -1,3 +1,10 @@
 .DS_Store
 .claude/
 *.log
+
+# 기획 원본 자료(대용량 원본 사진 · 원본사진 zip · 직인본 보고서)는 로컬에만 둔다
+docs/enhancement/**/*.jpg
+docs/enhancement/**/*.JPG
+docs/enhancement/**/*.jpeg
+docs/enhancement/**/*.zip
+docs/enhancement/**/*.pdf

@@ -18,10 +18,11 @@ Run:  python3 tools/pdc-set/build.py [--full] [--no-launch] [--out=<파일>] [--
   5 선베일      hero(구간 표지) · film-membrane · film-membrane-standard · how-it-works · how-it-bonds ·
                 reverse-ag-code-formula · proven-data · makeup-routine
                 (제품별 사용방법 usage · how-to-use는 2026-11-14에 뺌 — 키트 사용 순서는 6이 맡는다)
-  6 THE KIT RITUAL · WHEREABLE BEAUTY   sections/ritual.html (시안 없음 — 임시 구현)
+  6 THE KIT RITUAL              sections/ritual.html (시안 없음 — 임시 구현)
+    WHEREABLE BEAUTY            선베일 at-a-glance(머리말을 sections/whereable-head.html로 바꿈) · 엘릭서 ritual (2026-11-16)
   7 FAQ         탭 3개 — 키트(sections/faq-kit.html) / 엘릭서 faq / 선베일 full-faq
 
-제품 섹션에서 고친 것은 목차 제목(제품 이름을 앞에 붙임 — NAV)과 엘릭서 Hero의 섹션 키뿐이다.
+제품 섹션에서 고친 것은 목차 제목(제품 이름을 앞에 붙임 — NAV) · 엘릭서 Hero의 섹션 키 · 선베일 at-a-glance의 머리말뿐이다.
 뺀 것: 선베일 banner(웰니스 기프팅 배너) · JSON-LD(키트 상품용은 따로 써야 한다) · 위 목록에 없는 제품 섹션(--full로 되살림)
 이력: docs/changelog/2026-11-13.md(주제별 섞기 · 공통 요소 구간 폐기) · 2026-11-14.md(키트 기획안 반영)
 """
@@ -31,7 +32,7 @@ from pathlib import Path
 
 PLANNING = Path(__file__).resolve().parent.parent.parent
 flags = dict(a[2:].split("=", 1) if "=" in a else (a[2:], "1") for a in sys.argv[1:] if a.startswith("--"))
-VER = flags.get("ver", "20261115000004")
+VER = flags.get("ver", "20261116000001")
 FULL = "full" in flags
 IMG = "https://ecimg.cafe24img.com/pg2475b11771033004/ayrow/web/src/set"
 SECTIONS = Path(__file__).resolve().parent / "sections"
@@ -123,14 +124,22 @@ def rest(product, *keys):
 chapters = [
     ("3. CLINICAL PROOF", [part("clinical.html")]),
     ("4. 엘릭서", [
-        group(E, elixir_hero, no_nav(section(E, "concentrate")), *sections(E, "clinical", "origin", "botanical", "ltve", "harmony"), *rest(E, "ritual", "usage")),
+        group(E, elixir_hero, no_nav(section(E, "concentrate")), *sections(E, "clinical", "origin", "botanical", "ltve", "harmony"), *rest(E, "usage")),
     ]),
     ("5. 선베일", [
         group(S, sun_veil_hero, *rest(S, "membrane-intro", "problem", "film-membrane-pain", "film-membrane-choice"), *sections(S, "film-membrane"),
-              *rest(S, "at-a-glance", "why-intro", "why-highlight"),
+              *rest(S, "why-intro", "why-highlight"),
               *sections(S, "film-membrane-standard", "how-it-works", "how-it-bonds", "reverse-ag-code-formula", "proven-data"), *rest(S, "how-to-use"), *sections(S, "makeup-routine")),
     ]),
-    ("6. THE KIT RITUAL · WHEREABLE BEAUTY", [part("ritual.html")]),
+    ("6. THE KIT RITUAL", [part("ritual.html")]),
+    # Whereable Beauty — 선베일 3분할(At a Glance)과 엘릭서 하루 장면(Daily ritual)을 엮는다(2026-11-16 수정사항).
+    # 선베일 머리말(선패치의 기준을 다시 썼습니다)은 키트의 Whereable Beauty 머리말로 바꾼다
+    ("6-1. WHEREABLE BEAUTY", [
+        group(S, swap(re.sub(r' data-pdc-nav-title="[^"]*"', ' data-pdc-nav-title="언제 사용하면 좋나요?"', section(S, "at-a-glance"), count=1),
+                      re.search(r"      <header class=\"pdc-at-glance__header\".*?</header>\n", section(S, "at-a-glance"), re.S).group(0),
+                      part("whereable-head.html"))),
+        group(E, no_nav(section(E, "ritual"))),
+    ]),
     ("7. FAQ — 탭", [
         faq_tabs,
         # 키트 FAQ는 엘릭서 FAQ 블록(pdc-faq)을 쓰므로 엘릭서 범위 안에 둔다
